@@ -159,7 +159,7 @@ While Cinephage finds and selects releases, download clients handle the actual d
 **Supported Clients:**
 
 - **Torrent:** qBittorrent, Transmission, Deluge, rTorrent, aria2
-- **Usenet:** SABnzbd, NZBGet, NZB-Mount
+- **Usenet:** SABnzbd, NZBGet
 
 **Integration:**
 

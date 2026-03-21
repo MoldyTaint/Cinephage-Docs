@@ -328,29 +328,20 @@ Configure connections to download clients for automated downloading.
 | Field | Description | Example |
 |-------|-------------|---------|
 | **Name** | Display name | "SABnzbd" |
-| **URL** | Full URL to SABnzbd | `http://192.168.1.50:8080` |
+| **Host** | IP or hostname | `192.168.1.50` |
+| **Port** | SABnzbd API port | `8080` |
 | **API Key** | SABnzbd API key | `abc123...` |
 
-#### NZBGet
+**SABnzbd Client Behavior:**
 
-**Required Fields:**
+| Option | Description |
+|--------|-------------|
+| **Standard SABnzbd** | Default SAB workflow |
+| **Altmount / NZBDav (Mount Mode)** | Enables mount-mode behavior for `.strm` imports |
 
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Name** | Display name | "NZBGet" |
-| **Host** | IP or hostname | `192.168.1.50` |
-| **Port** | NZBGet port | `6789` |
-| **Username** | NZBGet username | `nzbget` |
-| **Password** | NZBGet password | `********` |
-
-#### NZBMount (Streaming)
-
-**Required Fields:**
-
-| Field | Description | Example |
-|-------|-------------|---------|
-| **Name** | Display name | "NZBMount" |
-| **Mount Mode** | Virtual filesystem type | `nzbdav` or `altmount` |
+:::note
+Cinephage no longer exposes a separate NZB-Mount client type. Use **SABnzbd** and choose **Altmount / NZBDav (Mount Mode)** when needed.
+:::
 
 ### Indexers
 

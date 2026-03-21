@@ -37,7 +37,6 @@ Cinephage supports the following clients:
 
 - **SABnzbd** (recommended)
 - **NZBGet**
-- **NZB-Mount**
 
 ## Part 1: Configure qBittorrent
 
