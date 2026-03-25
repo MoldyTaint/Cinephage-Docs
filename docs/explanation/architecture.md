@@ -147,7 +147,7 @@ Cinephage integrates with numerous external services:
 **Download Clients:**
 
 - Torrent: qBittorrent, Transmission, Deluge, rTorrent, aria2
-- Usenet: SABnzbd, NZBGet, NZB-Mount
+- Usenet: SABnzbd, NZBGet
 
 **Indexers:**
 
