@@ -83,25 +83,30 @@ const config: Config = {
 					value:
 						'<a href="/deploy" class="navbar__link">Deploy <span class="badge badge--secondary">Beta</span></a>'
 				},
-			{
-				type: 'dropdown',
-				label: 'Source Code',
-				position: 'right',
-				items: [
-					{
-						href: 'https://github.com/MoldyTaint/Cinephage',
-						label: 'Cinephage (main)'
-					},
-					{
-						href: 'https://github.com/MoldyTaint/Cinephage/tree/dev',
-						label: 'Cinephage (dev)'
-					},
-					{
-						href: 'https://github.com/MoldyTaint/Cinephage-Docs',
-						label: 'Documentation Repo'
-					}
-				]
-			}
+				{
+					href: 'https://discord.gg/scGCBTSWEt',
+					position: 'left',
+					label: 'Discord'
+				},
+				{
+					type: 'dropdown',
+					label: 'Source Code',
+					position: 'right',
+					items: [
+						{
+							href: 'https://github.com/MoldyTaint/Cinephage',
+							label: 'Cinephage (main)'
+						},
+						{
+							href: 'https://github.com/MoldyTaint/Cinephage/tree/dev',
+							label: 'Cinephage (dev)'
+						},
+						{
+							href: 'https://github.com/MoldyTaint/Cinephage-Docs',
+							label: 'Documentation Repo'
+						}
+					]
+				}
 			]
 		},
 		footer: {
@@ -125,8 +130,33 @@ const config: Config = {
 					]
 				},
 				{
+					title: 'Support',
+					items: [
+						{
+							label: 'FAQ',
+							to: '/docs/support/faq'
+						},
+						{
+							label: 'Troubleshooting',
+							to: '/docs/guides/deploy/troubleshooting'
+						},
+						{
+							label: 'Roadmap',
+							to: '/docs/support/roadmap'
+						},
+						{
+							label: 'Releases',
+							to: '/docs/support/releases'
+						}
+					]
+				},
+				{
 					title: 'Community',
 					items: [
+						{
+							label: 'Discord',
+							href: 'https://discord.gg/scGCBTSWEt'
+						},
 						{
 							label: 'GitHub Discussions',
 							href: 'https://github.com/MoldyTaint/Cinephage/discussions'
@@ -152,6 +182,10 @@ const config: Config = {
 				}
 			],
 			copyright: `Copyright \u00A9 ${new Date().getFullYear()} Cinephage. Licensed under GPL-3.0. Built with Docusaurus.`
+		},
+		tableOfContents: {
+			minHeadingLevel: 2,
+			maxHeadingLevel: 3
 		},
 		prism: {
 			theme: prismThemes.github,
