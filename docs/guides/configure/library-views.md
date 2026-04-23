@@ -21,7 +21,7 @@ Library routes have been standardized:
 - Legacy URLs redirect automatically
 :::
 
-### View Options
+### View options
 
 | View | Description | Best For |
 |------|-------------|----------|
@@ -50,11 +50,11 @@ Library routes have been standardized:
 
 Access via **Library > TV Shows** (URL: `/library/tv`)
 
-### View Options
+### View options
 
 Same as Movies (Grid, List, Table)
 
-### Additional Filters
+### Additional filters
 
 - **Series Status** - Continuing, Ended, All
 - **Seasons** - Number of seasons
@@ -62,7 +62,7 @@ Same as Movies (Grid, List, Table)
 - **Network** - Original network
 - **Next Airing** - Upcoming episodes
 
-### Series Detail View
+### Series detail view
 
 Click a series to see:
 - Overview and metadata

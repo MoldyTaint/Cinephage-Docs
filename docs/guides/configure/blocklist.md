@@ -14,7 +14,7 @@ The Blocklist prevents Cinephage from re-downloading releases that have previous
 
 ## Why Use the Blocklist?
 
-### Common Scenarios
+### Common scenarios
 
 - **Failed downloads** — Dead torrents, broken NZBs
 - **Fake releases** — Password-protected RARs, wrong content
@@ -33,7 +33,7 @@ The Blocklist prevents Cinephage from re-downloading releases that have previous
 
 ## How Blocking Works
 
-### Automatic Blocking
+### Automatic blocking
 
 Cinephage automatically blocklists releases when:
 
@@ -44,7 +44,7 @@ Cinephage automatically blocklists releases when:
 | Manual rejection | `manual`          | Permanent |
 | Wrong language   | `wrong_language`  | Permanent |
 
-### Block Identifiers
+### Block identifiers
 
 Releases are identified by:
 
@@ -56,7 +56,7 @@ Releases are identified by:
 
 ## Managing the Blocklist
 
-### View Blocklist
+### View blocklist
 
 Navigate to **Settings > Tasks > Blocklist**:
 
@@ -68,7 +68,7 @@ Navigate to **Settings > Tasks > Blocklist**:
 | **Date**         | When blocked       |
 | **Actions**      | Remove / Details   |
 
-### Manual Blocking
+### Manual blocking
 
 Block a release manually:
 
@@ -76,7 +76,7 @@ Block a release manually:
 2. **From download history** — Click **Block** on failed item
 3. **Bulk block** — Select multiple, click **Block Selected**
 
-### Removing Blocks
+### Removing blocks
 
 Remove items from blocklist:
 
@@ -88,7 +88,7 @@ Remove items from blocklist:
 
 ## Block Reasons
 
-### System-Generated Reasons
+### System-generated reasons
 
 | Reason             | When Used                                       |
 | ------------------ | ----------------------------------------------- |
@@ -97,7 +97,7 @@ Remove items from blocklist:
 | `upgrade_rejected` | Better release found before download completed  |
 | `manual`           | User clicked "Block" manually                   |
 
-### Custom Reasons
+### Custom reasons
 
 When blocking manually, you can specify a custom reason:
 
@@ -111,7 +111,7 @@ Reason: "Hardcoded Spanish subs"
 
 ## Blocklist Scope
 
-### Per-Title Blocking
+### Per-title blocking
 
 Blocks apply to specific movies/episodes:
 
@@ -120,7 +120,7 @@ Blocks apply to specific movies/episodes:
 
 This prevents over-blocking when a release works for some content but not others.
 
-### Global Blocking (Future Feature)
+### Global blocking (future feature)
 
 Currently blocks are per-title. Future versions may support:
 
@@ -132,7 +132,7 @@ Currently blocks are per-title. Future versions may support:
 
 ## Blocklist in Search Results
 
-### Visual Indicators
+### Visual indicators
 
 Blocked releases are marked in search:
 
@@ -140,7 +140,7 @@ Blocked releases are marked in search:
 - **"Blocked" badge** — Red badge with block reason
 - **Hidden by default** — Filter to show/hide blocked
 
-### Show/Hide Blocked
+### Show/hide blocked
 
 Toggle visibility in search:
 
@@ -154,7 +154,7 @@ Search Filters:
 
 ## Blocklist and Monitoring
 
-### How Monitoring Uses Blocklist
+### How monitoring uses blocklist
 
 When monitoring searches for upgrades:
 
@@ -163,7 +163,7 @@ When monitoring searches for upgrades:
 3. **Score remaining** — Apply quality/custom format scoring
 4. **Grab best** — Download highest-scoring unblocked release
 
-### Blocked Releases Don't Count
+### Blocked releases don't count
 
 A blocked release won't:
 
@@ -171,7 +171,7 @@ A blocked release won't:
 - Count toward quality cutoff
 - Be considered for upgrades
 
-### Exception: Cutoff Unmet
+### Exception: cutoff unmet
 
 The "Cutoff Unmet" task ignores the blocklist:
 
@@ -182,7 +182,7 @@ The "Cutoff Unmet" task ignores the blocklist:
 
 ## Best Practices
 
-### When to Block
+### When to block
 
 **Always block:**
 
@@ -202,7 +202,7 @@ The "Cutoff Unmet" task ignores the blocklist:
 - Good releases that you just don't want right now
 - Items you might want to retry later
 
-### Clean Up Regularly
+### Clean up regularly
 
 Blocklist can grow over time:
 
@@ -210,7 +210,7 @@ Blocklist can grow over time:
 - **Clear resolved** — If indexer fixed the problem
 - **Export before clearing** — Keep record if needed
 
-### Use Descriptive Reasons
+### Use descriptive reasons
 
 When blocking manually, be specific:
 
@@ -223,7 +223,7 @@ When blocking manually, be specific:
 
 ## Troubleshooting
 
-### Release Keeps Being Grabbed
+### Release keeps being grabbed
 
 If a blocked release is still being downloaded:
 
@@ -232,7 +232,7 @@ If a blocked release is still being downloaded:
 3. **Check scope** — Blocked for one title but not another
 4. **Clear and re-block** — Block may be corrupted
 
-### Can't Block Release
+### Can't block release
 
 If block option is unavailable:
 
@@ -240,7 +240,7 @@ If block option is unavailable:
 2. **Check if already blocked** — May be duplicate
 3. **Check search results** — Only available on search/history pages
 
-### Blocklist Too Large
+### Blocklist too large
 
 If blocklist is impacting performance:
 
@@ -252,19 +252,19 @@ If blocklist is impacting performance:
 
 ## Integration with Other Features
 
-### Search & Download
+### Search & download
 
 - Blocked releases filtered from results
 - Can toggle visibility with filter
 - Block button available on each result
 
-### Download History
+### Download history
 
 - Failed items show "Block" button
 - Block reason auto-set to failure type
 - Blocked items marked in history list
 
-### Quality Profiles
+### Quality profiles
 
 - Blocked releases don't count toward cutoff
 - May cause "cutoff unmet" state if all blocked

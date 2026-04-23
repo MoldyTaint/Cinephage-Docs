@@ -16,7 +16,7 @@ keywords: [faq, library, import, organize, root folder, monitored]
 3. Files are in supported format (.mkv, .mp4, .avi, etc.)
 4. Run Library Scan: Library → Movies/TV → Scan Library
 
-### How do I add my existing library?
+### How do i add my existing library?
 
 1. Go to **Library → Movies** or **Library → TV**
 2. Click **Import**
@@ -26,7 +26,7 @@ keywords: [faq, library, import, organize, root folder, monitored]
 
 See [Import Existing Files](/guides/use/import-existing-files) for details.
 
-### Can I have multiple root folders?
+### Can i have multiple root folders?
 
 Yes! You can create multiple root folders:
 ```
@@ -38,7 +38,7 @@ Yes! You can create multiple root folders:
 
 Each must be dedicated to one media type (don't mix movies and TV).
 
-### What's the difference between Monitored and Unmonitored?
+### What's the difference between monitored and unmonitored?
 
 - **Monitored:** Cinephage actively searches for this content
 - **Unmonitored:** Item is in library but won't be auto-searched
@@ -47,7 +47,7 @@ Each must be dedicated to one media type (don't mix movies and TV).
 - **Monitored:** Content you want to download/upgrade
 - **Unmonitored:** Content you already have, don't need more
 
-### How do I organize my files?
+### How do i organize my files?
 
 Cinephage can organize files automatically:
 

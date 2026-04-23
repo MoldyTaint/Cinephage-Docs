@@ -35,7 +35,7 @@ Cinephage can import existing media files and automatically:
 - TMDB API key configured
 - Read/write permissions to media folders
 
-### File Naming Considerations
+### File naming considerations
 
 Cinephage uses file names to identify content. Best results come from:
 
@@ -63,13 +63,13 @@ If your files have cryptic names, consider using a bulk renamer like:
 
 ## Importing Movies
 
-### Step 1: Access Import Interface
+### Step 1: access import interface
 
 1. Go to **Library > Movies**
 2. Click the **Import** button in the top right
 3. The Import Movies dialog opens
 
-### Step 2: Select Source Folder
+### Step 2: select source folder
 
 1. Click **Browse** or enter the path
 2. Navigate to the folder containing your movie files
@@ -92,7 +92,7 @@ If your files have cryptic names, consider using a bulk renamer like:
     Another.Movie.2023.720p.en.srt
 ```
 
-### Step 3: Review Detected Files
+### Step 3: review detected files
 
 Cinephage displays all detected movie files with:
 
@@ -102,7 +102,7 @@ Cinephage displays all detected movie files with:
 - **Match Confidence** - How certain the match is
 - **TMDB Match** - Suggested TMDB title
 
-### Step 4: Match Files to TMDB
+### Step 4: match files to TMDB
 
 For each file, verify or correct the TMDB match:
 
@@ -132,7 +132,7 @@ Use the checkboxes to select multiple files and apply the same action:
 - **Refresh Matches** - Re-scan with different parsing
 :::
 
-### Step 5: Configure Import Options
+### Step 5: configure import options
 
 Before importing, configure options:
 
@@ -144,7 +144,7 @@ Before importing, configure options:
 | **Rename Files** | Apply naming pattern | Yes |
 | **Monitor** | Enable monitoring after import | Yes |
 
-### Step 6: Start Import
+### Step 6: start import
 
 1. Review the import summary:
    - Number of files to import
@@ -157,7 +157,7 @@ Before importing, configure options:
    - Adds to library
    - Fetches metadata from TMDB
 
-### Step 7: Verify Import
+### Step 7: verify import
 
 After import completes:
 
@@ -170,13 +170,13 @@ After import completes:
 
 TV show importing follows a similar process with additional complexity for seasons and episodes.
 
-### Step 1: Access Import Interface
+### Step 1: access import interface
 
 1. Go to **Library > TV Shows**
 2. Click the **Import** button
 3. Select **Import TV Shows**
 
-### Step 2: Select Source Folder
+### Step 2: select source folder
 
 Navigate to your TV show collection:
 
@@ -206,7 +206,7 @@ Navigate to your TV show collection:
   Another.Show.S01E01.mkv
 ```
 
-### Step 3: Series Identification
+### Step 3: series identification
 
 Cinephage attempts to identify each series:
 
@@ -229,7 +229,7 @@ For each detected series:
 TV episode numbering must match TMDB exactly. Some series have different ordering on different databases. Always verify against TMDB.
 :::
 
-### Step 4: Episode Matching
+### Step 4: episode matching
 
 After series is identified, match individual episodes:
 
@@ -249,7 +249,7 @@ After series is identified, match individual episodes:
 | **Absolute numbering** | Some anime uses absolute numbers; convert to SXXEXX |
 | **Missing episodes** | Mark as not present; Cinephage will search for them |
 
-### Step 5: Import Options
+### Step 5: import options
 
 Configure TV import settings:
 
@@ -263,7 +263,7 @@ Configure TV import settings:
 | **Monitor Series** | Enable monitoring | Yes |
 | **Monitor Future Seasons** | Auto-monitor new seasons | Yes |
 
-### Step 6: Complete Import
+### Step 6: complete import
 
 1. Review series and episode counts
 2. Click **Import**
@@ -342,7 +342,7 @@ If you have an existing organized media library:
 -  Custom formats
 -  Monitoring preferences
 
-### Parallel Running
+### Parallel running
 
 You can run Cinephage alongside other media tools:
 
@@ -362,7 +362,7 @@ You can run Cinephage alongside other media tools:
 
 ## Troubleshooting Import
 
-### Files Not Detected
+### Files not detected
 
 **Check File Extensions:**
 
@@ -388,7 +388,7 @@ chown -R user:group /path/to/media
 - Native: Use absolute path
 - Network: Ensure mount is accessible
 
-### Incorrect TMDB Matches
+### Incorrect TMDB matches
 
 **Common Causes:**
 
@@ -405,7 +405,7 @@ chown -R user:group /path/to/media
    Movie.Title.{tmdb-12345}.mkv
    ```
 
-### Import Stuck or Slow
+### Import stuck or slow
 
 **Large Libraries:**
 
@@ -419,7 +419,7 @@ chown -R user:group /path/to/media
 - Check logs for errors
 - Ensure database disk isn't full
 
-### Duplicate Movies/Series
+### Duplicate movies/series
 
 **Detection:**
 
@@ -436,7 +436,7 @@ Cinephage warns about potential duplicates:
 
 ## Advanced Import Techniques
 
-### CLI Import
+### Cli import
 
 For headless or scripted imports:
 
@@ -448,7 +448,7 @@ npm run import -- --path /path/to/movies --type movie
 npm run import -- --path /path/to/tv --type tv --method hardlink --monitor true
 ```
 
-### Import Scripts
+### Import scripts
 
 Automate imports with custom scripts:
 
@@ -470,7 +470,7 @@ curl -X POST http://localhost:3000/api/import \
   }'
 ```
 
-### Watch Folders
+### Watch folders
 
 Configure automatic import from specific folders:
 
@@ -483,21 +483,21 @@ Configure automatic import from specific folders:
 
 ## Best Practices
 
-### Before Importing
+### Before importing
 
 1. **Backup your files** - Always have backups before bulk operations
 2. **Test with small batch** - Import 5-10 files first
 3. **Verify naming** - Ensure files have clear, parsable names
 4. **Check disk space** - Ensure destination has room
 
-### During Import
+### During import
 
 1. **Monitor progress** - Don't close browser during active import
 2. **Review matches** - Verify TMDB matches are correct
 3. **Handle errors** - Address failed imports immediately
 4. **Check results** - Verify files in correct locations
 
-### After Import
+### After import
 
 1. **Verify library** - Check that all items appear correctly
 2. **Enable monitoring** - For items you want to track

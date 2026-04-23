@@ -32,13 +32,13 @@ Smart Lists continuously monitor TMDB's database and automatically find content 
 
 ## Creating a Smart List
 
-### Step 1: Access Smart Lists
+### Step 1: access smart lists
 
 1. Navigate to **Library > Smart Lists** in the main navigation
 2. Click the **Add Smart List** button
 3. The Smart List configuration modal will open
 
-### Step 2: Basic Configuration
+### Step 2: basic configuration
 
 Configure the fundamental settings for your list:
 
@@ -51,11 +51,11 @@ Configure the fundamental settings for your list:
 | **Language Profile** | Language settings for added items | Yes (if auto-add enabled) |
 | **Limit** | Maximum items to keep in list | No (default: 100) |
 
-### Step 3: Configure Filters
+### Step 3: configure filters
 
 Smart Lists support 50+ TMDB Discover filters organized by category:
 
-#### Genre Filters
+#### Genre filters
 
 Include or exclude specific genres:
 
@@ -83,7 +83,7 @@ Include or exclude specific genres:
 Combine include and exclude filters for precise control. For example: Include "Horror" + Exclude "Comedy" for serious horror films only.
 :::
 
-#### Rating Filters
+#### Rating filters
 
 Filter by quality ratings:
 
@@ -97,7 +97,7 @@ Filter by quality ratings:
 Always use a minimum vote count (e.g., 100-1000) to filter out titles with inflated ratings from few votes.
 :::
 
-#### Date Filters
+#### Date filters
 
 Filter by release timeframe:
 
@@ -106,7 +106,7 @@ Filter by release timeframe:
 - **Released Before** - Movies older than a date
 - **Upcoming Only** - Not yet released
 
-#### Popularity Filters
+#### Popularity filters
 
 Filter by TMDB popularity metrics:
 
@@ -116,7 +116,7 @@ Filter by TMDB popularity metrics:
 | **Maximum Popularity** | Upper popularity limit |
 | **Sort By** | Order results by popularity, rating, or date |
 
-#### Advanced Filters
+#### Advanced filters
 
 Additional filtering options:
 
@@ -127,7 +127,7 @@ Additional filtering options:
 - **Runtime** - Minimum/maximum runtime in minutes
 - **Revenue** - Box office performance filters
 
-### Step 4: Sort Options
+### Step 4: sort options
 
 Choose how results are ordered:
 
@@ -139,7 +139,7 @@ Choose how results are ordered:
 | **Revenue Descending** | Highest grossing first | Blockbusters |
 | **Vote Count Descending** | Most rated first | Established titles |
 
-### Step 5: Configure Auto-Add Behavior
+### Step 5: configure auto-add behavior
 
 Control what happens when new items match your filters:
 
@@ -153,7 +153,7 @@ Control what happens when new items match your filters:
 **Add and Search** will automatically download content that matches your filters. Review your filters carefully before enabling.
 :::
 
-### Step 6: Set Refresh Interval
+### Step 6: set refresh interval
 
 Configure how often the list refreshes:
 
@@ -165,13 +165,13 @@ Configure how often the list refreshes:
 TMDB has rate limits on their API. Refreshing too frequently may cause temporary blocks. 6 hours is recommended for most use cases.
 :::
 
-### Step 7: Save the List
+### Step 7: save the list
 
 Click **Save** to create the Smart List. The list will immediately query TMDB and populate based on your filters.
 
 ## Managing Smart Lists
 
-### Viewing List Contents
+### Viewing list contents
 
 Each Smart List shows:
 
@@ -184,7 +184,7 @@ Each Smart List shows:
 - **TMDB Metadata** - Rating, popularity, release date
 - **Added Date** - When item first appeared in list
 
-### Excluding Items
+### Excluding items
 
 If specific items match your filters but you don't want them:
 
@@ -198,7 +198,7 @@ If specific items match your filters but you don't want them:
 2. Click **View Excluded Items**
 3. Click **Remove Exclusion** next to the item
 
-### Manual Refresh
+### Manual refresh
 
 Force an immediate refresh:
 
@@ -210,7 +210,7 @@ Force an immediate refresh:
 Manual refreshes still respect TMDB rate limits. If you've refreshed recently, you may need to wait.
 :::
 
-### Editing Lists
+### Editing lists
 
 Modify existing Smart Lists:
 
@@ -227,7 +227,7 @@ Modify existing Smart Lists:
 
 ## Example Smart Lists
 
-### Example 1: Trending Action Movies
+### Example 1: trending action movies
 
 ```yaml
 Name: "Trending Action"
@@ -242,7 +242,7 @@ Auto-Add: Add and Search
 Quality Profile: Balanced
 ```
 
-### Example 2: Highly Rated TV Dramas
+### Example 2: highly rated TV dramas
 
 ```yaml
 Name: "Prestige TV"
@@ -257,7 +257,7 @@ Auto-Add: Add Only
 Quality Profile: Quality
 ```
 
-### Example 3: New Anime Releases
+### Example 3: new anime releases
 
 ```yaml
 Name: "New Anime"
@@ -272,7 +272,7 @@ Auto-Add: Add and Search
 Quality Profile: Balanced
 ```
 
-### Example 4: Award-Winning Films
+### Example 4: award-winning films
 
 ```yaml
 Name: "Award Winners"
@@ -287,7 +287,7 @@ Auto-Add: Disabled (manual curation)
 Quality Profile: Quality
 ```
 
-### Example 5: Family Movie Night
+### Example 5: family movie night
 
 ```yaml
 Name: "Family Movies"
@@ -305,20 +305,20 @@ Quality Profile: Balanced
 
 ## Advanced Tips
 
-### Optimizing Filters
+### Optimizing filters
 
 1. **Start Broad, Then Narrow** - Begin with fewer filters and add more based on results
 2. **Use Vote Count** - Always include minimum vote count to filter out obscure titles
 3. **Combine Filters** - Multiple specific filters yield better results than one broad filter
 4. **Review Regularly** - Check what's being added and adjust filters accordingly
 
-### Managing List Size
+### Managing list size
 
 - **Set Reasonable Limits** - 50-100 items is manageable; larger lists become unwieldy
 - **Use Sort Order** - Most relevant items appear first when sorted by popularity/rating
 - **Clean Up Exclusions** - Periodically review excluded items in case preferences change
 
-### Automation Best Practices
+### Automation best practices
 
 **Start Conservative:**
 1. Create list with **Auto-Add: Disabled**
@@ -331,7 +331,7 @@ Quality Profile: Balanced
 - Review what was auto-added in Activity logs
 - Adjust filters if too many or too few items match
 
-### Multiple Lists Strategy
+### Multiple lists strategy
 
 Create specialized lists rather than one broad list:
 
@@ -342,7 +342,7 @@ Create specialized lists rather than one broad list:
 
 ## Troubleshooting
 
-### List Not Populating
+### List not populating
 
 **Check TMDB Connection:**
 - Verify TMDB API key is valid in Settings
@@ -354,7 +354,7 @@ Create specialized lists rather than one broad list:
 - Check if filters conflict (e.g., date range too narrow)
 - Verify genre names are spelled correctly
 
-### Items Not Auto-Adding
+### Items not auto-adding
 
 **Check Auto-Add Setting:**
 - Ensure auto-add is not set to "Disabled"
@@ -366,7 +366,7 @@ Create specialized lists rather than one broad list:
 - Verify available disk space
 - Check if items already exist in library
 
-### Too Many Items Matching
+### Too many items matching
 
 **Refine Filters:**
 - Increase minimum rating threshold
@@ -378,7 +378,7 @@ Create specialized lists rather than one broad list:
 - Lower the maximum items limit
 - Change sort order to show most relevant first
 
-### Items Disappearing
+### Items disappearing
 
 This is expected behavior - Smart Lists reflect current TMDB data:
 
@@ -388,19 +388,19 @@ This is expected behavior - Smart Lists reflect current TMDB data:
 
 ## Limitations
 
-### TMDB Dependencies
+### TMDB dependencies
 
 - Results depend on TMDB's data accuracy and completeness
 - Some titles may be missing or have incorrect metadata
 - TMDB API rate limits apply (approximately 40 requests per 10 seconds)
 
-### Filter Constraints
+### Filter constraints
 
 - Some filter combinations may return no results
 - Keywords must match TMDB's keyword database exactly
 - Cast/crew filters require exact TMDB person IDs
 
-### Refresh Behavior
+### Refresh behavior
 
 - Lists refresh based on the configured interval
 - Manual refreshes are still subject to rate limits

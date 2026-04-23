@@ -324,7 +324,7 @@ When a library is deleted, media items remain in the database but are no longer 
 
 ## Library Storage Management
 
-### Trigger Storage Backfill
+### Trigger storage backfill
 
 Initiates a backfill of media into the library from its root folder:
 

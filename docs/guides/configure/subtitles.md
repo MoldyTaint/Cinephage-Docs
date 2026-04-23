@@ -32,7 +32,7 @@ Cinephage provides comprehensive subtitle support:
 - **Score-based selection** - Best match by hash and filename
 - **Embedded subtitle recognition** - Counts embedded subtitles as satisfying language requirements
 
-### Supported Subtitle Providers
+### Supported subtitle providers
 
 | Provider          | Type         | Access Type   | Notes                       |
 | ----------------- | ------------ | ------------- | --------------------------- |
@@ -56,13 +56,13 @@ The following providers have been removed due to service unavailability:
 
 ## Part 1: Enable Subtitle Providers
 
-### Step 1: Access Subtitle Settings
+### Step 1: access subtitle settings
 
 1. Go to **Settings > Integrations > Subtitle Providers**
 2. See list of available providers
 3. Toggle providers to enable them
 
-### Step 2: Configure OpenSubtitles
+### Step 2: configure opensubtitles
 
 OpenSubtitles is recommended as a primary provider:
 
@@ -78,7 +78,7 @@ OpenSubtitles is recommended as a primary provider:
 - VIP accounts have higher download limits
 - Enter VIP credentials for priority access
 
-### Step 3: Enable Additional Providers
+### Step 3: enable additional providers
 
 Enable providers based on your language needs:
 
@@ -110,7 +110,7 @@ Enable providers based on your language needs:
 
 Enable at least 3-5 providers for good coverage.
 
-### Step 4: Set Provider Priority
+### Step 4: set provider priority
 
 Providers are searched in priority order (1 = highest):
 
@@ -131,12 +131,12 @@ Providers are searched in priority order (1 = highest):
 
 Language profiles define which languages you want subtitles for.
 
-### Step 1: Access Language Profiles
+### Step 1: access language profiles
 
 1. Go to **Settings > Integrations > Language Profiles**
 2. See default profiles or create new ones
 
-### Step 2: Create a New Profile
+### Step 2: create a new profile
 
 1. Click **Add Language Profile**
 2. Enter **Profile Name**: `English Primary` (or your preference)
@@ -165,7 +165,7 @@ Language profiles define which languages you want subtitles for.
    - Upgrade: Yes
 ```
 
-### Step 3: Create Multi-Language Profile
+### Step 3: create multi-language profile
 
 For multiple required languages:
 
@@ -186,7 +186,7 @@ For multiple required languages:
    - Upgrade: Yes (optional extra)
 ```
 
-### Step 4: Set Default Profile
+### Step 4: set default profile
 
 1. Go to **Settings > General**
 2. Under **Subtitle Settings**
@@ -197,7 +197,7 @@ For multiple required languages:
 
 Cinephage recognizes embedded subtitles within video containers (MKV, MP4, etc.) and counts them as satisfying your language profile requirements. This prevents unnecessary downloads of external subtitle files when your media already has the needed languages.
 
-### How It Works
+### How it works
 
 When media is imported:
 
@@ -213,7 +213,7 @@ When media is imported:
 - **Saves Bandwidth** — Less API calls to subtitle providers
 - **Cleaner Library** — Fewer external files to manage
 
-### Supported Containers
+### Supported containers
 
 - **MKV** (Matroska) — Full support for all subtitle tracks
 - **MP4** — Supports mov_text and other embedded formats
@@ -225,7 +225,7 @@ Embedded subtitle recognition is automatic and requires no configuration. It wor
 
 ## Part 3: Configure Download Behavior
 
-### Automatic Download on Import
+### Automatic download on import
 
 Enable subtitles to download automatically when media is imported:
 
@@ -237,7 +237,7 @@ Enable subtitles to download automatically when media is imported:
 
 This triggers automatic subtitle search when movies/episodes are imported to your library.
 
-### Missing Subtitles Monitoring
+### Missing subtitles monitoring
 
 The **Missing Subtitles** task automatically searches for subtitles on media missing required languages:
 
@@ -249,7 +249,7 @@ The **Missing Subtitles** task automatically searches for subtitles on media mis
 
 This task respects your language profiles and only searches for missing required languages.
 
-### Subtitle Upgrades
+### Subtitle upgrades
 
 The **Subtitle Upgrade** task searches for better-scoring subtitles when your profile allows upgrades:
 
@@ -261,7 +261,7 @@ The **Subtitle Upgrade** task searches for better-scoring subtitles when your pr
 
 This task only runs when your language profile has **Upgrade** enabled for at least one language.
 
-### Task Activity History
+### Task activity history
 
 All subtitle tasks record detailed activity history:
 
@@ -277,7 +277,7 @@ History is automatically cleaned up after 30 days.
 
 ## Part 4: Apply Language Profile to Media
 
-### Apply to Movies
+### Apply to movies
 
 1. Go to **Library > Movies**
 2. Select movies (or all)
@@ -285,7 +285,7 @@ History is automatically cleaned up after 30 days.
 4. Under **Language Profile**, select your profile
 5. Click **Save**
 
-### Apply to TV Series
+### Apply to TV series
 
 1. Go to **Library > TV**
 2. Select series (or all)
@@ -293,7 +293,7 @@ History is automatically cleaned up after 30 days.
 4. Under **Language Profile**, select your profile
 5. Click **Save**
 
-### Set Default for New Items
+### Set default for new items
 
 1. Go to **Settings > General**
 2. Under **Subtitle Settings**
@@ -303,7 +303,7 @@ History is automatically cleaned up after 30 days.
 
 ## Part 5: Manual Subtitle Operations
 
-### Search for Subtitles Manually
+### Search for subtitles manually
 
 1. Go to a movie or episode detail page
 2. Click **Subtitles** tab
@@ -312,7 +312,7 @@ History is automatically cleaned up after 30 days.
 5. Cinephage searches all enabled providers
 6. Choose from results and click **Download**
 
-### Upload Subtitles
+### Upload subtitles
 
 If you have subtitle files:
 
@@ -323,7 +323,7 @@ If you have subtitle files:
 5. Select language
 6. Click **Upload**
 
-### Sync Subtitles
+### Sync subtitles
 
 If subtitles are out of sync:
 
@@ -338,7 +338,7 @@ If subtitles are out of sync:
 
 Cinephage includes a **native subtitle synchronization engine** inspired by the alass (Automatic Language-Agnostic Subtitle Synchronization) algorithm. This replaces external binary dependencies with a fully integrated TypeScript solution.
 
-### How It Works
+### How it works
 
 The sync engine uses Voice Activity Detection (VAD) to align subtitles:
 
@@ -347,7 +347,7 @@ The sync engine uses Voice Activity Detection (VAD) to align subtitles:
 3. **Alignment** — Matches subtitle timing to speech segments
 4. **Correction** — Applies timing adjustments to subtitle file
 
-### Sync Options
+### Sync options
 
 | Option          | Description                                           | Default |
 | --------------- | ----------------------------------------------------- | ------- |
@@ -359,7 +359,7 @@ The sync engine uses Voice Activity Detection (VAD) to align subtitles:
 - **Medium (7)**: Balanced approach, recommended for most content
 - **High (15-30)**: Conservative corrections, fewer timing changes
 
-### Bulk Sync
+### Bulk sync
 
 For TV series with multiple episodes:
 
@@ -370,12 +370,12 @@ For TV series with multiple episodes:
 5. Monitor progress in real-time
 6. Review results per episode
 
-### Supported Formats
+### Supported formats
 
 - **Input**: SRT, ASS, VTT, SSA
 - **Output**: Same as input format
 
-### Memory Optimization
+### Memory optimization
 
 The sync engine streams audio data instead of loading entire files:
 - Peak memory: ~5MB (vs ~500MB for a 2-hour movie)
@@ -385,7 +385,7 @@ The sync engine streams audio data instead of loading entire files:
 
 Adaptive searching reduces API quota waste by scaling back search frequency for media that consistently has no subtitle results.
 
-### How It Works
+### How it works
 
 The system tracks failed subtitle searches:
 
@@ -409,7 +409,7 @@ Day 42: Search skipped
 ...
 ```
 
-### Resetting Counters
+### Resetting counters
 
 When a subtitle is found:
 - `failedSubtitleAttempts` → 0
@@ -422,7 +422,7 @@ The media returns to aggressive searching immediately.
 
 The throttling system prevents excessive API calls when providers return errors.
 
-### Error Types and Durations
+### Error types and durations
 
 | Error Type            | Throttle Duration | Description                          |
 | --------------------- | ----------------- | ------------------------------------ |
@@ -438,13 +438,13 @@ The throttling system prevents excessive API calls when providers return errors.
 | TimeoutError          | 1 hour            | Request timeout                      |
 | ConnectionError       | 1 hour            | Network connectivity issues          |
 
-### Sliding Window for Transient Errors
+### Sliding window for transient errors
 
 For temporary issues (rate limits, timeouts, server errors):
 - Provider is only throttled after **5 errors within 2 minutes**
 - This prevents throttling from occasional one-off failures
 
-### Provider-Specific Overrides
+### Provider-specific overrides
 
 Some providers have custom throttle durations:
 
@@ -455,7 +455,7 @@ Some providers have custom throttle durations:
 | Addic7ed        | IPAddressBlocked      | 1 hour          |
 | SubDL           | DownloadLimitExceeded | Until midnight UTC |
 
-### Viewing Throttle Status
+### Viewing throttle status
 
 1. Go to **Settings > Integrations > Subtitle Providers**
 2. Check the **Status** column
@@ -466,7 +466,7 @@ Some providers have custom throttle durations:
 
 Cinephage scores subtitle matches to select the best option:
 
-### Scoring Factors
+### Scoring factors
 
 **Hash Match (Highest Priority):**
 
@@ -493,7 +493,7 @@ Cinephage scores subtitle matches to select the best option:
 - User ratings
 - Slight score boost
 
-### Score Thresholds
+### Score thresholds
 
 - **90-100**: Perfect or near-perfect match
 - **70-89**: Good match, likely in sync
@@ -502,7 +502,7 @@ Cinephage scores subtitle matches to select the best option:
 
 ## Troubleshooting
 
-### No Subtitles Found
+### No subtitles found
 
 **Problem:** Search returns no results
 
@@ -513,7 +513,7 @@ Cinephage scores subtitle matches to select the best option:
 - Verify file name is clear (not obfuscated)
 - Try manual search with different language
 
-### Subtitles Out of Sync
+### Subtitles out of sync
 
 **Problem:** Subtitles do not match timing
 
@@ -524,7 +524,7 @@ Cinephage scores subtitle matches to select the best option:
 - Search for subtitles from same release group
 - Manually adjust with external tool
 
-### Wrong Language Downloaded
+### Wrong language downloaded
 
 **Problem:** Subtitle is wrong language
 
@@ -535,7 +535,7 @@ Cinephage scores subtitle matches to select the best option:
 - Report to provider if mislabeled
 - Block specific subtitle in blacklist
 
-### Download Limits Reached
+### Download limits reached
 
 **Problem:** "Download limit exceeded" errors
 
@@ -546,7 +546,7 @@ Cinephage scores subtitle matches to select the best option:
 - Enable more providers to distribute load
 - Reduce search frequency
 
-### Subtitle File Not Detected
+### Subtitle file not detected
 
 **Problem:** Downloaded subtitle not showing
 
@@ -557,7 +557,7 @@ Cinephage scores subtitle matches to select the best option:
 - Ensure subtitle is in same folder as media
 - Check file encoding (UTF-8 recommended)
 
-### Subtitle Path Issues (TV Shows)
+### Subtitle path issues (TV shows)
 
 **Problem:** TV episode subtitles not being found or associated correctly
 
@@ -596,7 +596,7 @@ docker exec cinephage node scripts/fix-tv-subtitle-paths.js
 
 ## Best Practices
 
-### Use Multiple Providers
+### Use multiple providers
 
 Enable 3-5 providers minimum:
 
@@ -604,20 +604,20 @@ Enable 3-5 providers minimum:
 - Redundancy if one is down
 - More options for rare content
 
-### Set Clear Language Priorities
+### Set clear language priorities
 
 - Define required vs optional languages
 - Set cutoff to avoid endless searching
 - Use upgrade wisely for better matches
 
-### Regular Maintenance
+### Regular maintenance
 
 - Review subtitle settings periodically
 - Remove unused providers
 - Update language profiles as needs change
 - Check for subtitle sync issues
 
-### Storage Considerations
+### Storage considerations
 
 Subtitles are small files:
 

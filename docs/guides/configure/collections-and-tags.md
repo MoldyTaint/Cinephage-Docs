@@ -14,13 +14,13 @@ Organize your media library using collections, tags, and custom filters.
 
 Organize movies into collections:
 
-### Automatic Collections
+### Automatic collections
 
 - Based on TMDB collections (e.g., Marvel Cinematic Universe)
 - Franchise groupings
 - Automatically updated
 
-### Custom Collections
+### Custom collections
 
 1. Go to **Library > Collections**
 2. Click **Add Collection**
@@ -32,7 +32,7 @@ Organize movies into collections:
 
 Tag items for organization:
 
-### Use Cases
+### Use cases
 
 - **Favorites** - Quick access to best movies
 - **Watchlist** - Queue for upcoming viewing
@@ -40,14 +40,14 @@ Tag items for organization:
 - **4K** - High-quality items
 - **Archive** - Don't delete these
 
-### Adding Tags
+### Adding tags
 
 1. Select item(s)
 2. Click **Edit**
 3. Add tags in Tags field
 4. Save
 
-### Filtering by Tags
+### Filtering by tags
 
 Use filter dropdown in library view to show only tagged items.
 
@@ -59,7 +59,7 @@ Create advanced filters:
 Library > Filters > Custom Filter
 ```
 
-### Filter Conditions
+### Filter conditions
 
 - Quality equals
 - Size greater than
@@ -69,7 +69,7 @@ Library > Filters > Custom Filter
 - Monitored status
 - File exists
 
-### Save Custom Filters
+### Save custom filters
 
 Name and save filters for quick access later.
 

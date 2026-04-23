@@ -24,7 +24,7 @@ This is independent of root folder settings - you can have multiple libraries us
 
 ## Setting Language Preferences
 
-### Step 1: Create Language Profiles
+### Step 1: create language profiles
 
 1. Go to **Settings > Integrations > Language Profiles**
 2. Create profiles for different use cases:
@@ -32,7 +32,7 @@ This is independent of root folder settings - you can have multiple libraries us
    - `English Only` - English required only
    - `Multi-Language` - Multiple languages required
 
-### Step 2: Configure Library Language Settings
+### Step 2: configure library language settings
 
 1. Go to **Settings > Media Management > Root Folders**
 2. Click **Edit** on a root folder
@@ -40,7 +40,7 @@ This is independent of root folder settings - you can have multiple libraries us
    - **Default Language Profile** for this library
    - **Subtitle Search Behavior** (import, monitoring, etc.)
 
-### Step 3: Assign to Libraries
+### Step 3: assign to libraries
 
 1. Go to **Library > Movies** (or **TV Shows**)
 2. Click **Settings** (gear icon) for that library

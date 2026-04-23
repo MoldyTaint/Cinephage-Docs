@@ -25,7 +25,7 @@ Instead of running multiple separate services, Cinephage provides one cohesive p
 
 <div className="card">
 
-### Getting Started
+### Getting started
 
 Installation, setup, and your first steps.
 

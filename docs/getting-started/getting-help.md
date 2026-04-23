@@ -18,7 +18,7 @@ Join our community on Discord for real-time chat support:
 
 [Join Discord Server](https://discord.gg/scGCBTSWEt)
 
-### GitHub
+### Github
 
 - **Issues** - Report bugs and request features
   [GitHub Issues](https://github.com/MoldyTaint/Cinephage/issues)
@@ -33,17 +33,17 @@ Join our community on Discord for real-time chat support:
 
 ## See Also
 
-### Getting Started
+### Getting started
 - [Installation](./installation) — Step-by-step installation guide
 - [Initial Setup](./initial-setup) — First-time configuration
 - [Adding Media](./adding-media) — Add your first movie or TV show
 
-### Common Issues
+### Common issues
 - [Troubleshooting Guide](../guides/deploy/troubleshooting) — Solutions for common problems
 - [FAQ](../support/faq) — Frequently asked questions
 - [Performance Tuning](../guides/deploy/performance-tuning) — Optimize Cinephage performance
 
-### Configuration Help
+### Configuration help
 - [Configure Download Clients](../guides/configure/download-clients) — Set up download clients
 - [Set Up Quality Profiles](../guides/configure/quality-profiles) — Configure quality scoring
 - [Configure Indexers](../guides/configure/indexers) — Add content sources

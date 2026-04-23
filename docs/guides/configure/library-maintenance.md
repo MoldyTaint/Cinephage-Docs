@@ -34,7 +34,7 @@ Regular maintenance keeps your library organized and running smoothly.
 
 ## Library Scanning
 
-### Manual Scan
+### Manual scan
 
 1. Go to **Library > Movies** or **Library > TV**
 2. Click **Scan Library**
@@ -44,7 +44,7 @@ Regular maintenance keeps your library organized and running smoothly.
    - Changed files
    - Metadata updates
 
-### Automatic Scanning
+### Automatic scanning
 
 Configure in Settings:
 ```
@@ -52,7 +52,7 @@ Settings > Media Management > Library Scan
 Scan Interval: 6 hours (or custom)
 ```
 
-### Scan Results
+### Scan results
 
 - Files added
 - Files removed
@@ -78,7 +78,7 @@ TMDB data changes over time. Refresh monthly for active series.
 
 ## Disk Space Management
 
-### Monitor Usage
+### Monitor usage
 
 ```
 Settings > System > Disk Space
@@ -89,7 +89,7 @@ Shows:
 - Free space remaining
 - Largest items
 
-### Cleanup Strategies
+### Cleanup strategies
 
 1. **Unmonitor Unwanted Items:**
    - Stop searching for old series

@@ -29,7 +29,7 @@ Deluge requires the Web UI plugin to be enabled for remote control.
 4. Click **Install** if not already installed
 5. Click **Apply** or **OK**
 
-### Configure Web UI settings
+### Configure web UI settings
 
 1. Go to **Preferences** > **Web Ui**
 2. Check **Enable Web Interface**
@@ -38,7 +38,7 @@ Deluge requires the Web UI plugin to be enabled for remote control.
 5. Check **Enable SSL** only if you have configured certificates
 6. Click **Apply** or **OK**
 
-### Alternative: Daemon mode
+### Alternative: daemon mode
 
 If running Deluge in daemon mode (deluged):
 

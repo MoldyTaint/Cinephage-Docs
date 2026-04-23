@@ -22,7 +22,7 @@ keywords: [faq, installation, setup, docker, system requirements]
 - SSD for Cinephage data
 - TMDB API key (free)
 
-### How do I get a TMDB API key?
+### How do i get a TMDB API key?
 
 1. Create free account at [themoviedb.org](https://www.themoviedb.org)
 2. Go to Settings → API
@@ -31,14 +31,14 @@ keywords: [faq, installation, setup, docker, system requirements]
 5. Fill in application details
 6. Copy the API Key (not Read Access Token)
 
-### Do I need a download client?
+### Do i need a download client?
 
 No, but it's recommended for automation. You can:
 - Use Cinephage without downloads (manual management)
 - Use with qBittorrent, SABnzbd, NZBGet
 - Use NZB Streaming without traditional downloads
 
-### Can I run Cinephage without Docker?
+### Can i run Cinephage without Docker?
 
 Yes, but Docker is strongly recommended:
 - **Docker:** Easier setup, consistent environment, better support
@@ -46,7 +46,7 @@ Yes, but Docker is strongly recommended:
 
 See [Installation](/getting-started/installation) for both methods.
 
-### How do I update Cinephage?
+### How do i update Cinephage?
 
 **Docker:**
 ```bash
@@ -76,7 +76,7 @@ npm start
 ./data/                             # Settings, logs
 ```
 
-### How do I backup Cinephage?
+### How do i backup Cinephage?
 
 **Backup:**
 ```bash

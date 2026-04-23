@@ -8,7 +8,7 @@ keywords: [faq, configuration, origin, auth, puid, pgid]
 
 # Configuration
 
-### What's the difference between ORIGIN and BETTER_AUTH_URL?
+### What's the difference between origin and better_auth_url?
 
 Both should usually be set to the same value:
 
@@ -22,7 +22,7 @@ environment:
   - BETTER_AUTH_URL=https://cinephage.yourdomain.com
 ```
 
-### Why can't I access Cinephage externally?
+### Why can't i access Cinephage externally?
 
 Common causes:
 1. **Firewall** - Port 3000 (or your custom port) not open
@@ -30,7 +30,7 @@ Common causes:
 3. **BETTER_AUTH_URL not set** - Required for external access
 4. **Host binding** - Use 0.0.0.0 not 127.0.0.1
 
-### How do I configure PUID/PGID?
+### How do i configure puid/pgid?
 
 **Get your IDs:**
 ```bash

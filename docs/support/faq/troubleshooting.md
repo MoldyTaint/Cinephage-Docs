@@ -25,7 +25,7 @@ Settings → System → Logs
 ./config/logs/cinephage.log
 ```
 
-### How do I enable debug logging?
+### How do i enable debug logging?
 
 **Docker:**
 ```yaml
@@ -38,7 +38,7 @@ environment:
 docker compose restart
 ```
 
-### My database is getting large, what should I do?
+### My database is getting large, what should i do?
 
 **Check size:**
 ```bash
@@ -59,7 +59,7 @@ sqlite3 ./data/cinephage.db "VACUUM;"
 Settings → System → Data Retention
 ```
 
-### Cinephage won't start, what do I do?
+### Cinephage won't start, what do i do?
 
 **Check logs:**
 ```bash
@@ -83,7 +83,7 @@ rm ./config/data/cinephage.db
 docker compose up -d
 ```
 
-### How do I reset my password?
+### How do i reset my password?
 
 If you can't log in:
 
@@ -100,7 +100,7 @@ If you can't log in:
 3. Video file name is clear (not obfuscated)
 4. Subtitle providers have the language
 
-### Can I use a VPN?
+### Can i use a VPN?
 
 Yes, but don't use Cinephage's built-in VPN (there isn't one). Instead:
 
@@ -119,7 +119,7 @@ services:
 - Run VPN on your host
 - Cinephage traffic goes through automatically
 
-### How do I get help?
+### How do i get help?
 
 **Resources:**
 - 📖 This documentation
@@ -136,11 +136,11 @@ services:
 
 ## Advanced Topics
 
-### Can I use PostgreSQL instead of SQLite?
+### Can i use PostgreSQL instead of SQLite?
 
 Not currently. Cinephage uses SQLite for simplicity. PostgreSQL support may be added in the future for very large libraries.
 
-### Can I run multiple instances?
+### Can i run multiple instances?
 
 Not recommended. SQLite doesn't handle concurrent access well. If you need multiple instances, use separate databases.
 
@@ -148,7 +148,7 @@ Not recommended. SQLite doesn't handle concurrent access well. If you need multi
 
 Yes, but it's currently private and undocumented. Public API documentation will be released in the future.
 
-### Can I contribute?
+### Can i contribute?
 
 Yes! Cinephage is open source:
 - 🐛 Report bugs on GitHub

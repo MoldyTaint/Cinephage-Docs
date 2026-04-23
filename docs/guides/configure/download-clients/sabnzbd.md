@@ -62,7 +62,7 @@ This guide shows you how to configure SABnzbd as your download client in Cinepha
 
 Categories in SABnzbd help separate downloads by type and can trigger different post-processing scripts.
 
-### URL Base (Reverse Proxy Support)
+### URL base (reverse proxy support)
 
 If SABnzbd is behind a reverse proxy with a base path:
 

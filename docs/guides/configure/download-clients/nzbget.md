@@ -77,7 +77,7 @@ If you need to set or change credentials:
 
 Categories in NZBGet help separate downloads by type and can trigger different post-processing.
 
-### URL Base (Reverse Proxy Support)
+### URL base (reverse proxy support)
 
 If NZBGet is behind a reverse proxy with a base path:
 
@@ -149,7 +149,7 @@ If the test fails:
 - Check Cinephage logs in **Settings > Logs**
 - Ensure the download category is correct
 
-### RSS feed issues
+### Rss feed issues
 
 **Problem:** NZBGet RSS feeds not working with Cinephage.
 
