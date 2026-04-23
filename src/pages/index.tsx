@@ -4,127 +4,126 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import SearchBar from '@theme/SearchBar';
 
 import styles from './index.module.css';
 
-function HomepageHeader() {
+function HeroSection() {
 	const { siteConfig } = useDocusaurusContext();
 	return (
-		<header className={clsx('hero--primary hero', styles.heroBanner)}>
+		<header className={clsx('hero--primary hero', styles.hero)}>
 			<div className="container">
 				<Heading as="h1" className={styles.heroTitle}>
 					{siteConfig.title}
 				</Heading>
-				<p className={styles.heroSubtitle}>
-					Your media, unified. Movies, TV, live channels, and streaming — one app, one config, one container.
+				<p className={styles.heroTagline}>
+					Self-hosted media management — movies, TV, live channels, and streaming in a single app.
 				</p>
-				<div className={styles.buttons}>
-					<Link
-						className="button button--secondary button--lg"
-						to="/docs/getting-started"
-					>
-						Get Started
-					</Link>
-					<Link
-						className="button button--outline button--secondary button--lg"
-						to="/deploy"
-					>
-						Deploy with Docker
-					</Link>
+				<div className={styles.searchWrap}>
+					<SearchBar />
 				</div>
 			</div>
 		</header>
 	);
 }
 
-function ProblemSection() {
-	return (
-		<section className={styles.section}>
-			<div className={clsx('container', styles.narrow)}>
-				<p className={styles.lead}>
-					Managing media shouldn't require six apps, six configs, and six update cycles.
-				</p>
-			</div>
-		</section>
-	);
-}
-
-function FeaturesSection() {
-	const features = [
-		{
-			title: 'One Database',
-			description: 'Movies, series, subtitles, and configurations — all together.'
-		},
-		{
-			title: 'One Interface',
-			description: 'Browse, search, monitor, and manage everything from a single UI.'
-		},
-		{
-			title: 'One Configuration',
-			description: 'Set up indexers, download clients, and preferences once.'
-		},
-		{
-			title: 'One Container',
-			description: 'Deploy with Docker and start managing immediately.'
-		}
-	];
-
-	return (
-		<section className={styles.section}>
-			<div className={clsx('container', styles.narrow)}>
-				<Heading as="h2" className={styles.sectionTitle}>
-					What You Get
-				</Heading>
-				<div className={styles.featureList}>
-					{features.map((feature, idx) => (
-						<div key={idx} className={styles.featureItem}>
-							<Heading as="h3" className={styles.featureTitle}>
-								{feature.title}
-							</Heading>
-							<p className={styles.featureDescription}>{feature.description}</p>
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-}
-
-function StepsSection() {
+function QuickStartStrip() {
 	const steps = [
+		{ label: 'Install', description: 'Docker setup', href: '/docs/getting-started/installation' },
+		{ label: 'Configure', description: 'TMDB & clients', href: '/docs/getting-started/initial-setup' },
+		{ label: 'Add Media', description: 'Movies & TV', href: '/docs/getting-started/adding-media' }
+	];
+
+	return (
+		<section className={styles.quickStart}>
+			<div className="container">
+				<div className={styles.quickSteps}>
+					{steps.map((step, idx) => (
+						<Link key={idx} to={step.href} className={styles.quickStep}>
+							<span className={styles.quickStepNumber}>{idx + 1}</span>
+							<div>
+								<span className={styles.quickStepLabel}>{step.label}</span>
+								<span className={styles.quickStepDesc}>{step.description}</span>
+							</div>
+						</Link>
+					))}
+				</div>
+			</div>
+		</section>
+	);
+}
+
+function SectionsDirectory() {
+	const sections = [
 		{
-			number: '01',
-			title: 'Install with Docker',
-			description: 'One command. One container. Done.'
+			title: 'Getting Started',
+			description: 'Install Cinephage, run initial setup, and add your first media.',
+			href: '/docs/getting-started',
+			links: [
+				{ label: 'Installation', href: '/docs/getting-started/installation' },
+				{ label: 'Initial Setup', href: '/docs/getting-started/initial-setup' },
+				{ label: 'Adding Media', href: '/docs/getting-started/adding-media' }
+			]
 		},
 		{
-			number: '02',
-			title: 'Configure',
-			description: 'Add your TMDB key and download clients.'
+			title: 'Guides',
+			description: 'Configure download clients, quality profiles, subtitles, and more.',
+			href: '/docs/guides',
+			links: [
+				{ label: 'Download Clients', href: '/docs/guides/configure/download-clients' },
+				{ label: 'Quality Profiles', href: '/docs/guides/configure/quality-profiles' },
+				{ label: 'Subtitles', href: '/docs/guides/configure/subtitles' }
+			]
 		},
 		{
-			number: '03',
-			title: 'Add Media',
-			description: 'Start building your library.'
+			title: 'Reference',
+			description: 'API docs, environment variables, database schema, and YAML formats.',
+			href: '/docs/reference',
+			links: [
+				{ label: 'Environment Variables', href: '/docs/reference/configuration/environment-variables' },
+				{ label: 'API Endpoints', href: '/docs/reference/api/endpoints-overview' },
+				{ label: 'Indexer YAML', href: '/docs/reference/yaml/indexer-definitions' }
+			]
+		},
+		{
+			title: 'Explanation',
+			description: 'Architecture, core concepts, quality scoring, and design decisions.',
+			href: '/docs/explanation',
+			links: [
+				{ label: 'Architecture', href: '/docs/explanation/architecture' },
+				{ label: 'Quality Scoring', href: '/docs/explanation/quality-scoring' },
+				{ label: 'Workers & Tasks', href: '/docs/explanation/workers-and-tasks' }
+			]
+		},
+		{
+			title: 'Support',
+			description: 'FAQ, release notes, roadmap, and troubleshooting.',
+			href: '/docs/support',
+			links: [
+				{ label: 'FAQ', href: '/docs/support/faq' },
+				{ label: 'Releases', href: '/docs/support/releases' },
+				{ label: 'Troubleshooting', href: '/docs/guides/deploy/troubleshooting' }
+			]
 		}
 	];
 
 	return (
-		<section className={styles.section}>
-			<div className={clsx('container', styles.narrow)}>
-				<Heading as="h2" className={styles.sectionTitle}>
-					How It Works
-				</Heading>
-				<div className={styles.stepsList}>
-					{steps.map((step, idx) => (
-						<div key={idx} className={styles.stepItem}>
-							<span className={styles.stepNumber}>{step.number}</span>
-							<div>
-								<Heading as="h3" className={styles.stepTitle}>
-									{step.title}
-								</Heading>
-								<p className={styles.stepDescription}>{step.description}</p>
-							</div>
+		<section className={styles.sections}>
+			<div className="container">
+				<div className={styles.sectionsGrid}>
+					{sections.map((section, idx) => (
+						<div key={idx} className={styles.sectionBlock}>
+							<Link to={section.href} className={styles.sectionTitle}>
+								<Heading as="h2">{section.title}</Heading>
+							</Link>
+							<p className={styles.sectionDescription}>{section.description}</p>
+							<ul className={styles.sectionLinks}>
+								{section.links.map((link, linkIdx) => (
+									<li key={linkIdx}>
+										<Link to={link.href}>{link.label}</Link>
+									</li>
+								))}
+							</ul>
 						</div>
 					))}
 				</div>
@@ -133,38 +132,14 @@ function StepsSection() {
 	);
 }
 
-function TrustBar() {
+function CommunityStrip() {
 	return (
-		<section className={clsx(styles.section, styles.trustSection)}>
+		<section className={styles.community}>
 			<div className="container">
-				<div className={styles.trustBar}>
-					<span>Docker</span>
-					<span className={styles.trustDivider}>·</span>
-					<span>GitHub</span>
-					<span className={styles.trustDivider}>·</span>
-					<span>GPL-3.0</span>
-					<span className={styles.trustDivider}>·</span>
-					<span>Self-hosted</span>
-				</div>
-			</div>
-		</section>
-	);
-}
-
-function FooterCTA() {
-	return (
-		<section className={clsx(styles.section, styles.ctaSection)}>
-			<div className={clsx('container', styles.narrow)}>
-				<Heading as="h2" className={styles.ctaTitle}>
-					Ready to unify your stack?
-				</Heading>
-				<div className={styles.buttons}>
-					<Link
-						className="button button--secondary button--lg"
-						to="/docs/getting-started"
-					>
-						Get Started
-					</Link>
+				<div className={styles.communityLinks}>
+					<Link to="https://discord.gg/scGCBTSWEt">Discord</Link>
+					<Link to="https://github.com/MoldyTaint/Cinephage">GitHub</Link>
+					<Link to="https://github.com/MoldyTaint/Cinephage/issues">Issues</Link>
 				</div>
 			</div>
 		</section>
@@ -174,16 +149,14 @@ function FooterCTA() {
 export default function Home(): ReactNode {
 	return (
 		<Layout
-			title="Documentation"
-			description="Cinephage documentation — self-hosted media management that replaces Radarr, Sonarr, Prowlarr, Bazarr, Overseerr, and FlareSolverr in a single app."
+			title="Cinephage Documentation"
+			description="Self-hosted media management — movies, TV, live channels, and streaming in a single app."
 		>
-			<HomepageHeader />
+			<HeroSection />
 			<main>
-				<ProblemSection />
-				<FeaturesSection />
-				<StepsSection />
-				<TrustBar />
-				<FooterCTA />
+				<QuickStartStrip />
+				<SectionsDirectory />
+				<CommunityStrip />
 			</main>
 		</Layout>
 	);

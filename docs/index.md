@@ -8,97 +8,24 @@ keywords: [cinephage, documentation, media management, self-hosted]
 
 # Cinephage Documentation
 
-Welcome to the Cinephage documentation. Cinephage is a self-hosted media management platform that unifies movies, TV shows, live TV, and streaming into a single modern application.
-
-## What Cinephage Does
-
-Instead of running multiple separate services, Cinephage provides one cohesive platform:
-
-- **One database** — All your media and configurations together
-- **One interface** — Browse, search, and manage everything
-- **One configuration** — Set up indexers and clients once
-- **One container** — Deploy with Docker and go
-
-## Documentation Sections
-
-<div className="card-grid">
-
-<div className="card">
-
-### 📚 Getting Started
-
-Installation, setup, and your first steps.
-
-[Get Started →](/docs/getting-started)
-
-</div>
-
-<div className="card">
-
-### ⚙️ Guides
-
-Task-oriented guides for configuration and use.
-
-[Browse Guides →](/docs/guides)
-
-</div>
-
-<div className="card">
-
-### 📖 Reference
-
-API docs, configuration, database schema.
-
-[View Reference →](/docs/reference)
-
-</div>
-
-<div className="card">
-
-### 💡 Explanation
-
-Architecture, concepts, and design decisions.
-
-[Learn More →](/docs/explanation)
-
-</div>
-
-<div className="card">
-
-### 🆘 Support
-
-FAQ, releases, roadmap, and troubleshooting.
-
-[Get Help →](/docs/support)
-
-</div>
-
-</div>
+Cinephage is a self-hosted media management platform — movies, TV, live channels, and streaming in a single app.
 
 ## Quick Start
 
-1. **Install** — [Docker installation guide](/docs/getting-started/installation)
-2. **Configure** — [Set up TMDB API and download clients](/docs/getting-started/initial-setup)
-3. **Add Media** — [Add your first movie or show](/docs/getting-started/adding-media)
+1. **[Install](/docs/getting-started/installation)** — Get running with Docker
+2. **[Configure](/docs/getting-started/initial-setup)** — TMDB API, download clients, root folders
+3. **[Add Media](/docs/getting-started/adding-media)** — Start building your library
 
-## New in v0.5.0
+## Sections
 
-:::info Latest Release
-- **Activity Management** — Enhanced history with stats and bulk actions
-- **Backup & Restore** — Encrypted configuration backups
-- **Native Subtitle Sync** — Built-in sync engine
-- **Smart Lists** — Dynamic TMDB Discover integration
-- **i18n Support** — Spanish localization
-
-[View full release notes →](/docs/support/releases)
-:::
+- **[Getting Started](/docs/getting-started)** — Installation, setup, and your first steps
+- **[Guides](/docs/guides)** — Configure download clients, quality profiles, subtitles, and more
+- **[Reference](/docs/reference)** — API docs, environment variables, database schema, YAML formats
+- **[Explanation](/docs/explanation)** — Architecture, concepts, quality scoring, and design decisions
+- **[Support](/docs/support)** — FAQ, releases, roadmap, and troubleshooting
 
 ## Getting Help
 
-- 💬 **[Discord](https://discord.gg/scGCBTSWEt)** — Community chat
-- 🐛 **[GitHub Issues](https://github.com/MoldyTaint/Cinephage/issues)** — Bug reports
-- 🔧 **[Troubleshooting](/docs/guides/deploy/troubleshooting)** — Common issues
-
----
-
-Ready to dive in? Start with the [Installation guide](/docs/getting-started/installation).
+- [Discord](https://discord.gg/scGCBTSWEt) — Community chat
+- [GitHub Issues](https://github.com/MoldyTaint/Cinephage/issues) — Bug reports and feature requests
+- [Troubleshooting Guide](/docs/guides/deploy/troubleshooting) — Common issues and fixes
