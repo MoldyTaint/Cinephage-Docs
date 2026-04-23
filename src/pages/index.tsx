@@ -132,20 +132,6 @@ function SectionsDirectory() {
 	);
 }
 
-function CommunityStrip() {
-	return (
-		<section className={styles.community}>
-			<div className="container">
-				<div className={styles.communityLinks}>
-					<Link to="https://discord.gg/scGCBTSWEt">Discord</Link>
-					<Link to="https://github.com/MoldyTaint/Cinephage">GitHub</Link>
-					<Link to="https://github.com/MoldyTaint/Cinephage/issues">Issues</Link>
-				</div>
-			</div>
-		</section>
-	);
-}
-
 export default function Home(): ReactNode {
 	return (
 		<Layout
@@ -156,7 +142,6 @@ export default function Home(): ReactNode {
 			<main>
 				<QuickStartStrip />
 				<SectionsDirectory />
-				<CommunityStrip />
 			</main>
 		</Layout>
 	);
