@@ -24,13 +24,13 @@ Cinephage supports live TV through three provider types, each with different fea
 
 Regardless of provider type, Cinephage provides:
 
--  Channel sync from all provider types
--  Electronic Program Guide (EPG) support (Stalker fully implemented, XStream planned)
--  Channel lineup organization
--  M3U playlist generation for external players
--  Category management
--  Portal scanning for Stalker account discovery
--  Multi-provider mixing (channels from all providers in one lineup)
+- Channel sync from all provider types
+- Electronic Program Guide (EPG) support (Stalker fully implemented, XStream planned)
+- Channel lineup organization
+- M3U playlist generation for external players
+- Category management
+- Portal scanning for Stalker account discovery
+- Multi-provider mixing (channels from all providers in one lineup)
 
 :::note Feature Status
 Live TV functionality supports all three provider types. Stalker Portal is the most mature implementation with full EPG support. XStream Codes and M3U support are actively developed.
@@ -48,11 +48,11 @@ Stalker (also known as Ministra) is an IPTV middleware system used by many IPTV 
 - Retrieves channel list, EPG, and account info from portal
 
 **Key Features:**
--  Full EPG support
--  Archive/Catch-up TV
--  Portal scanning for discovery
--  Account expiration tracking
--  Built-in authentication
+- Full EPG support
+- Archive/Catch-up TV
+- Portal scanning for discovery
+- Account expiration tracking
+- Built-in authentication
 
 **Required Information:**
 - Portal URL (e.g., `http://portal.example.com/c`)
@@ -68,10 +68,10 @@ XStream Codes is a popular IPTV panel system used by many providers. Accounts us
 - Retrieves channel list and account information
 
 **Key Features:**
--  Username/password authentication
--  Account expiration tracking
--  EPG support planned (not yet implemented)
--  Archive support implemented but not fully tested
+- Username/password authentication
+- Account expiration tracking
+- EPG support planned (not yet implemented)
+- Archive support implemented but not fully tested
 
 **Required Information:**
 - Server URL (e.g., `http://example.com:8080`)
@@ -88,12 +88,12 @@ M3U playlists are standard IPTV playlist files containing channel URLs. Many pro
 - No authentication required (URLs often contain tokens)
 
 **Key Features:**
--  Works with any M3U-compatible provider
--  URL or file upload support
--  Optional external EPG via XMLTV URL
--  Auto-refresh support
--  No built-in authentication
--  No archive/catch-up support
+- Works with any M3U-compatible provider
+- URL or file upload support
+- Optional external EPG via XMLTV URL
+- Auto-refresh support
+- No built-in authentication
+- No archive/catch-up support
 
 **Required Information:**
 - M3U URL or file
@@ -628,11 +628,11 @@ If you have multiple providers with the same channels:
 
 If you previously used Stalker-only mode:
 
--  All existing Stalker accounts are preserved
--  Channel lineups remain intact
--  You can now add XStream and M3U accounts
--  Channel lineups can mix channels from all provider types
--  EPG settings migrate automatically
+- All existing Stalker accounts are preserved
+- Channel lineups remain intact
+- You can now add XStream and M3U accounts
+- Channel lineups can mix channels from all provider types
+- EPG settings migrate automatically
 
 ### Updating from Older Versions
 
