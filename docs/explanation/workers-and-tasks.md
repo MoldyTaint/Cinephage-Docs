@@ -14,7 +14,7 @@ This document explains Cinephage's worker-based architecture for background proc
 
 Cinephage performs many operations in the background to keep the UI responsive and handle time-consuming tasks efficiently. This is accomplished through a worker-based task system.
 
-### Why background processing?
+### Why Background Processing?
 
 Without background workers:
 -  UI freezes during long operations
@@ -30,7 +30,7 @@ With background workers:
 
 ## Architecture
 
-### Task queue system
+### Task Queue System
 
 Cinephage uses multiple specialized worker pools:
 
@@ -61,7 +61,7 @@ Cinephage uses multiple specialized worker pools:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Worker pools
+### Worker Pools
 
 Cinephage maintains separate pools for different task types:
 
@@ -76,7 +76,7 @@ Cinephage maintains separate pools for different task types:
 | **Portal Scan Workers** | Live TV portal scanning | 2 | Finding IPTV accounts |
 | **Channel Sync Workers** | Live TV channel sync | 3 | Updating channel lists |
 
-### Task lifecycle
+### Task Lifecycle
 
 A task goes through several states:
 
@@ -101,7 +101,7 @@ A task goes through several states:
 
 ## Task Types
 
-### Import tasks
+### Import Tasks
 
 Handle file operations:
 
@@ -119,7 +119,7 @@ Handle file operations:
 - Disk I/O performance
 - Number of files
 
-### Search tasks
+### Search Tasks
 
 Query indexers for releases:
 
@@ -135,7 +135,7 @@ Query indexers for releases:
 - Network latency
 - Result parsing
 
-### Streaming tasks
+### Streaming Tasks
 
 Manage NZB streaming:
 
@@ -149,7 +149,7 @@ Manage NZB streaming:
 
 **Duration:** Continuous while streaming
 
-### Monitoring tasks
+### Monitoring Tasks
 
 Automated background operations:
 
@@ -164,7 +164,7 @@ Automated background operations:
 
 **Schedule:** Configurable intervals (minutes to days)
 
-### Library tasks
+### Library Tasks
 
 Maintain library consistency:
 
@@ -176,7 +176,7 @@ Maintain library consistency:
 
 ## Worker Configuration
 
-### Environment variables
+### Environment Variables
 
 Control worker pools via environment:
 
@@ -210,7 +210,7 @@ environment:
   - WORKER_MAX_LOGS=1000        # Max log entries per worker
 ```
 
-### Tuning guidelines
+### Tuning Guidelines
 
 **Small Setup (1-2 users, < 1000 items):**
 ```yaml
@@ -254,7 +254,7 @@ Monitor resource usage when increasing workers.
 
 ## Task Scheduling
 
-### Monitoring tasks
+### Monitoring Tasks
 
 Scheduled tasks run automatically:
 
@@ -275,7 +275,7 @@ Scheduled tasks run automatically:
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Configuring intervals
+### Configuring Intervals
 
 **Access Settings:**
 ```
@@ -302,7 +302,7 @@ Settings > Tasks
 More frequent tasks may hit indexer rate limits. Start conservative.
 :::
 
-### Task history
+### Task History
 
 View task execution history:
 
@@ -319,7 +319,7 @@ Settings > Tasks > History
 
 ## Monitoring Workers
 
-### Worker status
+### Worker Status
 
 Check worker health:
 
@@ -336,7 +336,7 @@ Settings > System > Workers
 | **Error** | Worker encountered error | Check logs |
 | **Stalled** | Worker not responding | Restart Cinephage |
 
-### Queue depth
+### Queue Depth
 
 Monitor task queues:
 
@@ -371,7 +371,7 @@ tail -f /path/to/logs/cinephage.log | grep -i worker
 
 ## Task Execution Flow
 
-### Example: import task
+### Example: Import Task
 
 ```
 1. User clicks "Import" on movie
@@ -395,7 +395,7 @@ tail -f /path/to/logs/cinephage.log | grep -i worker
 7. UI updates automatically
 ```
 
-### Example: search task
+### Example: Search Task
 
 ```
 1. Missing Content Search task starts
@@ -416,7 +416,7 @@ tail -f /path/to/logs/cinephage.log | grep -i worker
 
 ## Error Handling
 
-### Task failures
+### Task Failures
 
 When a task fails:
 
@@ -439,7 +439,7 @@ Failed tasks can be retried:
 Activity > History > Failed Items > Retry
 ```
 
-### Common failures
+### Common Failures
 
 | Failure | Cause | Solution |
 |---------|-------|----------|
@@ -450,7 +450,7 @@ Activity > History > Failed Items > Retry
 
 ## Performance Considerations
 
-### Concurrency limits
+### Concurrency Limits
 
 SQLite handles concurrency well but has limits:
 
@@ -462,7 +462,7 @@ SQLite handles concurrency well but has limits:
 - UI reads don't block on writes
 - Long transactions block other writes
 
-### Memory usage
+### Memory Usage
 
 Each worker consumes memory:
 
@@ -478,7 +478,7 @@ Each worker consumes memory:
 - Workers: 2-4 GB (depending on configuration)
 - Cache: Configurable (10-50 GB disk)
 
-### CPU usage
+### CPU Usage
 
 Workers use CPU when active:
 
@@ -494,7 +494,7 @@ Workers use CPU when active:
 
 ## Best Practices
 
-### Worker configuration
+### Worker Configuration
 
 1. **Start Conservative:**
    - Use default worker counts
@@ -511,7 +511,7 @@ Workers use CPU when active:
    - Check CPU load
    - Monitor queue depths
 
-### Task scheduling
+### Task Scheduling
 
 1. **Spread Tasks Out:**
    - Don't schedule all tasks at once
@@ -548,7 +548,7 @@ Workers use CPU when active:
 
 ## Advanced Topics
 
-### Custom workers
+### Custom Workers
 
 Developers can add custom worker types:
 
@@ -569,7 +569,7 @@ interface Task {
 }
 ```
 
-### Worker scaling
+### Worker Scaling
 
 For high-load scenarios:
 
@@ -584,7 +584,7 @@ For high-load scenarios:
 - Load balancer distribution
 - Not officially supported
 
-### Monitoring integration
+### Monitoring Integration
 
 Export worker metrics:
 

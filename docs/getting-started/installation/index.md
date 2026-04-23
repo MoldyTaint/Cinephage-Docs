@@ -76,14 +76,14 @@ Regardless of your chosen method, you will need:
 
 ## System Requirements
 
-### Minimum requirements
+### Minimum Requirements
 
 - **CPU**: 2 cores (x86_64 or ARM64)
 - **RAM**: 2GB
 - **Storage**: 10GB for application + space for your media library
 - **OS**: Linux (Docker) or Linux with systemd (Bare Metal)
 
-### Recommended requirements
+### Recommended Requirements
 
 - **CPU**: 4+ cores
 - **RAM**: 4GB+

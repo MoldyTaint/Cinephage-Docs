@@ -25,7 +25,7 @@ Before starting, ensure you have:
 - **A TMDB API key** (free registration required)
 - **Root or sudo access** to the server
 
-### Check system requirements
+### Check System Requirements
 
 ```bash
 # Check OS version
@@ -101,7 +101,7 @@ For detailed explanations of each step, continue reading below.
 
 ## Step-by-Step Installation
 
-### Step 1: install node.js
+### Step 1: Install Node.js
 
 Cinephage requires Node.js 20 or later. Install it using the official NodeSource repository:
 
@@ -121,7 +121,7 @@ npm --version   # Should show 10.x.x or higher
 For CentOS/RHEL, Fedora, or other distributions, see the [Node.js downloads page](https://nodejs.org/en/download/).
 :::
 
-### Step 2: install dependencies
+### Step 2: Install Dependencies
 
 Install FFmpeg and Git:
 
@@ -134,7 +134,7 @@ sudo apt-get install -y ffmpeg git
 ffmpeg -version | head -1
 ```
 
-### Step 3: create user and directory
+### Step 3: Create User and Directory
 
 For security, run Cinephage as a dedicated system user:
 
@@ -149,7 +149,7 @@ sudo mkdir -p /opt/cinephage
 sudo chown cinephage:cinephage /opt/cinephage
 ```
 
-### Step 4: download and build
+### Step 4: Download and Build
 
 Clone the repository and build the application:
 
@@ -177,7 +177,7 @@ exit
 The build process compiles the Svelte frontend and may take 2-5 minutes depending on your server's performance.
 :::
 
-### Step 5: configure environment
+### Step 5: Configure Environment
 
 Create an environment file with your configuration:
 
@@ -208,7 +208,7 @@ TZ=UTC
 EOF
 ```
 
-#### Required environment variables
+#### Required Environment Variables
 
 | Variable | Required | Description |
 |----------|----------|-------------|
@@ -224,7 +224,7 @@ EOF
 - Changing it invalidates all user sessions and API keys
 :::
 
-### Step 6: set up data directories
+### Step 6: Set Up Data Directories
 
 Create directories for data and media:
 
@@ -244,7 +244,7 @@ sudo chown -R cinephage:cinephage /mnt/media
 sudo chown -R cinephage:cinephage /mnt/downloads
 ```
 
-### Step 7: create Systemd service
+### Step 7: Create Systemd Service
 
 Create a systemd service file for automatic startup:
 
@@ -288,7 +288,7 @@ Reload systemd:
 sudo systemctl daemon-reload
 ```
 
-### Step 8: start Cinephage
+### Step 8: Start Cinephage
 
 Start the service and enable auto-start:
 
@@ -303,7 +303,7 @@ sudo systemctl enable cinephage
 sudo systemctl status cinephage
 ```
 
-### Step 9: verify installation
+### Step 9: Verify Installation
 
 Check the logs to ensure Cinephage started correctly:
 
@@ -321,7 +321,7 @@ You should see messages indicating the server started successfully.
 On first startup, Cinephage will download the Camoufox browser (~80MB) for Captcha Solver functionality. This is a one-time download stored in `/opt/cinephage/data`.
 :::
 
-### Step 10: access Cinephage
+### Step 10: Access Cinephage
 
 Open your web browser and navigate to your configured ORIGIN:
 
@@ -331,7 +331,7 @@ http://your-server-ip:3000
 
 You should see the Cinephage setup wizard.
 
-### Step 11: complete setup wizard
+### Step 11: Complete Setup Wizard
 
 Follow the on-screen instructions to:
 
@@ -399,7 +399,7 @@ For more details, see the [Update Guide](../../guides/use/update-cinephage).
 
 To access Cinephage through a domain with HTTPS:
 
-### Nginx configuration
+### Nginx Configuration
 
 ```bash
 # Install Nginx
@@ -450,7 +450,7 @@ sudo systemctl restart cinephage
 
 ## Troubleshooting
 
-### Service fails to start
+### Service Fails to Start
 
 Check the logs for specific errors:
 
@@ -458,7 +458,7 @@ Check the logs for specific errors:
 sudo journalctl -u cinephage -n 100 --no-pager
 ```
 
-### Permission denied errors
+### Permission Denied Errors
 
 Ensure the cinephage user owns all required directories:
 
@@ -467,7 +467,7 @@ sudo chown -R cinephage:cinephage /opt/cinephage/data
 sudo chown -R cinephage:cinephage /opt/cinephage/logs
 ```
 
-### Port already in use
+### Port Already in Use
 
 Change the port in `/opt/cinephage/.env`:
 
@@ -477,7 +477,7 @@ PORT=3001
 
 Then restart the service.
 
-### Node.js version issues
+### Node.js Version Issues
 
 Ensure you have Node.js 20+:
 

@@ -27,7 +27,7 @@ Traditional usenet workflow requires downloading the entire NZB before playback:
 3. Start playback immediately - no waiting
 4. Optional: Keep cache for re-watching
 
-### How it works
+### How It Works
 
 NZB Streaming uses several technologies working together:
 
@@ -53,7 +53,7 @@ NNTP Server (Usenet provider)
 
 ## Requirements
 
-### Usenet provider requirements
+### Usenet Provider Requirements
 
 Your usenet provider must support:
 
@@ -73,7 +73,7 @@ Look for providers with:
 - Unlimited plans or high data caps
 :::
 
-### System requirements
+### System Requirements
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
@@ -85,7 +85,7 @@ Look for providers with:
 
 ## Setup Guide
 
-### Step 1: add nzbmount download client
+### Step 1: Add NZBMount Download Client
 
 First, configure NZBMount as a download client:
 
@@ -107,7 +107,7 @@ First, configure NZBMount as a download client:
 NZBMount doesn't require host/port credentials like other download clients. It uses the NNTP server configuration (set up in Step 2).
 :::
 
-### Step 2: configure NNTP server
+### Step 2: Configure NNTP Server
 
 Add your usenet provider for streaming:
 
@@ -150,7 +150,7 @@ More connections = faster streaming, but:
 5. Click **Test** to verify connection
 6. Click **Save**
 
-### Step 3: configure cache settings
+### Step 3: Configure Cache Settings
 
 Set up segment caching for optimal performance:
 
@@ -177,7 +177,7 @@ Set up segment caching for optimal performance:
 - Prefetching prevents buffering
 :::
 
-### Step 4: set up streamer quality profile
+### Step 4: Set Up Streamer Quality Profile
 
 Configure a quality profile optimized for streaming:
 
@@ -207,7 +207,7 @@ The Streamer profile creates `.strm` files instead of video files. These are sma
 
 ## Using NZB Streaming
 
-### Method 1: automatic streaming mode (recommended)
+### Method 1: Automatic Streaming Mode (Recommended)
 
 Set movies/series to use the Streamer profile:
 
@@ -225,7 +225,7 @@ Set movies/series to use the Streamer profile:
 - No full download required
 - Playback starts instantly
 
-### Method 2: manual stream from search
+### Method 2: Manual Stream from Search
 
 Stream individual releases on-demand:
 
@@ -242,7 +242,7 @@ Use manual stream when:
 - Streaming one-time content
 :::
 
-### Method 3: NZB-Mount import
+### Method 3: NZB-Mount Import
 
 For existing NZBs you want to stream:
 
@@ -258,7 +258,7 @@ For existing NZBs you want to stream:
 
 ## Stream Quality and Performance
 
-### Adaptive quality selection
+### Adaptive Quality Selection
 
 Cinephage probes NZBs to determine available qualities:
 
@@ -269,7 +269,7 @@ Cinephage probes NZBs to determine available qualities:
 - **Subtitles** - Embedded or external subtitle availability
 - **Codecs** - H.264, H.265, AV1 support
 
-### Bandwidth requirements
+### Bandwidth Requirements
 
 Choose quality based on your connection:
 
@@ -290,9 +290,9 @@ Settings > Integrations > NNTP Servers > Adaptive Quality: ON
 Cinephage automatically adjusts based on connection speed.
 :::
 
-### Performance optimization
+### Performance Optimization
 
-#### Connection tuning
+#### Connection Tuning
 
 Increase connections for better performance:
 
@@ -310,7 +310,7 @@ Don't exceed your provider's connection limit:
 - Exceeding limits may cause bans
 :::
 
-#### Segment prefetching
+#### Segment Prefetching
 
 Enable prefetch for smoother playback:
 
@@ -322,7 +322,7 @@ Prefetch Ahead: 5-10 segments
 → Uses more bandwidth
 ```
 
-#### Provider selection
+#### Provider Selection
 
 Choose providers optimized for streaming:
 
@@ -335,7 +335,7 @@ Choose providers optimized for streaming:
 
 ## Cache Management
 
-### How segment caching works
+### How Segment Caching Works
 
 NZBs are split into small segments (typically 500KB-1MB each):
 
@@ -344,7 +344,7 @@ NZBs are split into small segments (typically 500KB-1MB each):
 3. **Subsequent Requests** - Served from local cache
 4. **Auto-Cleanup** - Old segments deleted automatically
 
-### Cache settings reference
+### Cache Settings Reference
 
 | Setting | Description | Default | When to Increase |
 |---------|-------------|---------|------------------|
@@ -352,7 +352,7 @@ NZBs are split into small segments (typically 500KB-1MB each):
 | **Cache TTL** | Retention time | 24 hours | Want longer retention |
 | **Prefetch** | Download ahead | Enabled | Buffering issues |
 
-### Cache location
+### Cache Location
 
 **Default Paths:**
 
@@ -377,7 +377,7 @@ environment:
 Cache benefits significantly from SSD storage due to frequent small random reads/writes.
 :::
 
-### Manual cache management
+### Manual Cache Management
 
 **View Cache Status:**
 
@@ -402,7 +402,7 @@ If experiencing issues:
 
 ## Advanced Configuration
 
-### Multiple NNTP servers
+### Multiple NNTP Servers
 
 Configure backup providers for redundancy:
 
@@ -425,7 +425,7 @@ Server 2 (Priority 2):
   Connections: 8
 ```
 
-### Par2 repair
+### PAR2 Repair
 
 Enable automatic repair of missing segments:
 
@@ -449,7 +449,7 @@ Enable PAR2 repair if:
 - You have bandwidth to spare
 :::
 
-### Stream URL caching
+### Stream URL Caching
 
 Stream extraction URLs are cached to avoid re-processing:
 
@@ -467,7 +467,7 @@ Stream extraction URLs are cached to avoid re-processing:
 
 Cinephage supports **SABnzbd Mount Mode** - a WebDAV-based approach for streaming NZB content with STRM/Symlink import support.
 
-### How SABnzbd mount mode works
+### How SABnzbd Mount Mode Works
 
 ```
 Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Media Server
@@ -479,7 +479,7 @@ Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Medi
 - Direct streaming from SABnzbd's working directory
 - Supports Jellyfin, Emby, Plex import
 
-### Configuring SABnzbd mount mode
+### Configuring SABnzbd Mount Mode
 
 **Step 1: Enable WebDAV in SABnzbd**
 
@@ -505,7 +505,7 @@ Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Medi
 2. NZBs in this folder trigger STRM generation
 3. STRM files point to streaming URLs
 
-### Using SABnzbd mount mode
+### Using SABnzbd Mount Mode
 
 **Workflow:**
 
@@ -524,7 +524,7 @@ Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Medi
 
 ## Troubleshooting
 
-### Stream won't start
+### Stream Won't Start
 
 **Check NNTP Server:**
 
@@ -547,7 +547,7 @@ Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Medi
 3. Clear cache and retry
 4. Monitor cache during stream attempt
 
-### Buffering/stuttering
+### Buffering/Stuttering
 
 **Reduce Quality:**
 
@@ -568,7 +568,7 @@ Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Medi
 3. Verify not hitting provider speed limits
 4. Consider QoS on router
 
-### "article not found" errors
+### "Article Not Found" Errors
 
 **Missing Segments:**
 
@@ -584,7 +584,7 @@ Cinephage → SABnzbd WebDAV → NZB Streaming → STRM File Generation → Medi
 3. Try different usenet provider
 4. Consider download instead of stream
 
-### High memory usage
+### High Memory Usage
 
 Streaming can use significant memory:
 
@@ -605,7 +605,7 @@ docker stats cinephage
 ps aux | grep cinephage
 ```
 
-### Poor video quality
+### Poor Video Quality
 
 **Stream Quality vs. Download:**
 
@@ -638,7 +638,7 @@ ps aux | grep cinephage
 
 ## Security Considerations
 
-### Ssl/tls encryption
+### SSL/TLS Encryption
 
 Always use SSL for NNTP connections:
 
@@ -655,7 +655,7 @@ Verify Certificate: Enabled
 - Protects credentials
 - Standard for modern usenet
 
-### VPN compatibility
+### VPN Compatibility
 
 NZB streaming works with VPNs:
 
@@ -672,7 +672,7 @@ NZB streaming works with VPNs:
 - Some VPNs block usenet ports
 - Test speed with VPN enabled
 
-### Privacy tips
+### Privacy Tips
 
 - Use providers that don't log downloads
 - Enable SSL on all connections
@@ -681,14 +681,14 @@ NZB streaming works with VPNs:
 
 ## Best Practices
 
-### For casual viewing
+### For Casual Viewing
 
 - Use **Streamer** quality profile
 - Enable auto-add for Smart Lists
 - Set moderate cache size (10-20 GB)
 - Monitor bandwidth usage
 
-### For power users
+### For Power Users
 
 - Configure multiple NNTP providers
 - Enable PAR2 repair
@@ -696,7 +696,7 @@ NZB streaming works with VPNs:
 - Use prefetch aggressively
 - Set up backup streaming sources
 
-### For limited bandwidth
+### For Limited Bandwidth
 
 - Use lower quality profiles
 - Disable prefetch
@@ -704,7 +704,7 @@ NZB streaming works with VPNs:
 - Download instead of stream for favorites
 - Cache management critical
 
-### For quality enthusiasts
+### For Quality Enthusiasts
 
 - Use 1080p/4K Streamer profile
 - Ensure fast provider (100+ Mbps)

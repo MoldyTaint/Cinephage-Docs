@@ -14,7 +14,7 @@ This guide explains how to handle failed downloads and use the blocklist effecti
 
 Downloads can fail for many reasons. Understanding the cause helps determine the right solution.
 
-### Common failure types
+### Common Failure Types
 
 | Failure Type | Cause | Solution |
 |--------------|-------|----------|
@@ -29,7 +29,7 @@ Downloads can fail for many reasons. Understanding the cause helps determine the
 
 Your first stop for managing downloads is the **Activity** section.
 
-### Activity overview
+### Activity Overview
 
 Navigate to **Activity** to see:
 
@@ -37,7 +37,7 @@ Navigate to **Activity** to see:
 - **History** - Completed and failed downloads
 - **Blocklist** - Releases marked as problematic
 
-### Reading the queue
+### Reading the Queue
 
 The queue shows active downloads:
 
@@ -67,7 +67,7 @@ The queue shows active downloads:
 | **Client** | Which download client |
 | **Actions** | Available actions (pause, remove, etc.) |
 
-### Understanding history
+### Understanding History
 
 History shows completed downloads and their outcomes:
 
@@ -99,7 +99,7 @@ History shows completed downloads and their outcomes:
 
 ## Handling Failed Downloads
 
-### Step 1: identify the failure
+### Step 1: Identify the Failure
 
 When a download fails:
 
@@ -127,7 +127,7 @@ When a download fails:
    → Blocked due to previous failure
 ```
 
-### Step 2: check the download client
+### Step 2: Check the Download Client
 
 Many failures originate in the download client:
 
@@ -150,11 +150,11 @@ Many failures originate in the download client:
    - "Verification failed" - Password protected
 4. Review server status
 
-### Step 3: take appropriate action
+### Step 3: Take Appropriate Action
 
 Based on the failure type:
 
-#### Disk space issues
+#### Disk Space Issues
 
 **Problem:** Download client out of space
 
@@ -164,7 +164,7 @@ Based on the failure type:
 3. Verify completed downloads are being removed
 4. Consider larger storage
 
-#### Permission issues
+#### Permission Issues
 
 **Problem:** Cinephage can't access files
 
@@ -184,7 +184,7 @@ chown -R 1000:1000 /path/to/media  # Adjust IDs as needed
 - Volume mounts use correct paths
 - Check container can access both directories
 
-#### Incomplete downloads
+#### Incomplete Downloads
 
 **Problem:** NZB is incomplete or torrent has no seeds
 
@@ -194,7 +194,7 @@ chown -R 1000:1000 /path/to/media  # Adjust IDs as needed
 3. Check if release is still available on indexer
 4. Consider blocklisting and searching again
 
-#### Wrong content
+#### Wrong Content
 
 **Problem:** Downloaded file doesn't match expected movie/episode
 
@@ -205,7 +205,7 @@ chown -R 1000:1000 /path/to/media  # Adjust IDs as needed
    - Add to blocklist (prevent re-download)
    - Search for correct release
 
-### Step 4: retry or search alternative
+### Step 4: Retry or Search Alternative
 
 After fixing the issue, you have options:
 
@@ -236,7 +236,7 @@ From Activity:
 
 ## Using the Blocklist
 
-### What is the blocklist?
+### What is the Blocklist?
 
 The blocklist prevents problematic releases from being downloaded again:
 
@@ -252,7 +252,7 @@ The blocklist prevents problematic releases from being downloaded again:
 - RSS sync ignores them
 - They don't count against indexer limits
 
-### Automatic blocklisting
+### Automatic Blocklisting
 
 Cinephage automatically adds releases to blocklist when:
 
@@ -261,7 +261,7 @@ Cinephage automatically adds releases to blocklist when:
 3. **Wrong content** - Manual marking
 4. **Release deleted** - File removed by user
 
-### Manual blocklisting
+### Manual Blocklisting
 
 Add releases to blocklist manually:
 
@@ -286,7 +286,7 @@ Add releases to blocklist manually:
 3. Click **Remove & Blocklist**
 4. Stops download and prevents retry
 
-### Viewing the blocklist
+### Viewing the Blocklist
 
 Access blocklisted releases:
 
@@ -298,7 +298,7 @@ Access blocklisted releases:
    - Reason for block
    - Source indexer
 
-### Managing the blocklist
+### Managing the Blocklist
 
 **Remove from Blocklist:**
 
@@ -319,7 +319,7 @@ If you want to allow a release again:
 Only clear blocklist if you understand why items were blocked. Clearing may result in re-downloading problematic releases.
 :::
 
-### Blocklist best practices
+### Blocklist Best Practices
 
 **Do Blocklist:**
 -  Releases with wrong content
@@ -334,7 +334,7 @@ Only clear blocklist if you understand why items were blocked. Clearing may resu
 
 ## Bulk Operations
 
-### Bulk clear failed downloads
+### Bulk Clear Failed Downloads
 
 Clear multiple failed items from the queue at once:
 
@@ -383,7 +383,7 @@ Click **Clear 15 Items** to confirm.
 If you check "Also add to blocklist," these releases will be skipped in future searches. Only enable this for releases that genuinely won't work.
 :::
 
-### Bulk clear from activity
+### Bulk Clear from Activity
 
 You can also access bulk clear from **Activity > History**:
 
@@ -392,7 +392,7 @@ You can also access bulk clear from **Activity > History**:
 3. Click **Clear Selected**
 4. Confirm the bulk operation
 
-### API endpoint for bulk clear
+### API Endpoint for Bulk Clear
 
 Use the queue API to programmatically clear failed downloads:
 
@@ -410,7 +410,7 @@ curl -X POST \
 }
 ```
 
-### Queue cleanup API
+### Queue Cleanup API
 
 The queue cleanup endpoint removes old completed items:
 
@@ -428,7 +428,7 @@ This is useful for:
 
 ## Advanced Failure Management
 
-### Failed download handling settings
+### Failed Download Handling Settings
 
 Configure automatic failure handling:
 
@@ -442,7 +442,7 @@ Configure automatic failure handling:
 | **Retry Delay** | Wait time between retries | 30 minutes |
 | **Redownload** | Search for alternative after max retries | Enabled |
 
-### Release rejection analysis
+### Release Rejection Analysis
 
 Understand why releases are rejected:
 
@@ -479,7 +479,7 @@ docker logs cinephage | grep -i reject
 journalctl -u cinephage | grep -i reject
 ```
 
-### Manual import after failure
+### Manual Import After Failure
 
 If automatic import fails, try manual import:
 
@@ -497,7 +497,7 @@ If automatic import fails, try manual import:
 
 ## Troubleshooting Specific Scenarios
 
-### Scenario 1: repeated failures for same item
+### Scenario 1: Repeated Failures for Same Item
 
 **Problem:** Same movie/episode keeps failing different releases
 
@@ -526,7 +526,7 @@ If quality keeps being rejected:
   → Review release size limits
 ```
 
-### Scenario 2: blocklist growing too large
+### Scenario 2: Blocklist Growing Too Large
 
 **Problem:** Blocklist has hundreds or thousands of entries
 
@@ -552,7 +552,7 @@ If quality keeps being rejected:
    - Clear all and start fresh
    - Import only problematic ones
 
-### Scenario 3: good releases getting blocked
+### Scenario 3: Good Releases Getting Blocked
 
 **Problem:** Legitimate releases are being blocked
 
@@ -578,7 +578,7 @@ If quality keeps being rejected:
    - Monitor for success
    - If fails again, investigate root cause
 
-### Scenario 4: download completes but won't import
+### Scenario 4: Download Completes But Won't Import
 
 **Problem:** File downloads successfully but import fails repeatedly
 
@@ -619,7 +619,7 @@ rm -rf /path/to/temp/files
 
 ## Best Practices
 
-### Preventing failures
+### Preventing Failures
 
 1. **Proper Configuration:**
    - Set correct root folder paths
@@ -639,7 +639,7 @@ rm -rf /path/to/temp/files
    - Review blocklist periodically
    - Clear resolved issues
 
-### When failures happen
+### When Failures Happen
 
 1. **Don't Panic:**
    - Most failures are temporary

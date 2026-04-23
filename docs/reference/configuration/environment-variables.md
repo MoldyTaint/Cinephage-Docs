@@ -56,7 +56,7 @@ node -e "console.log(require('crypto').randomBytes(32).toString('base64'))"
 
 ## Server Configuration
 
-### Core server settings
+### Core Server Settings
 
 | Variable                      | Default   | Description                                                                |
 | ----------------------------- | --------- | -------------------------------------------------------------------------- |
@@ -97,7 +97,7 @@ environment:
 
 ## System Configuration
 
-### User/group ids
+### User/Group IDs
 
 | Variable | Default | Description                                    |
 | -------- | ------- | ---------------------------------------------- |
@@ -132,7 +132,7 @@ Valid values are TZ database names:
 - `Australia/Sydney`
 - See [full list](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
-### Advanced permissions
+### Advanced Permissions
 
 | Variable                          | Default | Description                                                 |
 | --------------------------------- | ------- | ----------------------------------------------------------- |
@@ -142,7 +142,7 @@ Set to `1` if you experience permission issues after changing PUID/PGID.
 
 ## Logging Configuration
 
-### Log level
+### Log Level
 
 | Variable    | Default | Description                 |
 | ----------- | ------- | --------------------------- |
@@ -155,7 +155,7 @@ Valid levels (in order of verbosity):
 - `warn` - Warnings and errors
 - `error` - Errors only
 
-### Log options
+### Log Options
 
 | Variable            | Default | Description                                          |
 | ------------------- | ------- | ---------------------------------------------------- |
@@ -189,7 +189,7 @@ Workers handle background tasks. These limits control concurrency:
 | `WORKER_MAX_PORTAL_SCANS`    | `2`     | Maximum concurrent portal scans (Live TV)   |
 | `WORKER_MAX_CHANNEL_SYNCS`   | `3`     | Maximum concurrent channel synchronizations |
 
-### Tuning workers
+### Tuning Workers
 
 **Low-resource systems:**
 
@@ -213,7 +213,7 @@ environment:
 
 ## Streaming Configuration
 
-### Proxy settings
+### Proxy Settings
 
 | Variable                 | Default              | Description                                         |
 | ------------------------ | -------------------- | --------------------------------------------------- |
@@ -222,7 +222,7 @@ environment:
 | `PROXY_MAX_RETRIES`      | `2`                  | Maximum retry attempts for failed segments          |
 | `DEFAULT_PROXY_REFERER`  | `https://videasy.net`| Default referer header for stream requests          |
 
-### Provider circuit breaker
+### Provider Circuit Breaker
 
 Circuit breakers prevent repeated failures with streaming providers:
 
@@ -234,13 +234,13 @@ Circuit breakers prevent repeated failures with streaming providers:
 
 ## Live TV Configuration
 
-### EPG settings
+### EPG Settings
 
 | Variable               | Default | Description                                        |
 | ---------------------- | ------- | -------------------------------------------------- |
 | `EPG_STARTUP_GRACE_MS` | `30000` | Grace period for EPG initialization (milliseconds) |
 
-### API rate limiting
+### API Rate Limiting
 
 | Variable                                 | Default   | Description                                |
 | ---------------------------------------- | --------- | ------------------------------------------ |
@@ -249,7 +249,7 @@ Circuit breakers prevent repeated failures with streaming providers:
 
 ## External Tools
 
-### Ffprobe
+### ffprobe
 
 | Variable       | Default | Description                           |
 | -------------- | ------- | ------------------------------------- |
@@ -307,7 +307,7 @@ services:
 
 ## Variable Reference Table
 
-### Quick reference
+### Quick Reference
 
 | Category            | Variables                                                                                                  |
 | ------------------- | ---------------------------------------------------------------------------------------------------------- |
@@ -320,7 +320,7 @@ services:
 | **Live TV**         | `EPG_STARTUP_GRACE_MS`, `STREAMING_API_KEY_RATE_LIMIT_*`                                                   |
 | **Tools**           | `FFPROBE_PATH`                                                                                             |
 
-### Total variables
+### Total Variables
 
 - **Required:** 3 (`BETTER_AUTH_SECRET`, `ORIGIN`, `BETTER_AUTH_URL`)
 - **Recommended:** 4 (PUID, PGID, TZ, LOG_LEVEL)

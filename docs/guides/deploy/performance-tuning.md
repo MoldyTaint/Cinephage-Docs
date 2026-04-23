@@ -21,14 +21,14 @@ Cinephage is designed to work well on modest hardware, but performance tuning ca
 
 ## System Requirements vs. Performance
 
-### Minimum requirements
+### Minimum Requirements
 
 - **CPU:** 2 cores
 - **RAM:** 2 GB
 - **Disk:** 10 GB for application + media storage
 - **Network:** 10 Mbps
 
-### Recommended for performance
+### Recommended for Performance
 
 - **CPU:** 4+ cores
 - **RAM:** 4-8 GB
@@ -39,7 +39,7 @@ Cinephage is designed to work well on modest hardware, but performance tuning ca
 
 Workers handle background tasks. Proper configuration is crucial for performance.
 
-### Understanding workers
+### Understanding Workers
 
 Cinephage uses multiple worker pools:
 
@@ -54,7 +54,7 @@ Cinephage uses multiple worker pools:
 | **Portal Scan Workers** | Live TV portal scanning | 2 |
 | **Channel Sync Workers** | Live TV channel sync | 3 |
 
-### Configuring workers
+### Configuring Workers
 
 Set via environment variables:
 
@@ -70,7 +70,7 @@ environment:
   - WORKER_MAX_CHANNEL_SYNCS=4
 ```
 
-### Worker tuning guidelines
+### Worker Tuning Guidelines
 
 **For Small Libraries (< 1,000 items):**
 ```yaml
@@ -109,7 +109,7 @@ More workers isn't always better. Too many workers can:
 
 ## Database Optimization
 
-### Database location
+### Database Location
 
 Default location:
 ```
@@ -121,7 +121,7 @@ data/cinephage.db
 /config/data/cinephage.db
 ```
 
-### Storage recommendations
+### Storage Recommendations
 
 | Storage Type | Performance | Recommendation |
 |--------------|-------------|----------------|
@@ -137,16 +137,16 @@ Place the database on SSD storage if possible. It significantly improves:
 - Task execution
 :::
 
-### Database maintenance
+### Database Maintenance
 
-#### Automatic maintenance
+#### Automatic Maintenance
 
 Cinephage performs automatic maintenance:
 - Cleanup of old logs and history
 - Index optimization
 - Temporary file cleanup
 
-#### Manual optimization
+#### Manual Optimization
 
 **VACUUM Database:**
 
@@ -180,7 +180,7 @@ sqlite3 data/cinephage.db "REINDEX;"
 Always backup your database before manual maintenance operations.
 :::
 
-### Database size management
+### Database Size Management
 
 Monitor database growth:
 
@@ -205,7 +205,7 @@ Search History: 30 days
 
 ## Memory Optimization
 
-### Memory usage patterns
+### Memory Usage Patterns
 
 Cinephage memory usage by component:
 
@@ -217,7 +217,7 @@ Cinephage memory usage by component:
 | **Database Cache** | Automatic (SQLite) | - |
 | **Streaming Buffers** | 100-500 MB | 1-2 GB |
 
-### Reducing memory usage
+### Reducing Memory Usage
 
 **For Low-Memory Systems (2-4 GB):**
 
@@ -246,7 +246,7 @@ Cinephage memory usage by component:
    - NZB Streaming (if not using)
    - Notifications (if not using)
 
-### Memory monitoring
+### Memory Monitoring
 
 **Docker:**
 
@@ -276,7 +276,7 @@ Settings > System > Memory Usage
 
 ## Search Performance
 
-### Indexer optimization
+### Indexer Optimization
 
 **Limit Concurrent Indexers:**
 
@@ -304,7 +304,7 @@ If an indexer consistently times out:
 2. Or disable it temporarily
 3. Re-enable after indexer issues resolve
 
-### Search frequency
+### Search Frequency
 
 **Task Intervals:**
 
@@ -321,7 +321,7 @@ Adjust based on your needs:
 More frequent searches use more resources and hit indexer rate limits. Start conservative.
 :::
 
-### Caching search results
+### Caching Search Results
 
 Cinephage caches search results to avoid redundant API calls:
 
@@ -337,7 +337,7 @@ Settings > System > Clear Cache
 
 ## Library Scan Performance
 
-### Initial library scan
+### Initial Library Scan
 
 First scan of a large library is resource-intensive:
 
@@ -362,7 +362,7 @@ First scan of a large library is resource-intensive:
    - Reduces parsing time
    - Fewer manual corrections needed
 
-### Ongoing library scans
+### Ongoing Library Scans
 
 After initial import, scans are faster:
 
@@ -379,7 +379,7 @@ Scan Interval: 12-24 hours
 
 ## Network Optimization
 
-### Bandwidth management
+### Bandwidth Management
 
 **For Limited Bandwidth:**
 
@@ -408,7 +408,7 @@ Scan Interval: 12-24 hours
    - Smoother playback
    - Uses more bandwidth
 
-### Latency optimization
+### Latency Optimization
 
 **Reduce API Latency:**
 
@@ -426,7 +426,7 @@ Scan Interval: 12-24 hours
 
 ## Docker-Specific Optimization
 
-### Volume mounts
+### Volume Mounts
 
 **Optimal Configuration:**
 
@@ -456,7 +456,7 @@ volumes:
    - Database needs local storage
    - Network latency kills performance
 
-### Resource limits
+### Resource Limits
 
 Set Docker resource limits:
 
@@ -475,7 +475,7 @@ deploy:
 Resource limits prevent Cinephage from consuming all system resources, ensuring stability.
 :::
 
-### Container optimization
+### Container Optimization
 
 **Base Image:**
 
@@ -492,7 +492,7 @@ Cinephage uses `node:24-trixie-slim` (Debian-based):
 
 ## Monitoring Performance
 
-### Built-in monitoring
+### Built-in Monitoring
 
 **System Status:**
 
@@ -517,7 +517,7 @@ Shows:
 - Success rates
 - Queue depths
 
-### Log analysis
+### Log Analysis
 
 **Enable Performance Logging:**
 
@@ -540,7 +540,7 @@ grep -i "worker" logs/cinephage.log | grep "completed"
 grep -i "import" logs/cinephage.log | grep "took"
 ```
 
-### External monitoring
+### External Monitoring
 
 **Prometheus/Grafana:**
 
@@ -560,7 +560,7 @@ environment:
 
 ## Troubleshooting Performance Issues
 
-### Slow UI response
+### Slow UI Response
 
 **Symptoms:**
 - Pages take >5 seconds to load
@@ -594,7 +594,7 @@ environment:
    # If pegged, tasks running
    ```
 
-### High memory usage
+### High Memory Usage
 
 **Symptoms:**
 - Container uses >4GB RAM
@@ -620,7 +620,7 @@ environment:
    docker restart cinephage
    ```
 
-### Slow imports
+### Slow Imports
 
 **Symptoms:**
 - Imports take >10 minutes
@@ -651,7 +651,7 @@ environment:
    - Network mounts are slow
    - Use local storage for active operations
 
-### Search timeouts
+### Search Timeouts
 
 **Symptoms:**
 - Searches take >60 seconds
@@ -677,7 +677,7 @@ environment:
 
 ## Best Practices
 
-### General recommendations
+### General Recommendations
 
 1. **Start Conservative:**
    - Use default worker counts
@@ -694,7 +694,7 @@ environment:
    - Measure impact
    - Document what works
 
-### Hardware-specific guidelines
+### Hardware-Specific Guidelines
 
 **Raspberry Pi / Low-Power:**
 - Workers: 1-2 each

@@ -12,7 +12,7 @@ This document explains the key design decisions behind Cinephage - why it was bu
 
 ## Why a Single Application?
 
-### The unified philosophy
+### The Unified Philosophy
 
 Cinephage was built around a simple idea: media management doesn't need to be complicated.
 
@@ -69,7 +69,7 @@ The unified approach provides the best experience for most users. By consolidati
 
 ## Why SQLite?
 
-### Database options considered
+### Database Options Considered
 
 **Option 1: PostgreSQL**
 - ✅ Excellent performance
@@ -97,7 +97,7 @@ The unified approach provides the best experience for most users. By consolidati
 - ❌ Not ideal for very high concurrency
 - ❌ Single writer limitation
 
-### SQLite in production
+### SQLite in Production
 
 **Addressing Concerns:**
 
@@ -121,7 +121,7 @@ Modern SQLite is used in production by:
 - No built-in replication (backup strategy handles this)
 - Not for distributed systems (Cinephage is single-node)
 
-### Our decision
+### Our Decision
 
 SQLite provides the best balance for Cinephage's use case:
 - Simpler deployment
@@ -131,7 +131,7 @@ SQLite provides the best balance for Cinephage's use case:
 
 ## Why YAML for Indexers?
 
-### The indexer problem
+### The Indexer Problem
 
 Indexers (torrent sites, usenet sites) frequently:
 - Change their layout
@@ -156,7 +156,7 @@ Indexers (torrent sites, usenet sites) frequently:
    - ✅ Community-maintained
    - ✅ No code changes needed
 
-### YAML indexer definitions
+### YAML Indexer Definitions
 
 Cinephage uses YAML-based indexer definitions inspired by Cardigann:
 
@@ -223,7 +223,7 @@ The flexibility and community aspect of YAML indexers outweigh the complexity. M
 
 ## Why TypeScript/Svelte?
 
-### Technology stack choices
+### Technology Stack Choices
 
 **Backend: TypeScript/Node.js**
 
@@ -275,7 +275,7 @@ TypeScript + Svelte provides the best balance of developer productivity, perform
 
 ## Why No Built-in VPN?
 
-### The VPN question
+### The VPN Question
 
 Users often ask: "Why doesn't Cinephage include VPN/proxy support?"
 
@@ -291,7 +291,7 @@ Users often ask: "Why doesn't Cinephage include VPN/proxy support?"
 - ❌ Better handled at system level
 - ❌ Container/VPN integration is messy
 
-### Recommended approach
+### Recommended Approach
 
 **Use System-Level VPN:**
 
@@ -329,7 +329,7 @@ VPN functionality is better handled by dedicated VPN containers. This keeps Cine
 
 ## Why Docker-First?
 
-### Deployment options
+### Deployment Options
 
 **Native Installation:**
 - ✅ Maximum performance
@@ -346,7 +346,7 @@ VPN functionality is better handled by dedicated VPN containers. This keeps Cine
 - ✅ Better supportability
 - ❌ Small overhead (minimal)
 
-### Docker benefits for Cinephage
+### Docker Benefits for Cinephage
 
 **For Users:**
 - One command to install
@@ -386,7 +386,7 @@ Docker-first approach with native installation as secondary option. Docker solve
 
 ## Why GPL-3.0 License?
 
-### License philosophy
+### License Philosophy
 
 Cinephage is licensed under GPL-3.0 (GNU General Public License v3.0).
 
@@ -398,7 +398,7 @@ Cinephage is licensed under GPL-3.0 (GNU General Public License v3.0).
 - ❌ Derivative works must be GPL
 - ❌ Can't be made proprietary
 
-### Why not MIT/Apache?
+### Why Not MIT/Apache?
 
 **MIT/Apache Permits:**
 - ✅ Commercial use
@@ -430,7 +430,7 @@ GPL-3.0 protects the open-source nature of Cinephage and ensures it remains free
 
 ## Design Principles Summary
 
-### Core principles
+### Core Principles
 
 1. **Simplicity First**
    - One unified application
@@ -458,7 +458,7 @@ GPL-3.0 protects the open-source nature of Cinephage and ensures it remains free
    - Docker for deployment
    - Current best practices
 
-### Trade-offs we accept
+### Trade-offs We Accept
 
 | Decision | Trade-off | Why It's Worth It |
 |----------|-----------|-------------------|
@@ -471,7 +471,7 @@ GPL-3.0 protects the open-source nature of Cinephage and ensures it remains free
 
 ## Future Considerations
 
-### Potential changes
+### Potential Changes
 
 **Under Evaluation:**
 - PostgreSQL option for very large libraries (100K+ items)

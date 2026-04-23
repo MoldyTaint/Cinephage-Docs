@@ -60,7 +60,7 @@ Many endpoints now require admin authorization (👑). Ensure your API key has a
 | GET    | `/api/library/movies/[id]/stream` | 🔓   | SSE for movie updates          |
 | PUT    | `/api/library/movies/bulk`        | 🔐   | Bulk edit movies               |
 
-### Series & episodes
+### Series & Episodes
 
 | Method | Endpoint                          | Auth | Description                    |
 | ------ | --------------------------------- | ---- | ------------------------------ |
@@ -74,7 +74,7 @@ Many endpoints now require admin authorization (👑). Ensure your API key has a
 | GET    | `/api/library/episodes/[id]`      | 🔐   | Get episode details            |
 | PUT    | `/api/library/episodes/[id]`      | 🔐   | Update episode                 |
 
-### Library operations
+### Library Operations
 
 | Method | Endpoint                          | Auth | Description                    |
 | ------ | --------------------------------- | ---- | ------------------------------ |
@@ -153,7 +153,7 @@ Many endpoints now require admin authorization (👑). Ensure your API key has a
 | GET    | `/api/livetv/epg/status`        | 🔓   | EPG sync status            |
 | POST   | `/api/livetv/epg/sync`          | 👑   | Trigger EPG sync           |
 
-### Lineup & playlist
+### Lineup & Playlist
 
 | Method | Endpoint                        | Auth | Description                |
 | ------ | ------------------------------- | ---- | -------------------------- |
@@ -204,7 +204,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 - Throttle state now includes `consecutiveFailures`, `lastError`, `lastErrorAt`
 :::
 
-### Language profiles
+### Language Profiles
 
 | Method | Endpoint                              | Auth | Description              |
 | ------ | ------------------------------------- | ---- | ------------------------ |
@@ -224,7 +224,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 | GET    | `/api/streaming/status`               | 🔓   | Streaming status         |
 | POST   | `/api/streaming/verify`               | 🔓   | Verify stream URL        |
 
-### Usenet streaming
+### Usenet Streaming
 
 | Method | Endpoint                          | Auth | Description                |
 | ------ | --------------------------------- | ---- | -------------------------- |
@@ -280,7 +280,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 | GET    | `/api/settings/logs/stream`       | 👑   | SSE for log stream       |
 | GET    | `/api/settings/logs/download`     | 👑   | Download logs            |
 
-### Backup & restore
+### Backup & Restore
 
 | Method | Endpoint                              | Auth | Description              |
 | ------ | ------------------------------------- | ---- | ------------------------ |
@@ -288,14 +288,14 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 | POST   | `/api/settings/restore`               | 👑   | Restore from backup      |
 | GET    | `/api/settings/backup/status`         | 👑   | Backup/restore status    |
 
-### User preferences
+### User Preferences
 
 | Method | Endpoint                              | Auth | Description              |
 | ------ | ------------------------------------- | ---- | ------------------------ |
 | GET    | `/api/settings/user/language`         | 🔐   | Get user language        |
 | PUT    | `/api/settings/user/language`         | 🔐   | Update user language     |
 
-### API keys
+### API Keys
 
 | Method | Endpoint                              | Auth | Description            |
 | ------ | ------------------------------------- | ---- | ---------------------- |
@@ -322,7 +322,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 | GET    | `/api/scoring-profiles`   | 🔓   | List scoring profiles    |
 | POST   | `/api/scoring-profiles`   | 👑   | Create scoring profile   |
 
-### Custom formats
+### Custom Formats
 
 | Method | Endpoint                  | Auth | Description              |
 | ------ | ------------------------- | ---- | ------------------------ |
@@ -341,7 +341,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 | GET    | `/api/naming/tokens`      | 🔓   | List naming tokens       |
 | POST   | `/api/naming/preview`     | 🔓   | Preview naming           |
 
-### Rename operations
+### Rename Operations
 
 | Method | Endpoint                      | Auth | Description            |
 | ------ | ----------------------------- | ---- | ---------------------- |

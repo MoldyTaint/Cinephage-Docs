@@ -90,14 +90,14 @@ Manual search is ideal for immediate needs or when you want to override automati
 
 The complete search workflow involves multiple stages:
 
-### 1. initiation
+### 1. Initiation
 
 A search begins either:
 - Through the monitoring scheduler (automatic)
 - Via user clicking Search (manual)
 - When adding monitored media to library
 
-### 2. querying indexers
+### 2. Querying indexers
 
 The search system:
 - Identifies all enabled indexers
@@ -106,7 +106,7 @@ The search system:
 - Aggregates results as they return
 - Removes duplicate releases across indexers
 
-### 3. parsing and scoring
+### 3. Parsing and scoring
 
 For each release found:
 - Extracts metadata from release name
@@ -115,7 +115,7 @@ For each release found:
 - Applies custom format bonuses/penalties
 - Assigns final score
 
-### 4. selection
+### 4. Selection
 
 The system:
 - Sorts releases by score (highest first)
@@ -123,7 +123,7 @@ The system:
 - Applies delay profiles (if configured)
 - Selects highest-scoring acceptable release
 
-### 5. download
+### 5. Download
 
 Once selected:
 - Release sent to configured download client
@@ -131,7 +131,7 @@ Once selected:
 - Monitoring begins
 - Progress tracked in Activity > Queue
 
-### 6. import
+### 6. Import
 
 When download completes:
 - File detected in download location

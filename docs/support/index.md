@@ -14,7 +14,7 @@ Find answers, track releases, and get help with Cinephage.
 
 <div className="card">
 
-### 📋 frequently asked questions
+### 📋 Frequently Asked Questions
 
 Common questions about installing, configuring, and using Cinephage.
 
@@ -24,7 +24,7 @@ Common questions about installing, configuring, and using Cinephage.
 
 <div className="card">
 
-### 🚀 release history
+### 🚀 Release History
 
 Version history, release notes, and Docker tag reference.
 
@@ -34,7 +34,7 @@ Version history, release notes, and Docker tag reference.
 
 <div className="card">
 
-### 🗺️ roadmap
+### 🗺️ Roadmap
 
 Planned features, work in progress, and known limitations.
 
@@ -44,7 +44,7 @@ Planned features, work in progress, and known limitations.
 
 <div className="card">
 
-### 🔧 troubleshooting
+### 🔧 Troubleshooting
 
 Common issues, logs, and debugging steps.
 

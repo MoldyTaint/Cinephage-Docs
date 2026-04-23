@@ -24,49 +24,49 @@ Welcome to the Cinephage FAQ! Find answers to common questions organized by cate
 
 ## FAQ Categories
 
-### 📋 [general questions](/support/faq/general)
+### 📋 [General Questions](/support/faq/general)
 New to Cinephage? Start here to learn what it does, its features, and whether it's right for you.
 
 **Topics:** Overview, features, licensing, advantages, library import
 
 ---
 
-### ⚙️ [installation & setup](/support/faq/installation)
+### ⚙️ [Installation & Setup](/support/faq/installation)
 Everything you need to get Cinephage running, from system requirements to backups.
 
 **Topics:** Requirements, TMDB API, Docker vs native, updates, data storage, backups
 
 ---
 
-### 🔧 [configuration](/support/faq/configuration)
+### 🔧 [Configuration](/support/faq/configuration)
 Setting up environment variables, authentication, and fixing permission issues.
 
 **Topics:** ORIGIN/BETTER_AUTH_URL, external access, PUID/PGID, permissions
 
 ---
 
-### 📚 [library management](/support/faq/library)
+### 📚 [Library Management](/support/faq/library)
 Managing your media collection, importing existing files, and organization.
 
 **Topics:** Importing, root folders, monitored vs unmonitored, file organization, matching
 
 ---
 
-### ⬇️ [downloading](/support/faq/downloading)
+### ⬇️ [Downloading](/support/faq/downloading)
 Automated downloads, quality profiles, and indexer configuration.
 
 **Topics:** Quality profiles, cutoff, search tasks, slow searches, custom formats
 
 ---
 
-### 📺 [streaming & live tv](/support/faq/streaming)
+### 📺 [Streaming & Live TV](/support/faq/streaming)
 NZB streaming and IPTV setup for live television.
 
 **Topics:** NZB streaming, Live TV setup, M3U playlists
 
 ---
 
-### 🔍 [troubleshooting](/support/faq/troubleshooting)
+### 🔍 [Troubleshooting](/support/faq/troubleshooting)
 Solutions to common problems and advanced configuration.
 
 **Topics:** Logs, debug mode, database issues, startup problems, VPN, getting help, API, contributing

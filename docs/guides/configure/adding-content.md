@@ -12,7 +12,7 @@ Add movies and TV shows to your library through various methods.
 
 ## Manual Addition
 
-### Adding movies
+### Adding Movies
 
 1. Go to **Discover** or **Movies > Add New**
 2. Search for movie title
@@ -23,7 +23,7 @@ Add movies and TV shows to your library through various methods.
    - Monitor status
 5. Click **Add**
 
-### Adding TV shows
+### Adding TV Shows
 
 1. Go to **Discover** or **TV Shows > Add New**
 2. Search for series title
@@ -36,7 +36,7 @@ Add movies and TV shows to your library through various methods.
 
 ## Bulk Addition
 
-### From TMDB lists
+### From TMDB Lists
 
 1. Go to **Discover > Lists**
 2. Browse TMDB curated lists
@@ -45,7 +45,7 @@ Add movies and TV shows to your library through various methods.
 5. Configure defaults
 6. Bulk add
 
-### Import from file
+### Import from File
 
 1. Prepare CSV with columns: Title, Year, Type
 2. Go to **Library > Import**
@@ -53,7 +53,7 @@ Add movies and TV shows to your library through various methods.
 4. Map columns
 5. Import
 
-### Add TMDB collections (bulk)
+### Add TMDB Collections (Bulk)
 
 Add entire TMDB collections to your library at once:
 
@@ -76,7 +76,7 @@ Add entire TMDB collections to your library at once:
 
 ## Managing Library Items
 
-### Movie management
+### Movie Management
 
 **Individual Actions:**
 
@@ -106,7 +106,7 @@ When you delete a movie or episode:
    - Monitor/Unmonitor
    - Delete
 
-### TV show management
+### TV Show Management
 
 **Series-Level Actions:**
 
@@ -130,7 +130,7 @@ When you delete a movie or episode:
 - View episode details
 - Delete episode file
 
-### Monitoring status
+### Monitoring Status
 
 Understanding monitoring levels:
 

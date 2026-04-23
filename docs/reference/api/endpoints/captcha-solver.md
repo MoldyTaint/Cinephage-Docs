@@ -348,7 +348,7 @@ curl -X POST \
 }
 ```
 
-### Challenge types
+### Challenge Types
 
 | Type | Description |
 |------|-------------|

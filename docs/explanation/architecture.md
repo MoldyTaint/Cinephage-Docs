@@ -43,7 +43,7 @@ Cinephage follows a modern web application architecture with clear separation of
 
 ## Core Components
 
-### 1. web interface
+### 1. Web Interface
 
 **Technology:** SvelteKit + Svelte 5
 
@@ -62,7 +62,7 @@ The user interface is a modern, reactive web application:
 - Settings - Configuration interface
 - Activity - Download queue and history
 
-### 2. API layer
+### 2. API Layer
 
 **Technology:** SvelteKit Routes
 
@@ -83,7 +83,7 @@ RESTful API endpoints handle all data operations:
 - API key support for external access
 - Rate limiting for protection
 
-### 3. services layer
+### 3. Services Layer
 
 **Business Logic**
 
@@ -104,7 +104,7 @@ Services contain the core application logic:
 - Clear interfaces for testability
 - Error handling with typed errors
 
-### 4. database
+### 4. Database
 
 **Technology:** SQLite 3
 
@@ -134,7 +134,7 @@ Single-file embedded database:
 - Subtitles (providers, languages, files)
 - Live TV (portals, channels, EPG)
 
-### 5. external integrations
+### 5. External Integrations
 
 Cinephage integrates with numerous external services:
 
@@ -166,7 +166,7 @@ Cinephage integrates with numerous external services:
 - Emby notifications
 - Plex notifications
 
-### 6. background services
+### 6. Background Services
 
 **Technology:** Node.js with custom worker system
 
@@ -192,7 +192,7 @@ Long-running background processes:
 | `CaptchaSolver`       | Cloudflare bypass           | On-demand    |
 | `MediaBrowserNotifier`| Jellyfin/Emby/Plex updates  | Event-driven |
 
-### 7. worker system
+### 7. Worker System
 
 **Concurrent Task Processing**
 
@@ -218,7 +218,7 @@ environment:
 
 ## Data Flow
 
-### Adding a movie
+### Adding a Movie
 
 ```
 User clicks "Add to Library"
@@ -248,7 +248,7 @@ Organize file according to naming settings
 Send notifications
 ```
 
-### Library scanning
+### Library Scanning
 
 ```
 Scheduler triggers scan
@@ -265,7 +265,7 @@ Mark unmatched files
 Update library statistics
 ```
 
-### Search and download
+### Search and Download
 
 ```
 Monitoring task or manual search
@@ -342,7 +342,7 @@ Custom indexer definitions:
 
 ## Scalability Considerations
 
-### Single-user design
+### Single-User Design
 
 Cinephage is optimized for personal use:
 
@@ -350,7 +350,7 @@ Cinephage is optimized for personal use:
 - No need for complex database clustering
 - Simple deployment model
 
-### Resource limits
+### Resource Limits
 
 Worker limits prevent resource exhaustion:
 
@@ -358,7 +358,7 @@ Worker limits prevent resource exhaustion:
 - Memory usage controlled
 - CPU-intensive tasks queued
 
-### Caching strategy
+### Caching Strategy
 
 Multiple cache layers:
 
@@ -369,7 +369,7 @@ Multiple cache layers:
 
 ## Security Architecture
 
-### Defense in depth
+### Defense in Depth
 
 Multiple security layers:
 
@@ -380,7 +380,7 @@ Multiple security layers:
 5. **Rate Limiting** - Prevent abuse
 6. **API Keys** - Scoped access
 
-### Secrets management
+### Secrets Management
 
 Sensitive data handling:
 
@@ -389,7 +389,7 @@ Sensitive data handling:
 - Database for user credentials (hashed)
 - Never log sensitive data
 
-### Network security
+### Network Security
 
 - HTTPS recommended for production
 - Origin validation for CSRF
@@ -398,7 +398,7 @@ Sensitive data handling:
 
 ## Deployment Architecture
 
-### Docker (recommended)
+### Docker (Recommended)
 
 Containerized deployment:
 
@@ -407,7 +407,7 @@ Containerized deployment:
 - Environment variables for configuration
 - Health checks for monitoring
 
-### Process model
+### Process Model
 
 Inside the container:
 
@@ -429,7 +429,7 @@ Structured logging throughout:
 - Error logging with stack traces
 - Configurable log levels
 
-### Health checks
+### Health Checks
 
 Endpoints for monitoring:
 
@@ -448,14 +448,14 @@ Key metrics tracked:
 
 ## Future Architecture Considerations
 
-### Potential enhancements
+### Potential Enhancements
 
 - **Read Replicas** - For very large libraries
 - **Distributed Workers** - Separate worker processes
 - **Plugin System** - Third-party extensions
 - **GraphQL API** - Alternative to REST
 
-### Current limitations
+### Current Limitations
 
 - Single-node design
 - SQLite for database

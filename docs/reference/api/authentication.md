@@ -20,13 +20,13 @@ Cinephage uses **Better Auth** for authentication with session-based login and A
 
 ## Session Authentication
 
-### Login flow
+### Login Flow
 
 1. POST to `/api/auth/sign-in/credential` with username and password
 2. Server creates session and sets cookie
 3. Subsequent requests include session cookie automatically
 
-### Session properties
+### Session Properties
 
 | Property      | Value            |
 | ------------- | ---------------- |
@@ -36,7 +36,7 @@ Cinephage uses **Better Auth** for authentication with session-based login and A
 | HttpOnly      | Yes              |
 | SameSite      | Lax              |
 
-### Single admin architecture
+### Single Admin Architecture
 
 Cinephage uses a single-administrator model:
 
@@ -46,14 +46,14 @@ Cinephage uses a single-administrator model:
 
 ## API Key Authentication
 
-### API key types
+### API Key Types
 
 | Key Type             | Permissions                    | Use Case                    |
 | -------------------- | ------------------------------ | --------------------------- |
 | **Main API Key**     | Full access to all endpoints   | Automation, scripts, tools  |
 | **Streaming API Key**| Live TV, EPG, streaming only   | Media server integration    |
 
-### Streaming API key permissions
+### Streaming API Key Permissions
 
 | Allowed                      | Denied                       |
 | ---------------------------- | ---------------------------- |
@@ -62,7 +62,7 @@ Cinephage uses a single-administrator model:
 | `/api/livetv/playlist.m3u`   | `/api/indexers/*`            |
 | `/api/livetv/epg.xml`        | Admin-only operations        |
 
-### Using API keys
+### Using API Keys
 
 **Via Header (Recommended):**
 
@@ -81,7 +81,7 @@ curl "http://localhost:3000/api/livetv/playlist.m3u?api_key=cinephage_your_key_h
 Some media servers (Plex, Jellyfin) can't send custom headers. Use the query parameter for M3U playlist URLs.
 :::
 
-### Managing API keys
+### Managing API Keys
 
 Navigate to **Settings > System**:
 
@@ -95,7 +95,7 @@ Navigate to **Settings > System**:
 Regenerating a key immediately invalidates the old key. Update any services using the key before regenerating.
 :::
 
-### API key storage
+### API Key Storage
 
 API keys are encrypted at rest:
 
@@ -105,7 +105,7 @@ API keys are encrypted at rest:
 
 ## Rate Limiting
 
-### API key rate limits
+### API Key Rate Limits
 
 | Key Type         | Window     | Max Requests |
 | ---------------- | ---------- | ------------ |
@@ -118,7 +118,7 @@ Configure via environment variables:
 | `STREAMING_API_KEY_RATE_LIMIT_WINDOW_MS` | 3600000   | Window in ms (1 hr)  |
 | `STREAMING_API_KEY_RATE_LIMIT_MAX`       | 10000     | Max requests/window  |
 
-### Login rate limiting
+### Login Rate Limiting
 
 | Limit         | Value                      |
 | ------------- | -------------------------- |
@@ -127,7 +127,7 @@ Configure via environment variables:
 
 ## Endpoint Authorization
 
-### Authorization levels
+### Authorization Levels
 
 | Level          | Function            | Description                    |
 | -------------- | ------------------- | ------------------------------ |
@@ -135,7 +135,7 @@ Configure via environment variables:
 | **requireAuth**| `requireAuth()`     | Any authenticated user         |
 | **requireAdmin**| `requireAdmin()`   | Admin role required            |
 
-### Response codes
+### Response Codes
 
 | Code | Meaning                           |
 | ---- | --------------------------------- |
@@ -143,7 +143,7 @@ Configure via environment variables:
 | 401  | Not authenticated                 |
 | 403  | Authenticated but not authorized  |
 
-### Common endpoint patterns
+### Common Endpoint Patterns
 
 **Public (No Auth):**
 - `/api/health`
@@ -202,7 +202,7 @@ Cinephage automatically trusts:
 
 ## Security Best Practices
 
-### API key security
+### API Key Security
 
 - **Don't commit keys** to version control
 - **Use environment variables** in scripts
@@ -216,7 +216,7 @@ Cinephage automatically trusts:
 - **Don't change it** unless absolutely necessary
 - **Treat it like a password** — keep it secret
 
-### Network security
+### Network Security
 
 - **Use HTTPS** in production
 - **Restrict admin endpoints** with reverse proxy rules
@@ -224,7 +224,7 @@ Cinephage automatically trusts:
 
 ## Troubleshooting
 
-### "401 unauthorized"
+### "401 Unauthorized"
 
 **Session auth:**
 - Session may have expired — log in again
@@ -234,20 +234,20 @@ Cinephage automatically trusts:
 - Key may be invalid — verify in Settings > System
 - Key may be wrong type — use Main API Key for library access
 
-### "403 forbidden"
+### "403 Forbidden"
 
 - Authenticated but not admin
 - Check if endpoint requires admin role
 - Streaming API Key used for non-streaming endpoint
 
-### API key not working
+### API Key Not Working
 
 1. **Check key is correct** — Copy from Settings > System
 2. **Check header name** — Must be `x-api-key`
 3. **Check permissions** — Streaming key has limited access
 4. **Check rate limits** — May be temporarily blocked
 
-### Sessions invalid after restart
+### Sessions Invalid After Restart
 
 If all sessions are invalidated after restart:
 - `BETTER_AUTH_SECRET` may have changed

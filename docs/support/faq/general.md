@@ -38,7 +38,7 @@ Yes! Cinephage is 100% free and open source under the GPL-3.0 license. There are
 
 **Trade-off:** Unified design covers most common use cases; users needing highly specialized configurations per media type may prefer modular approaches.
 
-### Can i import my existing media library?
+### Can I import my existing media library?
 
 Yes, you can import your existing library:
 1. Configure root folders in Cinephage

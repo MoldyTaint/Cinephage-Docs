@@ -20,7 +20,7 @@ Cinephage supports live TV through three provider types, each with different fea
 | **XStream Codes** | IPTV API | Username/Password | Providers using XStream Codes panel |
 | **M3U Playlist** | Playlist File | None | Generic IPTV playlists |
 
-### Features overview
+### Features Overview
 
 Regardless of provider type, Cinephage provides:
 
@@ -38,7 +38,7 @@ Live TV functionality supports all three provider types. Stalker Portal is the m
 
 ## Provider Types Explained
 
-### Stalker portal (MAG/Ministra)
+### Stalker Portal (MAG/Ministra)
 
 Stalker (also known as Ministra) is an IPTV middleware system used by many IPTV providers. It's commonly used with MAG set-top boxes.
 
@@ -58,7 +58,7 @@ Stalker (also known as Ministra) is an IPTV middleware system used by many IPTV 
 - Portal URL (e.g., `http://portal.example.com/c`)
 - MAC Address (format: `00:1A:79:XX:XX:XX`)
 
-### Xstream codes
+### XStream Codes
 
 XStream Codes is a popular IPTV panel system used by many providers. Accounts use username/password authentication.
 
@@ -78,7 +78,7 @@ XStream Codes is a popular IPTV panel system used by many providers. Accounts us
 - Username
 - Password
 
-### M3U playlist
+### M3U Playlist
 
 M3U playlists are standard IPTV playlist files containing channel URLs. Many providers offer M3U URLs for use with generic IPTV players.
 
@@ -101,13 +101,13 @@ M3U playlists are standard IPTV playlist files containing channel URLs. Many pro
 
 ## Adding a Live TV Account
 
-### Step 1: navigate to live TV accounts
+### Step 1: Navigate to Live TV Accounts
 
 1. Go to **Live TV > Accounts** in the main navigation
 2. Click **Add Account**
 3. Select your provider type from the dropdown
 
-### Step 2: configure Stalker portal
+### Step 2: Configure Stalker Portal
 
 If you selected **Stalker Portal**:
 
@@ -128,7 +128,7 @@ Always test the connection before saving. The test verifies:
 - Account is active
 :::
 
-### Step 3: configure xstream codes
+### Step 3: Configure XStream Codes
 
 If you selected **XStream Codes**:
 
@@ -141,7 +141,7 @@ If you selected **XStream Codes**:
 5. **Test Connection** - Click **Test** to verify
 6. **Save** - Click **Save** to add the account
 
-### Step 4: configure M3U playlist
+### Step 4: Configure M3U Playlist
 
 If you selected **M3U Playlist**:
 
@@ -169,7 +169,7 @@ M3U URLs often contain authentication tokens. Treat them as sensitive informatio
 
 If you have a Stalker portal but don't have valid credentials, Cinephage can scan for working MAC addresses.
 
-### How portal scanning works
+### How Portal Scanning Works
 
 The scanner tests MAC addresses against a Stalker portal to find valid accounts:
 
@@ -179,14 +179,14 @@ The scanner tests MAC addresses against a Stalker portal to find valid accounts:
 4. Displays discovered accounts with expiration dates
 5. Allows you to approve accounts for use
 
-### Starting a scan
+### Starting a Scan
 
 1. Ensure you have at least one Stalker account configured (or add portal URL)
 2. Go to **Live TV > Accounts**
 3. Click **Scan for Accounts**
 4. Select scan type:
 
-#### Scan type: random
+#### Scan Type: Random
 
 Generates random MAC addresses using known STB manufacturer prefixes:
 
@@ -194,7 +194,7 @@ Generates random MAC addresses using known STB manufacturer prefixes:
 - **Number to Test** - How many addresses to generate (10-1000)
 - **Parallel Workers** - Concurrent scans (1-10)
 
-#### Scan type: sequential
+#### Scan Type: Sequential
 
 Tests a specific range of MAC addresses:
 
@@ -202,14 +202,14 @@ Tests a specific range of MAC addresses:
 - **End MAC** - Ending MAC address
 - **Step Size** - Increment between addresses
 
-#### Scan type: import
+#### Scan Type: Import
 
 Tests a list of MAC addresses you provide:
 
 - Paste MAC addresses (one per line)
 - Or upload a text file
 
-### During the scan
+### During the Scan
 
 The scanner shows real-time progress:
 
@@ -222,7 +222,7 @@ The scanner shows real-time progress:
 Only scan portals you have permission to access. Unauthorized scanning may violate terms of service.
 :::
 
-### Reviewing discovered accounts
+### Reviewing Discovered Accounts
 
 After scanning completes:
 
@@ -240,7 +240,7 @@ Approved accounts are added to your Live TV accounts and can be used immediately
 
 After adding an account, you need to sync channels from the provider.
 
-### Manual channel sync
+### Manual Channel Sync
 
 1. Go to **Live TV > Accounts**
 2. Find your account in the list
@@ -256,7 +256,7 @@ After adding an account, you need to sync channels from the provider.
 - EPG channel IDs
 - Archive/catch-up availability (Stalker)
 
-### What happens during sync
+### What Happens During Sync
 
 1. Cinephage connects to provider
 2. Requests channel list
@@ -272,7 +272,7 @@ Sync time depends on number of channels:
 - Large lists (2000+ channels): ~3-5 minutes
 :::
 
-### Auto-sync
+### Auto-Sync
 
 Some providers support automatic channel synchronization:
 
@@ -282,7 +282,7 @@ Some providers support automatic channel synchronization:
 
 ## Managing Channels
 
-### Channel overview
+### Channel Overview
 
 After syncing, view all channels at **Live TV > Channels**:
 
@@ -291,7 +291,7 @@ After syncing, view all channels at **Live TV > Channels**:
 - Search functionality
 - Status indicators (active/inactive)
 
-### Enabling/disabling channels
+### Enabling/Disabling Channels
 
 Not all channels from your provider may be relevant:
 
@@ -305,17 +305,17 @@ Not all channels from your provider may be relevant:
 1. Show disabled channels using the filter
 2. Toggle **Active** switch on
 
-### Channel categories
+### Channel Categories
 
 Cinephage automatically imports categories from your provider. You can also create custom categories:
 
-#### Viewing categories
+#### Viewing Categories
 
 1. Go to **Live TV > Categories**
 2. See all imported categories
 3. Shows channel count per category
 
-#### Creating custom categories
+#### Creating Custom Categories
 
 1. Click **Add Category**
 2. Enter category name
@@ -333,7 +333,7 @@ Cinephage automatically imports categories from your provider. You can also crea
 
 Lineups determine which channels appear in your M3U playlist and Live TV interface.
 
-### Understanding lineups
+### Understanding Lineups
 
 A lineup is a curated list of active channels:
 
@@ -342,7 +342,7 @@ A lineup is a curated list of active channels:
 - Controls which channels appear in exported playlists
 - Multiple lineups for different purposes
 
-### Creating a lineup
+### Creating a Lineup
 
 1. Go to **Live TV > Lineups**
 2. Click **Create Lineup**
@@ -356,7 +356,7 @@ A lineup is a curated list of active channels:
    - Use auto-sort by category or name
 6. Click **Save**
 
-### Default lineup
+### Default Lineup
 
 Set a default lineup that appears first:
 
@@ -364,7 +364,7 @@ Set a default lineup that appears first:
 2. Click the star icon next to your preferred lineup
 3. This lineup loads by default in the Live TV player
 
-### Multiple lineups strategy
+### Multiple Lineups Strategy
 
 Create different lineups for different use cases:
 
@@ -380,7 +380,7 @@ Create different lineups for different use cases:
 
 EPG provides TV schedule information for your channels.
 
-### EPG sources by provider
+### EPG Sources by Provider
 
 | Provider | EPG Support | Source |
 |----------|-------------|--------|
@@ -390,7 +390,7 @@ EPG provides TV schedule information for your channels.
 
 ### Configuring EPG
 
-#### For Stalker portals
+#### For Stalker Portals
 
 EPG is automatic:
 
@@ -404,7 +404,7 @@ EPG is automatic:
 - **Refresh Interval** - How often to update EPG (default: 6 hours)
 - **Cache Duration** - How long to keep EPG data (default: 24 hours)
 
-#### For M3U playlists
+#### For M3U Playlists
 
 Add external EPG:
 
@@ -427,7 +427,7 @@ Many IPTV providers offer XMLTV EPG URLs. Common sources:
 3. Click a channel for detailed schedule
 4. Navigate by time (now, next 24 hours, etc.)
 
-### EPG features
+### EPG Features
 
 - **Current Program** - What's playing now
 - **Up Next** - Next 3-4 programs
@@ -438,7 +438,7 @@ Many IPTV providers offer XMLTV EPG URLs. Common sources:
 
 Cinephage generates M3U playlists for use with external players.
 
-### Accessing your playlist
+### Accessing Your Playlist
 
 The M3U playlist is available at:
 
@@ -452,7 +452,7 @@ http://your-cinephage-url/api/livetv/playlist.m3u
 http://localhost:3000/api/livetv/playlist.m3u
 ```
 
-### Playlist contents
+### Playlist Contents
 
 The generated M3U includes:
 
@@ -463,23 +463,23 @@ The generated M3U includes:
 - Category tags (group-title)
 - Channel logos
 
-### Using with external apps
+### Using with External Apps
 
 Point any M3U-compatible player to the playlist URL:
 
-#### Vlc
+#### VLC
 
 1. Media > Open Network Stream
 2. Paste playlist URL
 3. Click Play
 
-#### IPTV apps (ios/android)
+#### IPTV Apps (iOS/Android)
 
 1. Add playlist by URL
 2. Enter Cinephage playlist URL
 3. Add EPG URL if desired
 
-#### Smart tvs
+#### Smart TVs
 
 1. Install IPTV app (Smart IPTV, IPTV Smarters, etc.)
 2. Configure with playlist URL
@@ -498,7 +498,7 @@ Point any M3U-compatible player to the playlist URL:
 2. Enter Cinephage playlist URL
 3. Configure guide data
 
-### Playlist updates
+### Playlist Updates
 
 The playlist updates automatically when:
 
@@ -510,7 +510,7 @@ External players should refresh playlists periodically.
 
 ## Stream Playback
 
-### Direct playback in Cinephage
+### Direct Playback in Cinephage
 
 1. Go to **Live TV > Channels**
 2. Click any channel
@@ -523,7 +523,7 @@ External players should refresh playlists periodically.
 - Volume control
 - Quality selection (if multiple streams)
 
-### Playback via media server
+### Playback via Media Server
 
 Import the M3U playlist into your media server:
 
@@ -532,7 +532,7 @@ Import the M3U playlist into your media server:
 3. Configure EPG for program guide
 4. Watch through your media server's interface
 
-### Failover support
+### Failover Support
 
 If you have multiple providers with the same channels:
 
@@ -543,7 +543,7 @@ If you have multiple providers with the same channels:
 
 ## Troubleshooting
 
-### Account test fails
+### Account Test Fails
 
 **Stalker Portal:**
 
@@ -567,7 +567,7 @@ If you have multiple providers with the same channels:
 3. **Authentication** - Some M3U URLs expire; get fresh URL from provider
 4. **File Upload** - If uploading, ensure file isn't corrupted
 
-### Channels not loading
+### Channels Not Loading
 
 **After Sync:**
 
@@ -582,7 +582,7 @@ If you have multiple providers with the same channels:
 2. **Stream URL Valid** - Some channels may have dead streams
 3. **Geographic Restrictions** - Some streams may be geo-blocked
 
-### EPG not showing
+### EPG Not Showing
 
 **Stalker Portals:**
 
@@ -598,7 +598,7 @@ If you have multiple providers with the same channels:
 3. **Format Compatibility** - Ensure XMLTV format is valid
 4. **Manual Refresh** - Trigger EPG refresh in settings
 
-### Streams not playing
+### Streams Not Playing
 
 **Buffering/Stuttering:**
 
@@ -614,7 +614,7 @@ If you have multiple providers with the same channels:
 3. **Expired Account** - Check subscription status
 4. **Try Failover** - If available, try backup stream
 
-### Portal scanner not finding accounts
+### Portal Scanner Not Finding Accounts
 
 1. **Verify Portal URL** - Must be valid Stalker portal
 2. **Check MAC Range** - Try different MAC prefixes
@@ -624,7 +624,7 @@ If you have multiple providers with the same channels:
 
 ## Migration Notes
 
-### From Stalker-Only mode
+### From Stalker-Only Mode
 
 If you previously used Stalker-only mode:
 
@@ -634,7 +634,7 @@ If you previously used Stalker-only mode:
 -  Channel lineups can mix channels from all provider types
 -  EPG settings migrate automatically
 
-### Updating from older versions
+### Updating from Older Versions
 
 When updating Cinephage:
 
@@ -645,14 +645,14 @@ When updating Cinephage:
 
 ## Best Practices
 
-### Account management
+### Account Management
 
 - **Test Before Adding** - Always test account credentials
 - **Use Descriptive Names** - Name accounts by provider/purpose
 - **Monitor Expiration** - Keep track of subscription dates
 - **Regular Syncs** - Sync channels weekly to catch changes
 
-### Lineup organization
+### Lineup Organization
 
 - **Create Purpose-Specific Lineups** - Different lineups for different uses
 - **Disable Unused Channels** - Improves performance and clarity
@@ -668,7 +668,7 @@ When updating Cinephage:
 
 ## Limitations
 
-### By provider type
+### By Provider Type
 
 **Stalker:**
 
@@ -689,7 +689,7 @@ When updating Cinephage:
 - No automatic failover
 - URLs may expire
 
-### General limitations
+### General Limitations
 
 - DVR/recording not yet supported
 - Some streams require specific codecs

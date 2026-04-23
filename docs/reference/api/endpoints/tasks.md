@@ -70,7 +70,7 @@ None required.
 }
 ```
 
-### Task types
+### Task Types
 
 | Type | Description |
 |------|-------------|
@@ -78,7 +78,7 @@ None required.
 | `subtitle` | Subtitle-related tasks |
 | `system` | System maintenance tasks |
 
-### Built-in tasks
+### Built-in Tasks
 
 | Task | Type | Description |
 |------|------|-------------|

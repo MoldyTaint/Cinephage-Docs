@@ -14,7 +14,7 @@ This reference documents the YAML format for defining custom indexers in Cinepha
 
 Cinephage uses a **unified YAML-only indexer architecture**. All indexers are defined entirely through YAML files — no code changes needed to add new indexers.
 
-### Architecture features
+### Architecture Features
 
 - **YAML-only definitions** — All indexer logic in declarative YAML files
 - **Protocol handlers** — Separate handlers for torrent, usenet, and streaming protocols
@@ -22,7 +22,7 @@ Cinephage uses a **unified YAML-only indexer architecture**. All indexers are de
 - **Enhanced health tracking** — Tracks consecutive failures with exponential backoff
 - **Protocol-specific settings** — Custom columns for torrent, usenet, and streaming configurations
 
-### Protocol support
+### Protocol Support
 
 | Protocol | Handler | Features |
 |----------|---------|----------|
@@ -30,7 +30,7 @@ Cinephage uses a **unified YAML-only indexer architecture**. All indexers are de
 | **Usenet** | `usenet` | Newznab API, NZB downloads |
 | **Streaming** | `streaming` | HLS streams, CORS proxy integration |
 
-### Dynamic capability discovery
+### Dynamic Capability Discovery
 
 Newznab-compatible indexers (including UNIT3D trackers) automatically discover capabilities:
 
@@ -53,7 +53,7 @@ This allows the indexer to:
 
 ## YAML Structure
 
-### Basic template
+### Basic Template
 
 ```yaml
 name: Display Name # Human-readable name (required)
@@ -68,7 +68,7 @@ settings: # Protocol-specific settings
   # See protocol sections below
 ```
 
-### Required fields
+### Required Fields
 
 | Field        | Type   | Description                                            |
 | ------------ | ------ | ------------------------------------------------------ |
@@ -78,7 +78,7 @@ settings: # Protocol-specific settings
 | `categories` | array  | Content types: `movies`, `tv`                          |
 | `settings`   | object | Protocol-specific configuration                        |
 
-### Optional fields
+### Optional Fields
 
 | Field         | Type    | Default | Description                               |
 | ------------- | ------- | ------- | ----------------------------------------- |
@@ -88,7 +88,7 @@ settings: # Protocol-specific settings
 
 ## Torrent Indexers
 
-### Basic torrent definition
+### Basic Torrent Definition
 
 ```yaml
 name: Example Torrent Site
@@ -114,7 +114,7 @@ settings:
     date: td.date
 ```
 
-### Search configuration
+### Search Configuration
 
 ```yaml
 settings:
@@ -138,7 +138,7 @@ settings:
 | `{{category}}` | Category ID  | movies, tv       |
 | `{{year}}`     | Release year | 2010             |
 
-### Css selectors
+### CSS Selectors
 
 Define how to extract data from HTML:
 
@@ -167,7 +167,7 @@ selectors:
   seeders: td.peers span.seeders
 ```
 
-### Attribute extraction
+### Attribute Extraction
 
 Extract specific attributes:
 
@@ -206,7 +206,7 @@ settings:
       X-API-Key: YOUR_KEY
 ```
 
-### Advanced: login flow
+### Advanced: Login Flow
 
 For sites requiring form login:
 
@@ -242,7 +242,7 @@ settings:
   retries: 3
 ```
 
-### Newznab settings
+### Newznab Settings
 
 ```yaml
 settings:
@@ -260,7 +260,7 @@ settings:
   rateLimit: integer # Requests per minute (optional)
 ```
 
-### Common Newznab categories
+### Common Newznab Categories
 
 | ID   | Category       |
 | ---- | -------------- |
@@ -276,7 +276,7 @@ settings:
 
 ## Streaming Indexers
 
-### Basic streaming definition
+### Basic Streaming Definition
 
 ```yaml
 name: Example Streaming
@@ -293,7 +293,7 @@ settings:
     resolve: /v1/resolve
 ```
 
-### Streaming settings
+### Streaming Settings
 
 ```yaml
 settings:
@@ -331,7 +331,7 @@ settings:
 
 This section provides complete, working indexer definitions demonstrating common patterns and configurations.
 
-### Example 1: basic public tracker
+### Example 1: Basic Public Tracker
 
 Public tracker with simple search form and no authentication.
 
@@ -372,7 +372,7 @@ settings:
     date: td.date
 ```
 
-### Example 2: private tracker with authentication
+### Example 2: Private Tracker with Authentication
 
 Private tracker requiring cookie-based authentication.
 
@@ -415,7 +415,7 @@ settings:
     date: td.date
 ```
 
-### Example 3: Usenet indexer (Newznab API)
+### Example 3: Usenet Indexer (Newznab API)
 
 Standard Newznab-compatible usenet indexer.
 
@@ -448,7 +448,7 @@ settings:
   rateLimit: 60  # Max requests per minute
 ```
 
-### Example 4: torznab via Jackett
+### Example 4: Torznab via Jackett
 
 Torrent indexer accessed through Jackett's Torznab API.
 
@@ -477,7 +477,7 @@ settings:
   timeout: 30
 ```
 
-### Example 5: advanced multi-page search
+### Example 5: Advanced Multi-Page Search
 
 Indexer with pagination support and complex selectors.
 
@@ -523,7 +523,7 @@ settings:
       attribute: data-category
 ```
 
-### Example 6: special date parsing
+### Example 6: Special Date Parsing
 
 Indexer with custom date format parsing.
 
@@ -560,7 +560,7 @@ settings:
       # Relative: "2 hours ago", "Yesterday"
 ```
 
-### Example 7: unit3d private tracker
+### Example 7: UNIT3D Private Tracker
 
 UNIT3D-based private tracker with full API support.
 
@@ -589,7 +589,7 @@ settings:
   rateLimit: 60
 ```
 
-### Example 8: streaming provider
+### Example 8: Streaming Provider
 
 Basic streaming service indexer.
 
@@ -621,9 +621,9 @@ settings:
 
 This section describes recurring patterns across indexer definitions.
 
-### Authentication methods
+### Authentication Methods
 
-#### Cookie authentication
+#### Cookie Authentication
 
 For sites requiring session cookies.
 
@@ -636,7 +636,7 @@ auth:
     session: "session-token"
 ```
 
-#### Form login
+#### Form Login
 
 For sites with traditional login forms.
 
@@ -650,7 +650,7 @@ auth:
   successCheck: .user-profile
 ```
 
-#### API key authentication
+#### API Key Authentication
 
 For API-based access.
 
@@ -666,7 +666,7 @@ settings:
   apiKey: YOUR_API_KEY
 ```
 
-### Search field mapping
+### Search Field Mapping
 
 Map Cinephage search parameters to indexer fields.
 
@@ -694,7 +694,7 @@ search:
   path: /browse?search={{query}}&category={{category}}&page={{page}}&year={{year}}
 ```
 
-### Result extraction
+### Result Extraction
 
 Standard fields to extract from search results.
 
@@ -721,7 +721,7 @@ selectors:
 2. `torrent` - Direct .torrent file
 3. `download` - Generic download link
 
-### Date parsing formats
+### Date Parsing Formats
 
 Cinephage automatically parses common date formats.
 
@@ -734,7 +734,7 @@ Cinephage automatically parses common date formats.
 | Unix timestamp | `1705315800` | Seconds since epoch |
 | Relative | `2 hours ago` | Automatically converted |
 
-### Category mapping
+### Category Mapping
 
 Map content types to indexer category IDs.
 
@@ -765,7 +765,7 @@ settings:
 | TV/HD | 5040 | HD TV episodes |
 | TV/Documentary | 5080 | Documentaries |
 
-### Handling pagination
+### Handling Pagination
 
 Configure multi-page search results.
 
@@ -786,7 +786,7 @@ search:
 - Incremented automatically for additional results
 - Used only when more results are needed
 
-### Error handling
+### Error Handling
 
 Cinephage handles common error scenarios automatically.
 
@@ -809,7 +809,7 @@ settings:
 
 ## Complete Examples
 
-### Example 1: public torrent tracker
+### Example 1: Public Torrent Tracker
 
 ```yaml
 name: 1337x
@@ -833,7 +833,7 @@ settings:
     date: td.date
 ```
 
-### Example 2: private tracker with login
+### Example 2: Private Tracker with Login
 
 ```yaml
 name: Private Tracker
@@ -860,7 +860,7 @@ settings:
     leechers: td.leechers
 ```
 
-### Example 3: Usenet indexer
+### Example 3: Usenet Indexer
 
 ```yaml
 name: NZBGeek
@@ -879,7 +879,7 @@ settings:
   retries: 3
 ```
 
-### Example 4: streaming provider
+### Example 4: Streaming Provider
 
 ```yaml
 name: My Streaming Service
@@ -897,7 +897,7 @@ settings:
     resolve: /v1/resolve
 ```
 
-### Example 5: unit3d private tracker (oldtoons.world)
+### Example 5: UNIT3D Private Tracker (OldToons.World)
 
 ```yaml
 name: OldToons.World
@@ -926,7 +926,7 @@ settings:
 
 ## Testing Indexers
 
-### Validate YAML syntax
+### Validate YAML Syntax
 
 Before adding to Cinephage, validate YAML:
 
@@ -938,7 +938,7 @@ python3 -c "import yaml; yaml.safe_load(open('indexer.yaml'))"
 # https://yaml-online-parser.appspot.com/
 ```
 
-### Test selectors
+### Test Selectors
 
 Use browser DevTools to test CSS selectors:
 
@@ -961,7 +961,7 @@ Use browser DevTools to test CSS selectors:
 
 ## Troubleshooting
 
-### YAML parse errors
+### YAML Parse Errors
 
 **Problem:** "Invalid YAML" error
 
@@ -972,7 +972,7 @@ Use browser DevTools to test CSS selectors:
 - Check for special characters in strings
 - Use quotes around strings with colons
 
-### Selector not found
+### Selector Not Found
 
 **Problem:** No results from working site
 
@@ -983,7 +983,7 @@ Use browser DevTools to test CSS selectors:
 - Verify selector matches actual HTML
 - Try more specific selectors
 
-### Authentication fails
+### Authentication Fails
 
 **Problem:** 401 or login errors
 
@@ -994,7 +994,7 @@ Use browser DevTools to test CSS selectors:
 - Try different auth type
 - Check if IP is whitelisted
 
-### Empty results
+### Empty Results
 
 **Problem:** Test succeeds but no search results
 
@@ -1007,13 +1007,13 @@ Use browser DevTools to test CSS selectors:
 
 ## Best Practices
 
-### Naming conventions
+### Naming Conventions
 
 - Use descriptive IDs: `nyaa` not `indexer1`
 - Keep names concise but clear
 - Use consistent casing
 
-### Priority guidelines
+### Priority Guidelines
 
 | Priority | Use Case                       |
 | -------- | ------------------------------ |

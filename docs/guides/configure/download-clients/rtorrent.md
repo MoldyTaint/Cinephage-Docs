@@ -50,7 +50,7 @@ pkill rtorrent
 rtorrent
 ```
 
-### Verify XML-RPC is working
+### Verify XML-RPC is Working
 
 Test the connection:
 
@@ -69,7 +69,7 @@ curl -d "<?xml version='1.0'?><methodCall><methodName>system.listMethods</method
 3. Select **rTorrent** from the dropdown
 4. Configure the connection settings:
 
-### Connection settings
+### Connection Settings
 
 | Field | Description | Example |
 |-------|-------------|---------|
@@ -88,7 +88,7 @@ curl -d "<?xml version='1.0'?><methodCall><methodName>system.listMethods</method
 - Separate machine: Use that machine's IP address
 - Docker container name: `rtorrent` (if on same network)
 
-### Advanced settings
+### Advanced Settings
 
 | Setting | Description | Default |
 |---------|-------------|---------|
@@ -119,7 +119,7 @@ If the test fails:
 
 ## Common Issues
 
-### XML-RPC not enabled
+### XML-RPC Not Enabled
 
 **Problem:** Connection refused or RPC not accessible.
 
@@ -130,7 +130,7 @@ If the test fails:
 - Verify the port is not blocked by a firewall
 - Check that rTorrent has permission to bind to the port
 
-### Connection timeout
+### Connection Timeout
 
 **Problem:** Connection test times out.
 
@@ -142,7 +142,7 @@ If the test fails:
 - Check if a firewall is blocking the connection
 - If using Docker, verify the container is running and accessible
 
-### Downloads not importing
+### Downloads Not Importing
 
 **Problem:** Downloads complete in rTorrent but do not appear in Cinephage library.
 
@@ -155,7 +155,7 @@ If the test fails:
 
 ## rTorrent Configuration Tips
 
-### Download directory
+### Download Directory
 
 Ensure your download directory is accessible to Cinephage:
 
@@ -164,7 +164,7 @@ Ensure your download directory is accessible to Cinephage:
 directory = /downloads/complete
 ```
 
-### Label/category support
+### Label/Category Support
 
 Cinephage uses rTorrent labels (tags) to categorize downloads:
 
@@ -173,7 +173,7 @@ Cinephage uses rTorrent labels (tags) to categorize downloads:
 # No manual configuration needed
 ```
 
-### Ratios and seeding
+### Ratios and Seeding
 
 Configure seeding behavior in rTorrent:
 

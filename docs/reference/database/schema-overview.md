@@ -27,7 +27,7 @@ Cinephage uses schema versioning for migrations:
 
 ## Major Table Categories
 
-### Authentication (better auth)
+### Authentication (Better Auth)
 
 User authentication and session management:
 
@@ -113,7 +113,7 @@ Subtitle management:
 | `subtitle_blacklist` | Rejected subtitle entries    |
 | `subtitle_settings`  | Global subtitle settings     |
 
-### Smart lists
+### Smart Lists
 
 Dynamic content lists:
 
@@ -169,7 +169,7 @@ Application settings and metadata:
 
 ## Key Relationships
 
-### Movie relationships
+### Movie Relationships
 
 ```
 movies
@@ -178,7 +178,7 @@ movies
 └── root_folders (many-to-one)
 ```
 
-### TV series relationships
+### TV Series Relationships
 
 ```
 series
@@ -189,7 +189,7 @@ series
 └── root_folders (many-to-one)
 ```
 
-### Download flow
+### Download Flow
 
 ```
 movies/episodes
@@ -200,7 +200,7 @@ movies/episodes
 
 ## Common Queries
 
-### List all movies
+### List All Movies
 
 ```sql
 SELECT id, title, year, monitored, tmdbId
@@ -208,7 +208,7 @@ FROM movies
 ORDER BY title;
 ```
 
-### Count monitored items
+### Count Monitored Items
 
 ```sql
 SELECT
@@ -216,7 +216,7 @@ SELECT
   (SELECT COUNT(*) FROM series WHERE monitored = 1) as monitored_series;
 ```
 
-### Recent downloads
+### Recent Downloads
 
 ```sql
 SELECT
@@ -229,7 +229,7 @@ ORDER BY dh.date DESC
 LIMIT 10;
 ```
 
-### Files missing quality info
+### Files Missing Quality Info
 
 ```sql
 SELECT
@@ -261,7 +261,7 @@ Size factors:
 
 ## Backup and Maintenance
 
-### Creating backups
+### Creating Backups
 
 ```bash
 # While Cinephage is stopped
@@ -271,7 +271,7 @@ cp /path/to/config/data/cinephage.db /path/to/backups/cinephage-$(date +%Y%m%d).
 sqlite3 /path/to/config/data/cinephage.db ".backup /path/to/backups/cinephage-$(date +%Y%m%d).db"
 ```
 
-### Database optimization
+### Database Optimization
 
 ```bash
 # Vacuum (reclaim space, optimize)
@@ -283,7 +283,7 @@ sqlite3 /path/to/config/data/cinephage.db "ANALYZE;"
 
 Run optimization monthly or after large imports.
 
-### Integrity check
+### Integrity Check
 
 ```bash
 # Check for corruption
@@ -294,7 +294,7 @@ sqlite3 /path/to/config/data/cinephage.db "PRAGMA integrity_check;"
 
 ## Accessing the Database
 
-### Docker access
+### Docker Access
 
 ```bash
 # Enter container shell
@@ -307,7 +307,7 @@ sqlite3 /config/data/cinephage.db
 docker exec cinephage sqlite3 /config/data/cinephage.db "SELECT COUNT(*) FROM movies;"
 ```
 
-### Local access (if not using Docker)
+### Local Access (if not using Docker)
 
 ```bash
 # Direct access

@@ -27,7 +27,7 @@ The Captcha Solver uses **Camoufox** — a privacy-focused Firefox fork with ant
 
 Navigate to **Settings > Integrations > Captcha Solver**:
 
-### Basic settings
+### Basic Settings
 
 | Setting       | Description                          | Default |
 | ------------- | ------------------------------------ | ------- |
@@ -36,7 +36,7 @@ Navigate to **Settings > Integrations > Captcha Solver**:
 | **Cache TTL** | How long to keep cookies (hours)     | 24      |
 | **Headless**  | Run browser without GUI              | Enabled |
 
-### Advanced settings
+### Advanced Settings
 
 | Setting             | Description                       | Default |
 | ------------------- | --------------------------------- | ------- |
@@ -54,7 +54,7 @@ Cookies are cached per-domain to minimize repeated challenges:
 - **Per-domain storage** — Each indexer has isolated cookies
 - **Manual clearing** — Clear cookies if issues occur
 
-### Clearing cookies
+### Clearing Cookies
 
 Via UI: **Settings > Integrations > Captcha Solver > Clear Cache**
 
@@ -75,20 +75,20 @@ The solver tracks its own performance:
 
 ## Troubleshooting
 
-### Challenges not being solved
+### Challenges Not Being Solved
 
 1. **Check solver is enabled** — Settings > Integrations > Captcha Solver
 2. **Increase timeout** — Some challenges take 30+ seconds
 3. **Check logs** — Look for "captcha" or "camoufox" errors
 4. **Clear cookie cache** — Corrupted cookies can cause failures
 
-### High failure rate
+### High Failure Rate
 
 1. **Disable headless mode** — Temporarily to debug (requires display)
 2. **Check proxy settings** — If using proxy, verify it works
 3. **Update Camoufox** — Solver uses latest browser version automatically
 
-### Indexer still blocked
+### Indexer Still Blocked
 
 Not all protection is Cloudflare:
 

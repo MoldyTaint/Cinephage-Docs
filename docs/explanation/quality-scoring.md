@@ -67,7 +67,7 @@ The original source affects quality dramatically:
 - **HDTV** - Variable quality, may have logos/commercials
 - **CAM/TS** - Poor quality, handheld camera recordings
 
-### Source detection
+### Source Detection
 
 Cinephage detects sources from release names:
 
@@ -97,7 +97,7 @@ Modern codecs provide better quality at smaller sizes:
 - **H.264** - Baseline efficiency
 - **Older codecs** - Larger files, lower quality
 
-### Codec detection
+### Codec Detection
 
 ```
 Movie.2023.1080p.BluRay.AV1-GRP        → AV1 (+25)
@@ -129,7 +129,7 @@ Audio quality significantly impacts the viewing experience:
 - **Standard** (AC3, AAC) - Good quality, efficient
 - **Stereo** (AAC) - Sufficient for dialogue
 
-### Audio detection
+### Audio Detection
 
 ```
 Movie.2023.2160p.BluRay.Atmos.TrueHD7.1 → Atmos (+25)
@@ -157,7 +157,7 @@ High Dynamic Range provides better color and contrast:
 - **HDR10** - Good HDR, static metadata
 - **SDR** - No HDR, compatible with all displays
 
-### Hdr detection
+### HDR Detection
 
 ```
 Movie.2023.2160p.BluRay.DV.HDR10+.x265  → Dolby Vision + HDR10+ (+50)
@@ -192,7 +192,7 @@ Group scoring is subjective and configurable via custom formats.
 
 Custom formats allow you to define personal preferences:
 
-### Creating scoring rules
+### Creating Scoring Rules
 
 Each custom format has a score that adds to or subtracts from the total:
 
@@ -214,7 +214,7 @@ Conditions:
   - OR Contains: 'HSBS'
 ```
 
-### Source-only scoring (v0.5.0+)
+### Source-Only Scoring (v0.5.0+)
 
 Score releases based solely on source quality, ignoring resolution:
 
@@ -227,7 +227,7 @@ Conditions:
 
 This is useful when you want the best source regardless of resolution.
 
-### Resolution-only scoring (v0.5.0+)
+### Resolution-Only Scoring (v0.5.0+)
 
 Score releases based solely on resolution, ignoring source:
 
@@ -240,7 +240,7 @@ Conditions:
 
 This prioritizes resolution over source quality.
 
-### Built-in profile overrides (v0.5.0+)
+### Built-in Profile Overrides (v0.5.0+)
 
 Override built-in scoring profiles at runtime:
 
@@ -250,7 +250,7 @@ Override built-in scoring profiles at runtime:
 | **Balanced** | Built-in scores + custom additions |
 | **Compact** | Override with user-defined thresholds |
 
-### Custom format examples
+### Custom Format Examples
 
 **Prefer Specific Resolution:**
 
@@ -285,7 +285,7 @@ Conditions:
 
 ## Complete Scoring Examples
 
-### Example 1: high-quality movie
+### Example 1: High-Quality Movie
 
 **Release:** `Inception.2010.2160p.UHD.BluRay.DV.HDR10+.Atmos.TrueHD7.1.x265-SPARKS`
 
@@ -304,7 +304,7 @@ Total:                 245
 
 **Result:** Excellent quality, will be selected if available.
 
-### Example 2: balanced quality
+### Example 2: Balanced Quality
 
 **Release:** `Movie.2023.1080p.BluRay.DTS-HD.MA.5.1.x264-EVO`
 
@@ -323,7 +323,7 @@ Total:                 150
 
 **Result:** Good quality, balanced file size.
 
-### Example 3: low quality (blocked)
+### Example 3: Low Quality (Blocked)
 
 **Release:** `Movie.2023.HDTS.x264-Unknown`
 
@@ -342,7 +342,7 @@ Total:                 -1000
 
 **Result:** Blocked by negative score, will not be selected.
 
-### Example 4: custom format impact
+### Example 4: Custom Format Impact
 
 **Release:** `Movie.2023.1080p.WEB-DL.x265.DD5.1-NTb`
 
@@ -370,7 +370,7 @@ Total:                 170
 
 ## Scoring in Practice
 
-### Search process
+### Search Process
 
 1. **Query Indexers** - Search all enabled indexers
 2. **Parse Results** - Extract metadata from release names
@@ -379,7 +379,7 @@ Total:                 170
 5. **Select Best** - Choose highest scoring release
 6. **Send to Download** - Add to download queue
 
-### Upgrade decision
+### Upgrade Decision
 
 When considering upgrades:
 
@@ -391,7 +391,7 @@ When considering upgrades:
 
 ## Profile-Specific Scoring
 
-### Quality profile cutoffs
+### Quality Profile Cutoffs
 
 Each profile defines when to stop upgrading:
 
@@ -401,7 +401,7 @@ Each profile defines when to stop upgrading:
 | Balanced | 1080p  | 1080p BluRay | Upgrade until 1080p BluRay |
 | Compact  | 720p   | 720p WEB-DL  | Upgrade until 720p WEB-DL  |
 
-### Score thresholds
+### Score Thresholds
 
 Profiles can define minimum scores:
 
@@ -413,7 +413,7 @@ Minimum Score: 100
 
 ## Troubleshooting Scoring
 
-### Why was lower quality selected?
+### Why Was Lower Quality Selected?
 
 **Possible Reasons:**
 
@@ -430,7 +430,7 @@ Minimum Score: 100
 - Verify indexer status
 - Check delay profile settings
 
-### Custom format not applied
+### Custom Format Not Applied
 
 **Check:**
 
@@ -439,7 +439,7 @@ Minimum Score: 100
 3. Release name matches pattern
 4. Format is enabled
 
-### Unexpected scores
+### Unexpected Scores
 
 **Verify:**
 
@@ -450,25 +450,25 @@ Minimum Score: 100
 
 ## Best Practices
 
-### Start with defaults
+### Start with Defaults
 
 - Use built-in profiles initially
 - Understand scoring before customizing
 - Test custom formats thoroughly
 
-### Document your rules
+### Document Your Rules
 
 - Keep notes on why scores are set
 - Name formats descriptively
 - Review periodically
 
-### Test with real releases
+### Test with Real Releases
 
 - Use actual release names
 - Verify score calculations
 - Check upgrade behavior
 
-### Balance quality and size
+### Balance Quality and Size
 
 - Higher score ≠ always better
 - Consider storage constraints

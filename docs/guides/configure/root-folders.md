@@ -19,7 +19,7 @@ Cinephage organizes media into two main library types with optional subtypes:
 | **Movies** | Individual films | Flat or by folder per movie |
 | **TV Shows** | Series with episodes | Series > Seasons > Episodes |
 
-### Media subtypes (v0.5.0+)
+### Media Subtypes (v0.5.0+)
 
 You can further organize content with subtypes:
 
@@ -42,12 +42,12 @@ A root folder is a base directory where Cinephage:
 
 ## Creating Root Folders
 
-### Step 1: access settings
+### Step 1: Access Settings
 
 1. Go to **Settings > Media Management > Root Folders**
 2. Click **Add Root Folder**
 
-### Step 2: configure folder
+### Step 2: Configure Folder
 
 | Setting | Description | Example |
 |---------|-------------|---------|
@@ -57,7 +57,7 @@ A root folder is a base directory where Cinephage:
 | **Default Quality** | Profile for new additions | "Balanced" |
 | **Default Language** | Language profile | "English" |
 
-### Step 3: multiple root folders
+### Step 3: Multiple Root Folders
 
 You can create multiple root folders:
 
@@ -75,7 +75,7 @@ Each root folder is dedicated to one media type. Don't mix movies and TV in the 
 
 ## Root Folder Best Practices
 
-### Path guidelines
+### Path Guidelines
 
 **Docker Installations:**
 - Use container paths, not host paths
@@ -87,7 +87,7 @@ Each root folder is dedicated to one media type. Don't mix movies and TV in the 
 - Ensure proper permissions
 - Consider dedicated mount points for media
 
-### Storage planning
+### Storage Planning
 
 **Separate Libraries:**
 ```
@@ -111,7 +111,7 @@ Each root folder is dedicated to one media type. Don't mix movies and TV in the 
  /media/tv/       (root folder)
 ```
 
-### Performance considerations
+### Performance Considerations
 
 - **Fast Storage for Database** - Put Cinephage config (database) on SSD
 - **Bulk Storage for Media** - Media can be on HDD or network storage
@@ -119,7 +119,7 @@ Each root folder is dedicated to one media type. Don't mix movies and TV in the 
 
 ## Managing Root Folders
 
-### View root folders
+### View Root Folders
 
 ```
 Settings > Media Management > Root Folders
@@ -132,7 +132,7 @@ Shows:
 - Free space available
 - Default profiles
 
-### Edit root folder
+### Edit Root Folder
 
 1. Click **Edit** on root folder
 2. Modify settings
@@ -144,7 +144,7 @@ Shows:
 - Default language profile
 - Path (use with caution)
 
-### Move media between root folders (v0.5.0+)
+### Move Media Between Root Folders (v0.5.0+)
 
 You can move media between root folders directly in Cinephage:
 
@@ -163,7 +163,7 @@ You can move media between root folders directly in Cinephage:
 You can select multiple items in the library to move them all at once. This is useful for reorganizing your library structure.
 :::
 
-### Remove root folder
+### Remove Root Folder
 
 :::warning Data Loss Warning
 Removing a root folder from Cinephage doesn't delete the actual files, but Cinephage will lose track of all items in that folder.

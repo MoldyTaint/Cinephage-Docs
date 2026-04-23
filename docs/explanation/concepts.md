@@ -12,7 +12,7 @@ This document explains fundamental concepts and terminology used throughout Cine
 
 ## Core Concepts
 
-### Root folders
+### Root Folders
 
 **Definition:** Physical directories where your media library is stored.
 
@@ -58,7 +58,7 @@ When an item is "monitored," Cinephage actively searches for it and will downloa
 - Season level - Specific season
 - Episode level - Individual episode
 
-### Quality profiles
+### Quality Profiles
 
 **Definition:** Rules that determine which releases to download and when to upgrade.
 
@@ -87,7 +87,7 @@ Cutoff reached: Stop upgrading
 
 **See:** [Set Up Quality Profiles](../guides/configure/quality-profiles)
 
-### Custom formats
+### Custom Formats
 
 **Definition:** User-defined rules that add or subtract score from releases.
 
@@ -149,7 +149,7 @@ Indexers are how Cinephage discovers what media is available for download. They 
 
 **See:** [Configure Indexers](../guides/configure/indexers)
 
-### Download clients
+### Download Clients
 
 **Definition:** Applications that actually download the media files.
 
@@ -172,7 +172,7 @@ While Cinephage finds and selects releases, download clients handle the actual d
 
 ## Library Management Concepts
 
-### Library scanning
+### Library Scanning
 
 **Definition:** The process of detecting and importing existing media files.
 
@@ -207,7 +207,7 @@ Inception (2010)/Inception (2010) 1080p.mkv
 Breaking Bad/Season 01/Breaking Bad - S01E01.mkv
 ```
 
-### Unmatched files
+### Unmatched Files
 
 **Definition:** Files that could not be automatically matched to TMDB entries.
 
@@ -301,7 +301,7 @@ When a better quality release becomes available, Cinephage can automatically upg
 
 ## Search Concepts
 
-### Automatic search
+### Automatic Search
 
 **Definition:** Background process that searches for monitored content.
 
@@ -319,7 +319,7 @@ Automatic search runs on a schedule (hourly by default) and searches for:
 - Interval time elapsed
 - Indexers available
 
-### Manual search
+### Manual Search
 
 **Definition:** User-initiated search on specific item.
 
@@ -360,7 +360,7 @@ Total: 170
 
 ## Subtitle Concepts
 
-### Language profiles
+### Language Profiles
 
 **Definition:** Preferences for subtitle languages.
 
@@ -380,7 +380,7 @@ Language profiles define which languages you want subtitles in and whether they 
 2. Spanish (Optional, Upgrade)
 ```
 
-### Subtitle scoring
+### Subtitle Scoring
 
 **Definition:** Quality assessment of subtitle matches.
 
@@ -396,7 +396,7 @@ Subtitles are scored based on how well they match your media file:
 
 ## Advanced Concepts
 
-### Smart lists
+### Smart Lists
 
 **Definition:** Dynamic lists that automatically populate based on criteria.
 
@@ -431,7 +431,7 @@ Cinephage can manage IPTV subscriptions, organize channels, and provide EPG (Ele
 - M3U playlist support
 - HLS streaming
 
-### NZB streaming
+### NZB Streaming
 
 **Definition:** Direct streaming from usenet without downloading.
 
@@ -450,7 +450,7 @@ Unlike traditional downloading, NZB streaming allows you to watch content direct
 - Instant playback
 - Selective downloading
 
-### Circuit breakers
+### Circuit Breakers
 
 **Definition:** Pattern that prevents repeated calls to failing services.
 

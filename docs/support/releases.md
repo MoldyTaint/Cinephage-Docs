@@ -19,7 +19,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 
 ## Version History
 
-### V0.5.0 (latest stable)
+### v0.5.0 (Latest Stable)
 
 **Release Date:** 2025-04-XX
 
@@ -43,7 +43,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 
 [View full release notes on GitHub →](https://github.com/MoldyTaint/Cinephage/releases/tag/v0.5.0)
 
-### V0.6.0 (in development)
+### v0.6.0 (In Development)
 
 **Status:** Preview builds available
 
@@ -55,7 +55,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 
 ## Docker Tags Reference
 
-### Stable releases
+### Stable Releases
 
 ```bash
 # Latest stable
@@ -65,7 +65,7 @@ docker pull ghcr.io/moldytaint/cinephage:latest
 docker pull ghcr.io/moldytaint/cinephage:v0.5.0
 ```
 
-### Preview builds
+### Preview Builds
 
 ```bash
 # Latest development build

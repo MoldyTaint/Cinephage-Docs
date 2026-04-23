@@ -14,7 +14,7 @@ Delay Profiles prevent Cinephage from grabbing low-quality releases immediately 
 
 ## Why Use Delays?
 
-### The problem
+### The Problem
 
 A new episode airs:
 
@@ -24,7 +24,7 @@ A new episode airs:
 
 Without delays, Cinephage grabs the HDTV immediately. With delays, it waits to see if something better appears.
 
-### The solution
+### The Solution
 
 Delay profiles let you:
 
@@ -37,7 +37,7 @@ Delay profiles let you:
 
 ## How Delay Profiles Work
 
-### The pending queue
+### The Pending Queue
 
 When a monitored item is found:
 
@@ -47,7 +47,7 @@ When a monitored item is found:
 4. **Better release?** — If yes, replace in queue
 5. **Timer expires** — Grab best release in queue
 
-### Quality upgrades during delay
+### Quality Upgrades During Delay
 
 If a better quality release appears during the delay:
 
@@ -61,7 +61,7 @@ If a better quality release appears during the delay:
 
 Navigate to **Settings > Quality > Delay Profiles**:
 
-### Basic settings
+### Basic Settings
 
 | Setting      | Description              | Example           |
 | ------------ | ------------------------ | ----------------- |
@@ -69,7 +69,7 @@ Navigate to **Settings > Quality > Delay Profiles**:
 | **Protocol** | Usenet, Torrent, or Both | Both              |
 | **Delay**    | Hours to wait            | 6 hours           |
 
-### Protocol-specific delays
+### Protocol-Specific Delays
 
 Different delays for different protocols:
 
@@ -86,21 +86,21 @@ This prefers usenet but falls back to torrents after 12 hours.
 
 Sometimes you don't want to wait. Set conditions to bypass the delay:
 
-### Bypass if highest quality
+### Bypass if Highest Quality
 
 ```
 Bypass if: Release meets highest quality in profile
 Example: 2160p BluRay appears (nothing better exists)
 ```
 
-### Bypass if score threshold
+### Bypass if Score Threshold
 
 ```
 Bypass if: Score >= 2000
 Example: Trusted group + high quality = grab now
 ```
 
-### Bypass tags
+### Bypass Tags
 
 Apply bypass to specific content:
 
@@ -113,7 +113,7 @@ Applies to: Movies/Series with this tag bypass delay
 
 ## Example Profiles
 
-### Conservative (recommended)
+### Conservative (Recommended)
 
 ```
 Name: Conservative
@@ -135,7 +135,7 @@ Bypass: Score >= 1500
 Result: Quick grabs, but only if high quality
 ```
 
-### Usenet only
+### Usenet Only
 
 ```
 Name: Usenet Preferred
@@ -150,14 +150,14 @@ Result: Only grabs torrents if usenet fails for 3 days
 
 ## Assigning Delay Profiles
 
-### Global default
+### Global Default
 
 Set a default profile in **Settings > Quality > Delay Profiles**:
 
 - Applies to all new monitored items
 - Can be overridden per-item
 
-### Per-movie/series
+### Per-Movie/Series
 
 Override the default for specific content:
 
@@ -166,7 +166,7 @@ Override the default for specific content:
 3. Select delay profile
 4. Save
 
-### Use cases for overrides
+### Use Cases for Overrides
 
 - **Daytime TV** — Use aggressive (low quality expected)
 - **Premium Shows** — Use conservative (wait for best)
@@ -189,7 +189,7 @@ View all delayed releases:
 | **Delay Ends** | When it will be grabbed |
 | **Actions**    | Grab now / Remove       |
 
-### Manual actions
+### Manual Actions
 
 - **Grab Now** — Bypass delay and download immediately
 - **Remove** — Remove from queue (won't grab)
@@ -199,7 +199,7 @@ View all delayed releases:
 
 ## How Delays Interact with Other Features
 
-### Quality profiles
+### Quality Profiles
 
 Delay + Quality work together:
 
@@ -207,7 +207,7 @@ Delay + Quality work together:
 2. Delay profile determines "when to grab"
 3. Only releases meeting quality cutoff enter pending queue
 
-### Custom formats
+### Custom Formats
 
 Custom format scores affect delay bypass:
 
@@ -226,25 +226,25 @@ Monitoring tasks respect delays:
 
 ## Troubleshooting
 
-### Releases not being grabbed
+### Releases Not Being Grabbed
 
 1. **Check pending queue** — May be waiting in delay
 2. **Verify delay profile assigned** — Default vs per-item
 3. **Check bypass conditions** — May not be met
 
-### Delay too long
+### Delay Too Long
 
 1. **Reduce delay hours** — Start with 6-12 hours
 2. **Add bypass conditions** — Score threshold, highest quality
 3. **Use tags** — Bypass for specific content
 
-### Delay being ignored
+### Delay Being Ignored
 
 1. **Check cutoff unmet** — Ignores delays
 2. **Check manual search** — Manual grabs bypass delay
 3. **Check bypass tags** — Item may have bypass tag
 
-### Conflicting profiles
+### Conflicting Profiles
 
 If multiple profiles apply:
 
@@ -256,7 +256,7 @@ If multiple profiles apply:
 
 ## Best Practices
 
-### Start conservative
+### Start Conservative
 
 Begin with longer delays, then reduce:
 
@@ -266,7 +266,7 @@ Begin with longer delays, then reduce:
 
 Find the sweet spot for your indexers.
 
-### Match delay to content
+### Match Delay to Content
 
 | Content Type    | Suggested Delay |
 | --------------- | --------------- |
@@ -275,7 +275,7 @@ Find the sweet spot for your indexers.
 | Movies (old)    | 0-2 hours       |
 | Anime           | 2-6 hours       |
 
-### Monitor your indexers
+### Monitor Your Indexers
 
 Different indexers have different release patterns:
 

@@ -38,7 +38,7 @@ The logs page provides a **real-time stream** of application logs via Server-Sen
 | **Warn**  | Yellow | Warnings that may need attention     |
 | **Error** | Red   | Errors requiring investigation       |
 
-### Filtering by level
+### Filtering by Level
 
 Toggle level buttons to show/hide:
 
@@ -63,7 +63,7 @@ Domains categorize log sources:
 | `auth`      | Authentication events                |
 | `captcha`   | Captcha solver operations            |
 
-### Filtering by domain
+### Filtering by Domain
 
 1. Click **Domain Filter** dropdown
 2. Select one or more domains
@@ -89,7 +89,7 @@ Each log entry shows:
 | **Domain**  | Source category                       |
 | **Message** | Log message content                   |
 
-### Expanded view
+### Expanded View
 
 Click a log entry to see additional details:
 
@@ -122,7 +122,7 @@ Download logs for external analysis:
 3. Includes all filtered logs
 4. Compatible with log analysis tools
 
-### Jsonl format
+### JSONL Format
 
 Each line is a JSON object:
 
@@ -132,21 +132,21 @@ Each line is a JSON object:
 
 ## Using Logs for Debugging
 
-### Finding errors
+### Finding Errors
 
 1. **Filter to Error level** — Show only errors
 2. **Search for keywords** — "failed", "error", function names
 3. **Check timestamps** — Correlate with when issue occurred
 4. **Expand entries** — View stack traces
 
-### Tracing requests
+### Tracing Requests
 
 1. **Find the request** — Search by path or method
 2. **Copy Request ID** — From expanded view
 3. **Search by Request ID** — Find all logs for that request
 4. **Follow the flow** — See request lifecycle
 
-### Support tickets
+### Support Tickets
 
 When contacting support:
 
@@ -163,7 +163,7 @@ Logs are stored in memory only:
 - **Buffer limit** — ~1000 entries in browser
 - **For persistence** — Check Docker/container logs
 
-### Accessing container logs
+### Accessing Container Logs
 
 ```bash
 # Docker logs
@@ -186,7 +186,7 @@ Configure logging behavior:
 | `LOG_INCLUDE_STACK` | `false` | Include stack traces           |
 | `LOG_SENSITIVE`     | `false` | Log sensitive data (debug only)|
 
-### Enable debug logging
+### Enable Debug Logging
 
 ```yaml
 environment:

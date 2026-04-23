@@ -23,7 +23,7 @@ Find and download movies and TV shows from your configured indexers.
 
 ## Part 1: Automatic Search
 
-### How it works
+### How It Works
 
 1. **Monitoring Tasks** run on schedule
 2. Check all monitored items
@@ -33,7 +33,7 @@ Find and download movies and TV shows from your configured indexers.
 6. Monitor until complete
 7. Import and organize file
 
-### Enable automatic search
+### Enable Automatic Search
 
 1. Go to **Settings > Tasks**
 2. Enable **Missing Content Search**
@@ -41,7 +41,7 @@ Find and download movies and TV shows from your configured indexers.
 4. Enable **Upgrade Monitoring** (optional)
 5. Click **Save**
 
-### Monitor automatic searches
+### Monitor Automatic Searches
 
 Check **Activity > History** to see:
 
@@ -52,7 +52,7 @@ Check **Activity > History** to see:
 
 ## Part 2: Manual Search
 
-### Search a movie
+### Search a Movie
 
 1. Go to **Library > Movies**
 2. Find the movie you want
@@ -60,7 +60,7 @@ Check **Activity > History** to see:
 4. Click **Search** tab
 5. Click **Search** button
 
-### Review results
+### Review Results
 
 Results appear with columns:
 
@@ -74,7 +74,7 @@ Results appear with columns:
 | **Age**     | How old the release is           |
 | **Grab**    | Button to download               |
 
-### Understanding scores
+### Understanding Scores
 
 The **Score** column shows how well a release matches your quality profile:
 
@@ -86,7 +86,7 @@ Hover over any score to see the detailed breakdown.
 
 **Learn more:** See [Search System](/explanation/search-system) for a complete explanation of how scoring works.
 
-### Grab a release
+### Grab a Release
 
 1. Find desired release in results
 2. Check score is acceptable
@@ -94,7 +94,7 @@ Hover over any score to see the detailed breakdown.
 4. Confirm in dialog
 5. Release sent to download client
 
-### Grab best release
+### Grab Best Release
 
 To automatically grab highest-scoring release:
 
@@ -104,7 +104,7 @@ To automatically grab highest-scoring release:
 
 ## Part 3: Search TV Episodes
 
-### Search entire series
+### Search Entire Series
 
 1. Go to **Library > TV**
 2. Click on series
@@ -115,7 +115,7 @@ To automatically grab highest-scoring release:
    - **Selected Seasons** - Specific seasons
 5. Click **Search**
 
-### Search specific episode
+### Search Specific Episode
 
 1. Go to series details
 2. Expand season
@@ -126,7 +126,7 @@ To automatically grab highest-scoring release:
 
 ## Part 4: Search from Discover
 
-### Search before adding
+### Search Before Adding
 
 1. Go to **Discover**
 2. Find movie or series
@@ -136,7 +136,7 @@ To automatically grab highest-scoring release:
 6. Review quality options
 7. Then click **Add to Library** to download
 
-### Preview quality availability
+### Preview Quality Availability
 
 In Discover view:
 
@@ -147,7 +147,7 @@ In Discover view:
 
 ## Part 5: Advanced Search Options
 
-### Filter results
+### Filter Results
 
 In search results, filter by:
 
@@ -171,7 +171,7 @@ In search results, filter by:
 - Maximum age
 - Specific indexers
 
-### Sort results
+### Sort Results
 
 Click column headers to sort:
 
@@ -180,7 +180,7 @@ Click column headers to sort:
 - **Age** - Newest or oldest
 - **Peers** - Most seeders (torrents)
 
-### Compare releases
+### Compare Releases
 
 To compare similar releases:
 
@@ -195,7 +195,7 @@ To compare similar releases:
 
 ## Part 6: Handling Search Results
 
-### No results found
+### No Results Found
 
 If search returns nothing:
 
@@ -214,7 +214,7 @@ If search returns nothing:
    - Check custom formats are not blocking
    - Verify language settings
 
-### Too many results
+### Too Many Results
 
 If overwhelmed with results:
 
@@ -232,7 +232,7 @@ If overwhelmed with results:
    - Adjust scoring rules
    - Block unwanted sources
 
-### Low scores
+### Low Scores
 
 If best score is low:
 
@@ -248,7 +248,7 @@ If best score is low:
 
 ## Part 7: After Grab
 
-### Monitor download
+### Monitor Download
 
 1. Go to **Activity > Queue**
 2. See download progress
@@ -258,7 +258,7 @@ If best score is low:
    - File size
    - Release details
 
-### Download complete
+### Download Complete
 
 When download finishes:
 
@@ -268,7 +268,7 @@ When download finishes:
 4. Added to library
 5. Notifications sent (if configured)
 
-### Failed downloads
+### Failed Downloads
 
 If download fails:
 
@@ -292,7 +292,7 @@ For the best search results:
 
 ## Troubleshooting
 
-### Searches take too long
+### Searches Take Too Long
 
 **Problem:** Searching is very slow
 
@@ -303,7 +303,7 @@ For the best search results:
 - Check network connectivity
 - Increase indexer timeout settings
 
-### Results not appearing
+### Results Not Appearing
 
 **Problem:** No results from working indexers
 
@@ -314,7 +314,7 @@ For the best search results:
 - Test indexer individually
 - Check for indexer site issues
 
-### Wrong quality downloaded
+### Wrong Quality Downloaded
 
 **Problem:** Lower quality than expected
 
@@ -325,7 +325,7 @@ For the best search results:
 - Review custom format scores
 - Check if better release was filtered
 
-### Cannot grab release
+### Cannot Grab Release
 
 **Problem:** Grab button does nothing or errors
 

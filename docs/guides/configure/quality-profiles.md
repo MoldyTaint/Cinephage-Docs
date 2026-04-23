@@ -23,7 +23,7 @@ Configure how Cinephage scores and selects releases, including upgrade behavior 
 
 Cinephage uses a **scoring-based** quality system rather than simple quality levels. Each release is scored based on multiple factors:
 
-### Scoring factors
+### Scoring Factors
 
 Cinephage considers 50+ factors when scoring releases:
 
@@ -72,7 +72,7 @@ Cinephage considers 50+ factors when scoring releases:
 
 Cinephage includes four default quality profiles:
 
-### Quality profile
+### Quality Profile
 
 **Goal:** Maximum quality regardless of size
 
@@ -84,7 +84,7 @@ Cinephage includes four default quality profiles:
 
 **Best for:** Users with unlimited storage and high-bandwidth displays
 
-### Balanced profile
+### Balanced Profile
 
 **Goal:** Good quality with reasonable file sizes
 
@@ -96,7 +96,7 @@ Cinephage includes four default quality profiles:
 
 **Best for:** Most users with average storage and bandwidth
 
-### Compact profile
+### Compact Profile
 
 **Goal:** Smallest acceptable quality
 
@@ -108,7 +108,7 @@ Cinephage includes four default quality profiles:
 
 **Best for:** Limited storage or bandwidth
 
-### Streamer profile
+### Streamer Profile
 
 **Goal:** Streaming-optimized quality
 
@@ -122,7 +122,7 @@ Cinephage includes four default quality profiles:
 
 ## Part 2: Configure Default Profiles
 
-### Step 1: set default movie profile
+### Step 1: Set Default Movie Profile
 
 1. Go to **Settings > Profiles**
 2. Under **Default Movie Profile**, select a profile:
@@ -132,12 +132,12 @@ Cinephage includes four default quality profiles:
    - Streamer
 3. Click **Save**
 
-### Step 2: set default TV profile
+### Step 2: Set Default TV Profile
 
 1. Under **Default TV Profile**, select a profile
 2. Click **Save**
 
-### Step 3: apply to existing items
+### Step 3: Apply to Existing Items
 
 To apply the new default to existing library items:
 
@@ -149,7 +149,7 @@ To apply the new default to existing library items:
 
 ## Part 3: Understanding Upgrade Behavior
 
-### Cutoff quality
+### Cutoff Quality
 
 The **cutoff** is the quality threshold where upgrades stop:
 
@@ -165,7 +165,7 @@ The **cutoff** is the quality threshold where upgrades stop:
 3. Upgrade found: 1080p BluRay (score: 120) - **CUTOFF REACHED**
 4. No more upgrades even if 4K available
 
-### Upgrade until
+### Upgrade Until
 
 Configure cutoff in profile settings:
 
@@ -181,7 +181,7 @@ Configure cutoff in profile settings:
 
 Custom formats let you define rules for specific release characteristics.
 
-### Example 1: prefer x265/hevc
+### Example 1: Prefer x265/HEVC
 
 Create a format that boosts HEVC releases:
 
@@ -195,7 +195,7 @@ Create a format that boosts HEVC releases:
      - Does NOT contain: `HDR` (optional)
 4. Click **Save**
 
-### Example 2: avoid cam releases
+### Example 2: Avoid Cam Releases
 
 Block CAM and TS releases:
 
@@ -207,7 +207,7 @@ Block CAM and TS releases:
      - Contains: `CAM` OR `TS` OR `TC` OR `SCR`
 3. Click **Save**
 
-### Example 3: prefer specific groups
+### Example 3: Prefer Specific Groups
 
 Boost trusted release groups:
 
@@ -219,7 +219,7 @@ Boost trusted release groups:
       - Contains: `-SPARKS` OR `-DON` OR `-NTb`
 3. Click **Save**
 
-### Example 4: require hdr
+### Example 4: Require HDR
 
 Only accept HDR content:
 
@@ -263,7 +263,7 @@ Test your formats against real release names:
 
 ## Part 7: Advanced Custom Format Conditions
 
-### Condition types
+### Condition Types
 
 **Contains:**
 
@@ -297,7 +297,7 @@ Min/Max file size
 Example: Min 2GB, Max 10GB
 ```
 
-### Combining conditions
+### Combining Conditions
 
 Use **AND** and **OR** logic:
 
@@ -315,7 +315,7 @@ Use **AND** and **OR** logic:
 
 ## Troubleshooting
 
-### Upgrades not happening
+### Upgrades Not Happening
 
 **Problem:** Better releases available but not upgrading
 
@@ -326,7 +326,7 @@ Use **AND** and **OR** logic:
 - Check upgrade monitoring task is running
 - Ensure better release has higher score
 
-### Wrong quality downloaded
+### Wrong Quality Downloaded
 
 **Problem:** Lower quality downloaded when better available
 
@@ -337,7 +337,7 @@ Use **AND** and **OR** logic:
 - Check if better release was filtered out
 - Review blocklist for the better release
 
-### Custom format not matching
+### Custom Format Not Matching
 
 **Problem:** Format should match but does not
 
@@ -348,7 +348,7 @@ Use **AND** and **OR** logic:
 - Verify condition logic (AND vs OR)
 - Use regex for complex patterns
 
-### Releases being blocked
+### Releases Being Blocked
 
 **Problem:** Releases you want are being rejected
 
@@ -361,14 +361,14 @@ Use **AND** and **OR** logic:
 
 ## Best Practices
 
-### Start simple
+### Start Simple
 
 Begin with built-in profiles:
 
 - Use them as-is for initial setup
 - Modify gradually as you learn the system
 
-### Document your rules
+### Document Your Rules
 
 Keep notes on what each custom format does:
 
@@ -376,7 +376,7 @@ Keep notes on what each custom format does:
 - Add comments if supported
 - Document why scores are set certain ways
 
-### Test before applying
+### Test Before Applying
 
 Always test custom formats:
 
@@ -384,7 +384,7 @@ Always test custom formats:
 - Check score calculations
 - Verify logic works as expected
 
-### Monitor performance
+### Monitor Performance
 
 Watch how your profiles perform:
 

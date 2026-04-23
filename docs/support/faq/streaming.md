@@ -8,7 +8,7 @@ keywords: [faq, streaming, live tv, iptv, nzb streaming, stalker, xstream]
 
 # Streaming & Live TV
 
-### What is NZB streaming?
+### What is NZB Streaming?
 
 Watch content directly from usenet without downloading the full file:
 1. Mount NZB as virtual filesystem
@@ -18,7 +18,7 @@ Watch content directly from usenet without downloading the full file:
 
 See [Configure NZB Streaming](/guides/configure/nzb-streaming) for setup.
 
-### How do i set up live TV?
+### How do I set up Live TV?
 
 Cinephage supports IPTV via:
 - **Stalker Portal** - MAG/Ministra (MAC address auth)
@@ -27,11 +27,11 @@ Cinephage supports IPTV via:
 
 See [Set Up Live TV](/guides/configure/live-tv) for detailed configuration.
 
-### Can i record live TV?
+### Can I record Live TV?
 
 Not currently. Cinephage focuses on streaming and playlist management. DVR/recording may be added in the future.
 
-### How do i use the M3U playlist?
+### How do I use the M3U playlist?
 
 Access your playlist at:
 ```

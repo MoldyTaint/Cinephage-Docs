@@ -24,11 +24,11 @@ Add content sources (indexers) so Cinephage can search for and find media releas
 
 Cinephage uses a **YAML-only** indexer architecture. All indexer configurations are defined in YAML files, providing flexibility and making it easy to add custom indexers. Native TypeScript indexer implementations have been replaced by this unified YAML-based system.
 
-### Dynamic capability discovery
+### Dynamic Capability Discovery
 
 When adding a Newznab or Torznab indexer, Cinephage automatically fetches the indexer's capabilities at `/api?t=caps` to determine supported search parameters. This ensures proper query construction and filtering.
 
-### Supported protocols
+### Supported Protocols
 
 Cinephage supports three types of indexers:
 
@@ -42,7 +42,7 @@ Cinephage supports three types of indexers:
 
 Newznab is the standard API format for usenet indexers.
 
-### Step 1: get indexer details
+### Step 1: Get Indexer Details
 
 You need:
 
@@ -56,7 +56,7 @@ Example from NZBGeek:
 - URL: `https://api.nzbgeek.info/`
 - API Key: Found in your profile settings
 
-### Step 2: add to Cinephage
+### Step 2: Add to Cinephage
 
 1. Go to **Settings > Integrations > Indexers**
 2. Click **Add Indexer**
@@ -77,13 +77,13 @@ Example from NZBGeek:
 - **Retries**: `3`
 - **Rate Limit**: Leave default
 
-### Step 3: test connection
+### Step 3: Test Connection
 
 Click **Test** to verify the connection works.
 
 If successful, the indexer status shows **Healthy**.
 
-### Step 4: save
+### Step 4: Save
 
 Click **Save** to add the indexer.
 
@@ -91,7 +91,7 @@ Click **Save** to add the indexer.
 
 Torznab is a Newznab-compatible API for torrents, typically provided by Jackett or Prowlarr.
 
-### Option a: using Jackett
+### Option A: Using Jackett
 
 If you have Jackett running:
 
@@ -103,11 +103,11 @@ If you have Jackett running:
    - Paste the Jackett URL
    - Add Jackett API key
 
-### Option b: direct torrent indexer
+### Option B: Direct Torrent Indexer
 
 For public torrent sites, use a YAML definition.
 
-#### Example: adding 1337x
+#### Example: Adding 1337x
 
 1. Go to **Settings > Integrations > Indexers**
 2. Click **Add Indexer**
@@ -181,7 +181,7 @@ Russian torrent tracker with extensive movie and TV content.
 - Good for hard-to-find titles
 :::
 
-### Milkie.cc (private tracker)
+### Milkie.cc (Private Tracker)
 
 Private torrent tracker with high-quality releases.
 
@@ -212,7 +212,7 @@ Priority determines search order (lower number = higher priority):
    - `11-25`: Normal priority
    - `26-50`: Low priority (fallback)
 
-### Priority strategy
+### Priority Strategy
 
 **Recommended setup:**
 
@@ -255,7 +255,7 @@ If no results appear:
 
 ## YAML Indexer Reference
 
-### Required fields
+### Required Fields
 
 ```yaml
 name: Display Name # Human-readable name
@@ -267,7 +267,7 @@ enabled: true # true or false
 priority: 25 # Search priority (1-50)
 ```
 
-### Protocol-specific settings
+### Protocol-Specific Settings
 
 **Torrent:**
 
@@ -308,7 +308,7 @@ settings:
 
 ## Troubleshooting
 
-### Indexer shows "failed"
+### Indexer Shows "Failed"
 
 **Problem:** Status shows failed or error
 
@@ -320,7 +320,7 @@ settings:
 - Check indexer site is online
 - Verify your account is active
 
-### No search results
+### No Search Results
 
 **Problem:** Searches return no results
 
@@ -331,7 +331,7 @@ settings:
 - Try a more popular/searchable title
 - Verify indexer is enabled
 
-### Rate limited
+### Rate Limited
 
 **Problem:** "Rate limit exceeded" errors
 
@@ -342,7 +342,7 @@ settings:
 - Check indexer terms of service
 - Consider upgrading to premium account
 
-### Authentication failed
+### Authentication Failed
 
 **Problem:** 401 or auth errors
 
@@ -355,7 +355,7 @@ settings:
 
 ## Best Practices
 
-### Diversify indexers
+### Diversify Indexers
 
 Use multiple indexers for better coverage:
 
@@ -363,7 +363,7 @@ Use multiple indexers for better coverage:
 - One or two torrent indexers
 - Different priority levels
 
-### Regular testing
+### Regular Testing
 
 Test indexers periodically:
 
@@ -372,7 +372,7 @@ Test indexers periodically:
 - Remove broken indexers
 - Add new ones as needed
 
-### Respect rate limits
+### Respect Rate Limits
 
 - Do not exceed indexer API limits
 - Use reasonable monitoring intervals
