@@ -228,14 +228,14 @@ Now that you can add media, continue to [Understanding the Interface](understand
 ### Organizing your library
 
 - Use tags to categorize content (e.g., `kids`, `4k`, `hdr`)
-- Create separate root folders for different quality tiers
+- Create separate Root Folders for different quality tiers
 - Enable season folders for TV shows
 
 ### Efficient searching
 
 - Start with monitoring disabled if you are just tracking
 - Enable monitoring when you are ready to download
-- Use custom formats to prefer specific release groups or sources
+- Use Custom Formats to prefer specific release groups or sources
 
 ### Managing upgrades
 
@@ -256,7 +256,7 @@ Now that you can add media, continue to [Understanding the Interface](understand
 
 ### Concepts
 - [Quality Scoring](../explanation/quality-scoring) — How Cinephage calculates release quality
-- [Key Concepts](../explanation/concepts) — Understanding monitoring, root folders, and more
+- [Key Concepts](../explanation/concepts) — Understanding monitoring, Root Folders, and more
 
 ---
 

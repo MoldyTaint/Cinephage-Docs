@@ -22,7 +22,7 @@ Downloads can fail for many reasons. Understanding the cause helps determine the
 | **Import Failure** | Permissions, file locked, path issues | Check file system |
 | **Missing Files** | NZB/torrent incomplete, DMCA takedown | Try alternative release |
 | **Quality Rejected** | File doesn't match expected quality | Adjust quality profile |
-| **Custom Format Rejected** | Doesn't meet format requirements | Review custom formats |
+| **Custom Format Rejected** | Doesn't meet format requirements | Review Custom Formats |
 | **Unknown Movie/Episode** | Can't parse release name | Manual import or skip |
 
 ## The Activity Page

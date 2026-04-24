@@ -323,7 +323,7 @@ If you have an existing organized media library:
 
 **Import Process:**
 
-1. **Configure root folders** in Cinephage pointing to your media
+1. **Configure Root Folders** in Cinephage pointing to your media
 2. **Import existing files** using methods above
 3. Cinephage will:
    - Recognize existing folder structure
@@ -348,7 +348,7 @@ You can run Cinephage alongside other media tools:
 
 **Option 1: Read-Only Mode**
 
-1. Configure Cinephage with same root folders
+1. Configure Cinephage with same Root Folders
 2. Import files using **Hardlink** method
 3. Keep other app active for downloads
 4. Use Cinephage for discovery/browsing

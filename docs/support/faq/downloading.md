@@ -69,7 +69,7 @@ Downloads:
 - Increase timeout in settings
 - Check network connectivity
 
-### What are custom formats?
+### What are Custom Formats?
 
 Custom formats let you score releases based on attributes:
 

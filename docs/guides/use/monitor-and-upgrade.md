@@ -430,15 +430,15 @@ Advanced scoring with custom format rules:
 **Check Tasks Are Enabled:**
 
 ```
-Settings > Tasks > Missing Content Search = Enabled
-Settings > Tasks > Cutoff Unmet Search = Enabled
+**Settings > Tasks > Missing Content Search** = Enabled
+**Settings > Tasks > Cutoff Unmet Search** = Enabled
 ```
 
 **Check Quality Profile:**
 
 1. Verify quality profile allows desired qualities
 2. Ensure cutoff is set correctly
-3. Check custom formats aren't rejecting releases
+3. Check Custom Formats aren't rejecting releases
 
 ### No upgrades found
 
@@ -454,7 +454,7 @@ Result: No upgrades needed
 **Check Upgrade Task:**
 
 ```
-Settings > Tasks > Upgrade Search
+**Settings > Tasks > Upgrade Search**
 ```
 
 This task searches above cutoff. If disabled, no above-cutoff upgrades occur.
@@ -480,7 +480,7 @@ After: Cutoff = 1080p BluRay (stops at good quality)
 
 Turn off aggressive searching:
 ```
-Settings > Tasks > Upgrade Search = Disabled
+**Settings > Tasks > Upgrade Search** = Disabled
 ```
 
 **Use Custom Formats:**

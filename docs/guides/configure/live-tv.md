@@ -1,14 +1,14 @@
 ---
 title: Set up live TV
-description: Configure IPTV providers, manage channels, and stream live television
+description: Configure Live TV providers, manage channels, and stream live television
 sidebar_position: 5
-tags: [live-tv, iptv, streaming, configuration, guide, stalker, xstream, m3u]
-keywords: [live tv, iptv, stalker, xstream, channels]
+tags: [live-tv, streaming, configuration, guide, stalker, xstream, m3u]
+keywords: [live tv, stalker, xstream, channels]
 ---
 
 # Set up live TV
 
-Cinephage includes comprehensive IPTV support with multi-provider integration, supporting Stalker Portals, XStream Codes, and M3U playlists. This guide covers setting up and managing live TV.
+Cinephage includes comprehensive Live TV support with multi-provider integration, supporting Stalker Portals, XStream Codes, and M3U playlists. This guide covers setting up and managing live TV.
 
 ## Overview
 
@@ -17,8 +17,8 @@ Cinephage supports live TV through three provider types, each with different fea
 | Provider | Type | Authentication | Best For |
 |----------|------|----------------|----------|
 | **Stalker Portal** | MAG/Ministra | MAC Address | Providers using Stalker/Ministra middleware |
-| **XStream Codes** | IPTV API | Username/Password | Providers using XStream Codes panel |
-| **M3U Playlist** | Playlist File | None | Generic IPTV playlists |
+| **XStream Codes** | Live TV API | Username/Password | Providers using XStream Codes panel |
+| **M3U Playlist** | Playlist File | None | Generic Live TV playlists |
 
 ### Features overview
 
@@ -40,7 +40,7 @@ Live TV functionality supports all three provider types. Stalker Portal is the m
 
 ### Stalker portal (mag/ministra)
 
-Stalker (also known as Ministra) is an IPTV middleware system used by many IPTV providers. It's commonly used with MAG set-top boxes.
+Stalker (also known as Ministra) is a Live TV middleware system used by many Live TV providers. It's commonly used with MAG set-top boxes.
 
 **How It Works:**
 - Provider gives you a portal URL and MAC address
@@ -60,7 +60,7 @@ Stalker (also known as Ministra) is an IPTV middleware system used by many IPTV 
 
 ### XStream codes
 
-XStream Codes is a popular IPTV panel system used by many providers. Accounts use username/password authentication.
+XStream Codes is a popular Live TV panel system used by many providers. Accounts use username/password authentication.
 
 **How It Works:**
 - Provider gives you server URL, username, and password
@@ -80,7 +80,7 @@ XStream Codes is a popular IPTV panel system used by many providers. Accounts us
 
 ### M3U playlist
 
-M3U playlists are standard IPTV playlist files containing channel URLs. Many providers offer M3U URLs for use with generic IPTV players.
+M3U playlists are standard Live TV playlist files containing channel URLs. Many providers offer M3U URLs for use with generic Live TV players.
 
 **How It Works:**
 - Provider gives you an M3U playlist URL or file
@@ -111,8 +111,8 @@ M3U playlists are standard IPTV playlist files containing channel URLs. Many pro
 
 If you selected **Stalker Portal**:
 
-1. **Name** - Enter a display name (e.g., "My IPTV Provider")
-2. **Portal URL** - Enter the portal URL provided by your IPTV service
+1. **Name** - Enter a display name (e.g., "My Live TV Provider")
+2. **Portal URL** - Enter the portal URL provided by your Live TV service
    - Format: `http://portal.example.com/c` or `http://portal.example.com:80/c`
    - Must include the `/c` path suffix
 3. **MAC Address** - Enter your MAC address
@@ -414,7 +414,7 @@ Add external EPG:
 4. Maps channels using tvg-id attributes
 
 :::tip Finding EPG URLs
-Many IPTV providers offer XMLTV EPG URLs. Common sources:
+Many Live TV providers offer XMLTV EPG URLs. Common sources:
 - Provider-specific EPG (check your account panel)
 - iptv-org/epg GitHub repository
 - Third-party EPG services
@@ -473,7 +473,7 @@ Point any M3U-compatible player to the playlist URL:
 2. Paste playlist URL
 3. Click Play
 
-#### IPTV Apps (iOS/Android)
+#### Live TV Apps (iOS/Android)
 
 1. Add playlist by URL
 2. Enter Cinephage playlist URL
@@ -481,7 +481,7 @@ Point any M3U-compatible player to the playlist URL:
 
 #### Smart TVs
 
-1. Install IPTV app (Smart IPTV, IPTV Smarters, etc.)
+1. Install Live TV app (Smart IPTV, IPTV Smarters, etc.)
 2. Configure with playlist URL
 3. Enter EPG source
 
@@ -528,7 +528,7 @@ External players should refresh playlists periodically.
 Import the M3U playlist into your media server:
 
 1. Get playlist URL from Cinephage
-2. Add as IPTV source in Jellyfin/Emby/Plex
+2. Add as Live TV source in Jellyfin/Emby/Plex
 3. Configure EPG for program guide
 4. Watch through your media server's interface
 
@@ -605,7 +605,7 @@ If you have multiple providers with the same channels:
 1. **Check Bandwidth** - Live TV streams need stable connection
 2. **Try Different Channel** - May be provider-side issue
 3. **Check Stream Format** - Some players don't support all formats
-4. **Use External Player** - Try VLC or dedicated IPTV app
+4. **Use External Player** - Try VLC or dedicated Live TV app
 
 **"Stream Unavailable":**
 

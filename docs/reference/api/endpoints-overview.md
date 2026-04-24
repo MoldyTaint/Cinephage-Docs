@@ -307,7 +307,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 
 | Method | Endpoint                  | Auth | Description              |
 | ------ | ------------------------- | ---- | ------------------------ |
-| GET    | `/api/root-folders`       | 🔓   | List root folders        |
+| GET    | `/api/root-folders`       | 🔓   | List Root Folders        |
 | POST   | `/api/root-folders`       | 👑   | Create root folder       |
 | GET    | `/api/root-folders/[id]`  | 🔓   | Get folder               |
 | PUT    | `/api/root-folders/[id]`  | 👑   | Update folder            |
@@ -326,7 +326,7 @@ The `/api/subtitles/providers/analytics` endpoint response shape has changed:
 
 | Method | Endpoint                  | Auth | Description              |
 | ------ | ------------------------- | ---- | ------------------------ |
-| GET    | `/api/custom-formats`     | 🔓   | List custom formats      |
+| GET    | `/api/custom-formats`     | 🔓   | List Custom Formats      |
 | POST   | `/api/custom-formats`     | 👑   | Create custom format     |
 | PUT    | `/api/custom-formats`     | 👑   | Update custom format     |
 | DELETE | `/api/custom-formats`     | 👑   | Delete custom format     |

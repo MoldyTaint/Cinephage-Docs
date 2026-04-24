@@ -3,7 +3,7 @@ title: Custom formats
 description: Create personalized scoring rules that go beyond built-in quality profiles
 sidebar_position: 7
 tags: [custom-formats, scoring, configuration, guide]
-keywords: [custom formats, scoring, conditions, rules]
+keywords: [Custom Formats, scoring, conditions, rules]
 ---
 
 # Custom formats
@@ -166,7 +166,7 @@ Must Not Contain:
 
 ### Start simple
 
-Don't create 50 custom formats at once. Start with 2-3 important ones:
+Don't create 50 Custom Formats at once. Start with 2-3 important ones:
 
 1. Prefer your favorite codec (x265)
 2. Block unwanted formats (3D, CAM)

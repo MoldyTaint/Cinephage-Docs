@@ -178,7 +178,7 @@ To trigger a full library refresh manually:
 **Plex requires library section lookup:**
 - Cinephage finds the section containing your path
 - If path isn't in any library, refresh fails
-- Ensure your root folders are in Plex libraries
+- Ensure your Root Folders are in Plex libraries
 
 **"No matching library found":**
 1. Add the path to a Plex library

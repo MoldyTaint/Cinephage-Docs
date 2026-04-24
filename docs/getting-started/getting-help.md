@@ -46,7 +46,7 @@ Join our community on Discord for real-time chat support:
 ### Configuration help
 - [Configure Download Clients](../guides/configure/download-clients) — Set up download clients
 - [Set Up Quality Profiles](../guides/configure/quality-profiles) — Configure quality scoring
-- [Configure Indexers](../guides/configure/indexers) — Add content sources
+- [Configure Indexers](../guides/configure/indexers) — Add indexers
 
 ### Community
 - [GitHub Discussions](https://github.com/MoldyTaint/Cinephage/discussions) — Ask questions and share ideas

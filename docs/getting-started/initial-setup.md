@@ -85,7 +85,7 @@ Root folders define where Cinephage stores your media library:
 - Use the path as seen inside the Docker container
 - If you mounted `/mnt/media:/media` in Docker, use `/media/movies`
 - Ensure Cinephage has read/write permissions to these paths
-- Do not nest root folders (e.g., do not put TV inside Movies)
+- Do not nest Root Folders (e.g., do not put TV inside Movies)
 
 ## Step 6: Configure Download Client (Optional)
 
@@ -216,7 +216,7 @@ You have successfully:
 
 - Created an admin account
 - Configured TMDB API access
-- Set up root folders for media storage
+- Set up Root Folders for media storage
 - Configured your download client (optional)
 - Configured quality profiles
 - Added indexers for content discovery
@@ -250,7 +250,7 @@ Now that Cinephage is fully configured, continue to [Adding Media](adding-media)
 - Verify there are no extra spaces when pasting
 - Check that your TMDB account is verified
 
-### Cannot access root folders
+### Cannot access Root Folders
 
 - Verify the volume mounts in Docker Compose
 - Check file permissions (PUID/PGID settings)
@@ -270,7 +270,7 @@ Now that Cinephage is fully configured, continue to [Adding Media](adding-media)
 
 ### Configuration guides
 - [Configure Download Clients](../guides/configure/download-clients) — Set up qBittorrent, SABnzbd, and others
-- [Configure Indexers](../guides/configure/indexers) — Add content sources using YAML definitions
+- [Configure Indexers](../guides/configure/indexers) — Add indexers using YAML definitions
 - [Set Up Quality Profiles](../guides/configure/quality-profiles) — Configure quality scoring and upgrade behavior
 
 ### Help & support

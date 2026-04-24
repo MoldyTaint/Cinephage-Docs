@@ -211,7 +211,7 @@ If search returns nothing:
 
 3. **Check filters:**
    - Remove quality filters temporarily
-   - Check custom formats are not blocking
+   - Check Custom Formats are not blocking
    - Verify language settings
 
 ### Too many results
@@ -228,7 +228,7 @@ If overwhelmed with results:
    - Sort by size for storage concerns
 
 3. **Refine quality profile:**
-   - Tighten custom formats
+   - Tighten Custom Formats
    - Adjust scoring rules
    - Block unwanted sources
 

@@ -21,7 +21,7 @@ Cinephage provides comprehensive media management capabilities:
 - **Indexer Management** — YAML-based indexer definitions, built-in and custom support
 - **Subtitles** — 11 subtitle providers with automatic syncing
 - **Requests & Discovery** — Browse trending content, manage watchlists
-- **Live TV & Streaming** — IPTV support via Stalker, XStream, M3U playlists
+- **Live TV & Streaming** — Live TV support via Stalker, XStream, M3U playlists
 
 ### Is Cinephage free?
 
@@ -41,7 +41,7 @@ Yes! Cinephage is 100% free and open source under the GPL-3.0 license. There are
 ### Can I import my existing media library?
 
 Yes, you can import your existing library:
-1. Configure root folders in Cinephage
+1. Configure Root Folders in Cinephage
 2. Use Import feature to scan existing files
 3. Cinephage will match to TMDB
 

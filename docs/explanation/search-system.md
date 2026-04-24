@@ -316,7 +316,7 @@ Understanding how to use the search system effectively helps you build a better 
 **Best Practices:**
 - Default hourly monitoring is usually sufficient
 - Avoid excessive manual searches
-- Monitor indexer health in Settings > Indexers
+- Monitor indexer health in **Settings > Indexers**
 
 ### Review before grabbing
 
@@ -346,7 +346,7 @@ Delay profiles add a waiting period before grabbing releases, allowing better qu
 - Avoid initial rush of poor-quality uploads
 
 **Configuration:**
-- Set in Settings > Delay Profiles
+- Set in **Settings > Delay Profiles**
 - Can be per-quality or global
 - Usenet often has shorter delays than torrents
 

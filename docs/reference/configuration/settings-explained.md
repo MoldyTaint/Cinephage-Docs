@@ -18,10 +18,10 @@ Cinephage settings are organized into categories accessible from the **Settings*
 |----------|---------|
 | **General** | Core application settings |
 | **Media Management** | Root folders, file naming, import behavior |
-| **Profiles** | Quality profiles, language profiles, custom formats |
+| **Profiles** | Quality profiles, language profiles, Custom Formats |
 | **Integrations** | Download clients, indexers, subtitle providers, notifications |
 | **Tasks** | Monitoring task configuration |
-| **Live TV** | IPTV provider configuration |
+| **Live TV** | Live TV provider configuration |
 
 ---
 
@@ -40,7 +40,7 @@ Your API key from [The Movie Database](https://www.themoviedb.org/). Required fo
 - **Default:** None
 
 :::info API Key Location
-The API key is a 32-character string found in your TMDB account Settings > API section. The "Read Access Token" is not used for this setting.
+The API key is a 32-character string found in your TMDB account **Settings > API section**. The "Read Access Token" is not used for this setting.
 :::
 
 #### External URL
@@ -338,13 +338,13 @@ Configure connections to download clients for automated downloading.
 | **Username** | NZBGet username | `nzbget` |
 | **Password** | NZBGet password | `********` |
 
-#### NZBMount (Streaming)
+#### NZB Streaming (Streaming)
 
 **Required Fields:**
 
 | Field | Description | Example |
 |-------|-------------|---------|
-| **Name** | Display name | "NZBMount" |
+| **Name** | Display name | "NZB Streaming" |
 | **Mount Mode** | Virtual filesystem type | `nzbdav` or `altmount` |
 
 ### Indexers
@@ -493,7 +493,7 @@ The unified status page provides a consolidated view of your Cinephage system he
 
 | Metric | Description |
 |--------|-------------|
-| **Total Space** | Total storage across all root folders |
+| **Total Space** | Total storage across all Root Folders |
 | **Used Space** | Currently used storage |
 | **Free Space** | Available storage |
 | **Root Folder Status** | Per-folder usage and health |
@@ -589,7 +589,7 @@ Cinephage uses Paraglide JS v2 for internationalization. Interface translations 
 
 **Path:** `Settings > Live TV`
 
-Configure IPTV provider accounts and streaming settings.
+Configure Live TV provider accounts and streaming settings.
 
 ### Provider accounts
 
@@ -743,7 +743,7 @@ Configure usenet provider connections for NZB streaming.
 ### Media and integration guides
 - [Root Folders](../../guides/configure/root-folders) - Root folders, naming, and organization
 - [Media Servers](../../guides/configure/media-servers) - Jellyfin, Emby, and Plex integration
-- [Live TV Setup](../../guides/configure/live-tv) - IPTV provider configuration
+- [Live TV Setup](../../guides/configure/live-tv) - Live TV provider configuration
 - [Subtitles Configuration](../../guides/configure/subtitles) - Automatic subtitle downloads
 - [NNTP Servers](../../guides/configure/nntp-servers) - Usenet provider setup
 - [NZB Streaming](../../guides/configure/nzb-streaming) - Streaming without downloading

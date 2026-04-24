@@ -27,7 +27,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 - Activity Management with enhanced history and bulk actions
 - Backup & Restore with encrypted configuration
 - Native subtitle sync with alass algorithm
-- Media Move between root folders
+- Media Move between Root Folders
 - Smart Lists with TMDB Discover integration
 - i18n support with Spanish localization
 - rTorrent download client support

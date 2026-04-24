@@ -52,7 +52,7 @@ Core media library data:
 | `seasons`              | Season information                   |
 | `episodes`             | Episode metadata                     |
 | `episode_files`        | Physical episode files               |
-| `root_folders`         | Configured root folders              |
+| `root_folders`         | Configured Root Folders              |
 | `unmatched_files`      | Files awaiting manual matching       |
 | `library_scan_history` | Scan operation history               |
 
@@ -113,7 +113,7 @@ Subtitle management:
 | `subtitle_blacklist` | Rejected subtitle entries    |
 | `subtitle_settings`  | Global subtitle settings     |
 
-### Smart lists
+### Smart Lists
 
 Dynamic content lists:
 
@@ -136,7 +136,7 @@ Streaming and NZB streaming:
 
 ### Live TV
 
-IPTV and live television:
+Live TV:
 
 | Table                    | Purpose                           |
 | ------------------------ | --------------------------------- |

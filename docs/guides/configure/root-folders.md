@@ -1,9 +1,9 @@
 ---
 title: Root folders
-description: Set up and manage root folders for your media library
+description: Set up and manage Root Folders for your media library
 sidebar_position: 4
 tags: [library, root-folders, configuration, guide]
-keywords: [library, root folders, organization, media management]
+keywords: [library, Root Folders, organization, media management]
 ---
 
 # Root folders
@@ -44,7 +44,7 @@ A root folder is a base directory where Cinephage:
 
 ### Step 1: access settings
 
-1. Go to **Settings > Media Management > Root Folders**
+1. Go to ****Settings > Media Management > Root Folders****
 2. Click **Add Root Folder**
 
 ### Step 2: configure folder
@@ -57,9 +57,9 @@ A root folder is a base directory where Cinephage:
 | **Default Quality** | Profile for new additions | "Balanced" |
 | **Default Language** | Language profile | "English" |
 
-### Step 3: multiple root folders
+### Step 3: multiple Root Folders
 
-You can create multiple root folders:
+You can create multiple Root Folders:
 
 **Example Setup:**
 ```
@@ -119,10 +119,10 @@ Each root folder is dedicated to one media type. Don't mix movies and TV in the 
 
 ## Managing Root Folders
 
-### View root folders
+### View Root Folders
 
 ```
-Settings > Media Management > Root Folders
+**Settings > Media Management > Root Folders**
 ```
 
 Shows:
@@ -144,9 +144,9 @@ Shows:
 - Default language profile
 - Path (use with caution)
 
-### Move media between root folders (v0.5.0+)
+### Move media between Root Folders (v0.5.0+)
 
-You can move media between root folders directly in Cinephage:
+You can move media between Root Folders directly in Cinephage:
 
 1. Go to **Library** and select the media you want to move
 2. Click **Actions > Move to Root Folder**

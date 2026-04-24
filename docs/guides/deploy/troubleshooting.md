@@ -125,7 +125,7 @@ Before diving into specific issues, perform these checks:
 3. **Check quality profile:**
    - Ensure item has quality profile assigned
    - Verify profile allows the found releases
-   - Check custom formats are not blocking
+   - Check Custom Formats are not blocking
 
 4. **Check blocklist:**
    - Go to **Activity > Blocklist**
@@ -425,7 +425,7 @@ If you cannot resolve the issue:
 Before asking for help, collect:
 
 1. **Cinephage version:**
-   - Check Settings > System
+   - Check **Settings > System**
 
 2. **Docker version:**
 

@@ -20,7 +20,7 @@ Unlike simple "highest resolution wins" systems, Cinephage uses a sophisticated 
 - Audio quality (Atmos vs DTS-HD vs AAC)
 - HDR formats (Dolby Vision vs HDR10)
 - Release group reputation
-- Your personal preferences (custom formats)
+- Your personal preferences (Custom Formats)
 
 ## Scoring Formula
 
@@ -185,7 +185,7 @@ Some release groups are known for quality:
 - No fake or mislabeled releases
 
 :::note
-Group scoring is subjective and configurable via custom formats.
+Group scoring is subjective and configurable via Custom Formats.
 :::
 
 ## Custom Format Scoring
@@ -454,7 +454,7 @@ Minimum Score: 100
 
 - Use built-in profiles initially
 - Understand scoring before customizing
-- Test custom formats thoroughly
+- Test Custom Formats thoroughly
 
 ### Document your rules
 

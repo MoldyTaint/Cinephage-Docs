@@ -85,18 +85,18 @@ Look for providers with:
 
 ## Setup Guide
 
-### Step 1: add NZBMount download client
+### Step 1: add NZB Streaming download client
 
-First, configure NZBMount as a download client:
+First, configure NZB Streaming as a download client:
 
 1. Go to **Settings > Integrations > Download Clients**
 2. Click **Add Download Client**
-3. Select **NZBMount** from the dropdown
+3. Select **NZB Streaming** from the dropdown
 4. Configure settings:
 
 | Setting | Value | Description |
 |---------|-------|-------------|
-| **Name** | "NZBMount" or "Streaming" | Display name |
+| **Name** | "NZB Streaming" or "Streaming" | Display name |
 | **Enable** | Checked | Enable the client |
 | **Priority** | 1 | Priority for automatic search |
 
@@ -104,7 +104,7 @@ First, configure NZBMount as a download client:
 6. Click **Save**
 
 :::note No Credentials Required
-NZBMount doesn't require host/port credentials like other download clients. It uses the NNTP server configuration (set up in Step 2).
+NZB Streaming doesn't require host/port credentials like other download clients. It uses the NNTP server configuration (set up in Step 2).
 :::
 
 ### Step 2: configure NNTP server
@@ -246,10 +246,10 @@ Use manual stream when:
 
 For existing NZBs you want to stream:
 
-1. Add NZB to NZBMount client manually:
+1. Add NZB to NZB Streaming client manually:
    - Go to **Activity > Queue**
    - Click **Add NZB**
-   - Select NZBMount as client
+   - Select NZB Streaming as client
 2. Cinephage mounts the NZB automatically
 3. Access via:
    - `.strm` file in library
@@ -284,7 +284,7 @@ Choose quality based on your connection:
 Enable adaptive quality in settings:
 
 ```
-Settings > Integrations > NNTP Servers > Adaptive Quality: ON
+**Settings > Integrations > NNTP Servers > Adaptive Quality**: ON
 ```
 
 Cinephage automatically adjusts based on connection speed.
@@ -382,7 +382,7 @@ Cache benefits significantly from SSD storage due to frequent small random reads
 **View Cache Status:**
 
 ```
-Settings > Integrations > NNTP Servers > Cache Statistics
+**Settings > Integrations > NNTP Servers > Cache Statistics**
 ```
 
 Shows:
@@ -751,6 +751,6 @@ Best integration via STRM files:
 
 ## See Also
 
-- [Configure Download Clients](download-clients) - Set up NZBMount
+- [Configure Download Clients](download-clients) - Set up NZB Streaming
 - [Set Up Quality Profiles](quality-profiles) - Configure Streamer profile
 - [Configure NNTP Servers](../../reference/configuration/settings-explained#nntp-servers-usenet) - NNTP settings reference

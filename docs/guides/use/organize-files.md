@@ -397,9 +397,9 @@ chmod -R u+w /path/to/media
 
 **Review Root Folders:**
 
-Ensure root folders are configured:
+Ensure Root Folders are configured:
 ```
-Settings > Media Management > Root Folders
+**Settings > Media Management > Root Folders**
 ```
 
 **Check Path Separators:**

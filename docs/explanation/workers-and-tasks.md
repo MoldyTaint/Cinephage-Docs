@@ -73,7 +73,7 @@ Cinephage maintains separate pools for different task types:
 | **Scan Workers** | Library scans | 2 | Detecting changes |
 | **Monitoring Workers** | Automated tasks | 5 | Background monitoring |
 | **Subtitle Workers** | Subtitle downloads | 3 | Fetching subtitles |
-| **Portal Scan Workers** | Live TV portal scanning | 2 | Finding IPTV accounts |
+| **Portal Scan Workers** | Live TV portal scanning | 2 | Finding Live TV accounts |
 | **Channel Sync Workers** | Live TV channel sync | 3 | Updating channel lists |
 
 ### Task lifecycle
@@ -279,7 +279,7 @@ Scheduled tasks run automatically:
 
 **Access Settings:**
 ```
-Settings > Tasks
+**Settings > Tasks**
 ```
 
 **Adjust Intervals:**
@@ -307,7 +307,7 @@ More frequent tasks may hit indexer rate limits. Start conservative.
 View task execution history:
 
 ```
-Settings > Tasks > History
+**Settings > Tasks** > History
 ```
 
 **History Shows:**
@@ -324,7 +324,7 @@ Settings > Tasks > History
 Check worker health:
 
 ```
-Settings > System > Workers
+**Settings > System > Workers**
 ```
 
 **Status Indicators:**

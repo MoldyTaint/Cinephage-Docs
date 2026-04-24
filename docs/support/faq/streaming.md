@@ -1,9 +1,9 @@
 ---
 title: Streaming & Live TV FAQ
-description: Questions about NZB streaming, IPTV, and Live TV features
+description: Questions about NZB Streaming and Live TV features
 sidebar_position: 6
 tags: [faq, streaming, live tv, iptv, nzb]
-keywords: [faq, streaming, live tv, iptv, nzb streaming, stalker, xstream]
+keywords: [faq, streaming, live tv, iptv, NZB Streaming, stalker, xstream]
 ---
 
 # Streaming & Live TV
@@ -20,10 +20,10 @@ See [Configure NZB Streaming](/guides/configure/nzb-streaming) for setup.
 
 ### How do I set up live TV?
 
-Cinephage supports IPTV via:
+Cinephage supports Live TV via:
 - **Stalker Portal** - MAG/Ministra (MAC address auth)
 - **XStream Codes** - Username/password auth
-- **M3U Playlist** - Standard IPTV playlists
+- **M3U Playlist** - Standard Live TV playlists
 
 See [Set Up Live TV](/guides/configure/live-tv) for detailed configuration.
 
@@ -38,7 +38,7 @@ Access your playlist at:
 https://your-cinephage-url/api/livetv/playlist.m3u
 ```
 
-Use with VLC, Kodi, Jellyfin, or any IPTV app.
+Use with VLC, Kodi, Jellyfin, or any Live TV app.
 
 ## Quick Command Reference
 
@@ -61,5 +61,5 @@ curl https://your-cinephage-url/api/livetv/playlist.m3u
 ## See Also
 
 - [NZB Streaming Guide](/guides/configure/nzb-streaming) - Setup instructions
-- [Live TV Setup](/guides/configure/live-tv) - IPTV configuration
+- [Live TV Setup](/guides/configure/live-tv) - Live TV configuration
 - [Downloading FAQ](/support/faq/downloading) - Traditional downloads

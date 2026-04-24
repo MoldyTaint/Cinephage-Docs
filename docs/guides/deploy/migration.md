@@ -66,7 +66,7 @@ docker compose up -d
 
 1. Log in to Cinephage
 2. Check that existing API keys still work
-3. If issues arise, you may need to regenerate API keys in Settings > System
+3. If issues arise, you may need to regenerate API keys in **Settings > System**
 
 ### What if I don't have the old secret?
 
@@ -75,7 +75,7 @@ If you cannot retrieve the old secret:
 1. Set a **new** `BETTER_AUTH_SECRET`
 2. Restart Cinephage
 3. All users will need to log in again
-4. All API keys must be regenerated in Settings > System
+4. All API keys must be regenerated in **Settings > System**
 5. Update any external services using old API keys
 
 ---
@@ -402,7 +402,7 @@ docker compose up -d
 
 ### What changed
 
-- **Monitoring settings page removed** — All monitoring configuration consolidated into Settings > Tasks
+- **Monitoring settings page removed** — All monitoring configuration consolidated into **Settings > Tasks**
 - **Unified task registry** — Centralized task definitions with consistent configuration
 - **Task execution history** — All tasks now record detailed per-item activity
 - **Automatic history cleanup** — Old history entries automatically removed after 30 days
@@ -482,7 +482,7 @@ If you have `BROWSER_SOLVER_ENABLED` in your `.env`, remove it (no longer used).
 **Step 5:** Configure Captcha Solver:
 
 1. Open Cinephage UI
-2. Go to Settings > Integrations > Captcha Solver
+2. Go to **Settings > Integrations > Captcha Solver**
 3. Enable and configure as needed
 
 ### Troubleshooting

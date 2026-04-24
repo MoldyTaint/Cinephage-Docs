@@ -197,7 +197,7 @@ sqlite3 data/cinephage.db "SELECT name FROM sqlite_master WHERE type='table';"
 Configure automatic cleanup:
 
 ```yaml
-# In Settings > System > Data Retention
+# In **Settings > System > Data Retention**
 History Retention: 90 days
 Task Logs Retention: 30 days
 Search History: 30 days
@@ -271,7 +271,7 @@ htop
 **In-App:**
 
 ```
-Settings > System > Memory Usage
+**Settings > System > Memory Usage**
 ```
 
 ## Search Performance
@@ -332,7 +332,7 @@ Cinephage caches search results to avoid redundant API calls:
 **Clear Search Cache:**
 
 ```
-Settings > System > Clear Cache
+**Settings > System > Clear Cache**
 ```
 
 ## Library Scan Performance
@@ -373,7 +373,7 @@ After initial import, scans are faster:
 **Optimize Ongoing Scans:**
 
 ```
-Settings > Media Management > Library Scan
+**Settings > Media Management > Library Scan**
 Scan Interval: 12-24 hours
 ```
 
@@ -497,7 +497,7 @@ Cinephage uses `node:24-trixie-slim` (Debian-based):
 **System Status:**
 
 ```
-Settings > System > Status
+**Settings > System > Status**
 ```
 
 Shows:
@@ -509,7 +509,7 @@ Shows:
 **Task Performance:**
 
 ```
-Settings > Tasks > Performance
+**Settings > Tasks > Performance**
 ```
 
 Shows:
@@ -612,7 +612,7 @@ environment:
 
 2. **Limit Cache:**
    ```
-   Settings > Integrations > NNTP > Cache Size: 5GB
+   **Settings > Integrations > NNTP > Cache Size**: 5GB
    ```
 
 3. **Restart Container:**
@@ -666,7 +666,7 @@ environment:
 
 2. **Increase Timeout:**
    ```
-   Settings > Indexers > Timeout: 30 seconds
+   **Settings > Indexers > Timeout**: 30 seconds
    ```
 
 3. **Check Network:**

@@ -59,7 +59,7 @@ The **Streaming API Key** provides limited access for media server integration.
 
 **Use Cases:**
 - Jellyfin Live TV integration
-- Plex IPTV plugin
+- Plex Live TV plugin
 - Emby Live TV
 - Media player apps
 

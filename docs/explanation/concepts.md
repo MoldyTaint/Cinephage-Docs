@@ -3,7 +3,7 @@ title: Key concepts
 description: Fundamental concepts and terminology used throughout Cinephage
 sidebar_position: 2
 tags: [concepts, terminology, glossary, explanation]
-keywords: [concepts, terminology, root folders, monitoring]
+keywords: [concepts, terminology, Root Folders, monitoring]
 ---
 
 # Key concepts
@@ -12,7 +12,7 @@ This document explains fundamental concepts and terminology used throughout Cine
 
 ## Core Concepts
 
-### Root folders
+### Root Folders
 
 **Definition:** Physical directories where your media library is stored.
 
@@ -22,7 +22,7 @@ Root folders are the foundation of your library organization. When you add media
 **Examples:**
 
 - `/media/movies` - For movie files
-- `/media/tv` - For TV series
+- `/media/tv` - For TV Shows
 - `/mnt/nas/movies` - Network-attached storage
 
 **Key Points:**
@@ -30,7 +30,7 @@ Root folders are the foundation of your library organization. When you add media
 - Must be accessible by Cinephage (read/write permissions)
 - Should be separate from download folder
 - Can be on local disk, NAS, or cloud mount
-- Multiple root folders allowed
+- Multiple Root Folders allowed
 
 **See:** [Configure Download Clients](../guides/configure/download-clients#path-mapping-basics)
 
@@ -58,7 +58,7 @@ When an item is "monitored," Cinephage actively searches for it and will downloa
 - Season level - Specific season
 - Episode level - Individual episode
 
-### Quality profiles
+### Quality Profiles
 
 **Definition:** Rules that determine which releases to download and when to upgrade.
 
@@ -87,7 +87,7 @@ Cutoff reached: Stop upgrading
 
 **See:** [Set Up Quality Profiles](../guides/configure/quality-profiles)
 
-### Custom formats
+### Custom Formats
 
 **Definition:** User-defined rules that add or subtract score from releases.
 
@@ -396,12 +396,12 @@ Subtitles are scored based on how well they match your media file:
 
 ## Advanced Concepts
 
-### Smart lists
+### Smart Lists
 
 **Definition:** Dynamic lists that automatically populate based on criteria.
 
 **Explanation:**
-Smart lists use TMDB queries to automatically find content matching your criteria. They can auto-add items to your library.
+Smart Lists use TMDB queries to automatically find content matching your criteria. They can auto-add items to your library.
 
 **Use Cases:**
 
@@ -418,10 +418,10 @@ Smart lists use TMDB queries to automatically find content matching your criteri
 
 ### Live TV
 
-**Definition:** IPTV and live television streaming.
+**Definition:** Live TV streaming.
 
 **Explanation:**
-Cinephage can manage IPTV subscriptions, organize channels, and provide EPG (Electronic Program Guide) functionality.
+Cinephage can manage Live TV subscriptions, organize channels, and provide EPG (Electronic Program Guide) functionality.
 
 **Components:**
 
@@ -431,7 +431,7 @@ Cinephage can manage IPTV subscriptions, organize channels, and provide EPG (Ele
 - M3U playlist support
 - HLS streaming
 
-### NZB streaming
+### NZB Streaming
 
 **Definition:** Direct streaming from usenet without downloading.
 

@@ -78,7 +78,7 @@ FAQ, releases, roadmap, and troubleshooting.
 ## Quick Start
 
 1. **[Install](/getting-started/installation)** — Get running with Docker
-2. **[Configure](/getting-started/initial-setup)** — Set up TMDB API, download clients, and root folders
+2. **[Configure](/getting-started/initial-setup)** — Set up TMDB API, download clients, and Root Folders
 3. **[Add Media](/getting-started/adding-media)** — Add your first movie or TV show
 
 ## New in v0.5.0

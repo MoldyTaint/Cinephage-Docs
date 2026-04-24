@@ -16,7 +16,7 @@ Set up and customize your Cinephage instance:
 - [Quality Profiles](/guides/configure/quality-profiles) — Define quality preferences and cutoffs
 - [Indexers](/guides/configure/indexers) — Add search sources
 - [Subtitles](/guides/configure/subtitles) — Language preferences and providers
-- [Live TV](/guides/configure/live-tv) — IPTV and EPG setup
+- [Live TV](/guides/configure/live-tv) — Live TV and EPG setup
 
 ## Deploy
 

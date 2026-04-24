@@ -48,7 +48,7 @@ Regular maintenance keeps your library organized and running smoothly.
 
 Configure in Settings:
 ```
-Settings > Media Management > Library Scan
+**Settings > Media Management > Library Scan**
 Scan Interval: 6 hours (or custom)
 ```
 
@@ -81,7 +81,7 @@ TMDB data changes over time. Refresh monthly for active series.
 ### Monitor usage
 
 ```
-Settings > System > Disk Space
+**Settings > System > Disk Space**
 ```
 
 Shows:

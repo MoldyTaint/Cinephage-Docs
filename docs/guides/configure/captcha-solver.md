@@ -77,7 +77,7 @@ The solver tracks its own performance:
 
 ### Challenges not being solved
 
-1. **Check solver is enabled** — Settings > Integrations > Captcha Solver
+1. **Check solver is enabled** — **Settings > Integrations > Captcha Solver**
 2. **Increase timeout** — Some challenges take 30+ seconds
 3. **Check logs** — Look for "captcha" or "camoufox" errors
 4. **Clear cookie cache** — Corrupted cookies can cause failures

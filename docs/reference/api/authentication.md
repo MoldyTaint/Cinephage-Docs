@@ -198,7 +198,7 @@ Cinephage automatically trusts:
 1. **Local development:** `localhost:3000`, `localhost:5173`, `127.0.0.1`
 2. **Private networks:** RFC1918 addresses (10.x, 172.16-31.x, 192.168.x)
 3. **Environment configured:** `BETTER_AUTH_URL`, `ORIGIN`
-4. **Settings configured:** External URL from Settings > System
+4. **Settings configured:** External URL from **Settings > System**
 
 ## Security Best Practices
 
@@ -231,7 +231,7 @@ Cinephage automatically trusts:
 - Cookie may be blocked — check browser settings
 
 **API key auth:**
-- Key may be invalid — verify in Settings > System
+- Key may be invalid — verify in **Settings > System**
 - Key may be wrong type — use Main API Key for library access
 
 ### "403 forbidden"
@@ -242,7 +242,7 @@ Cinephage automatically trusts:
 
 ### API key not working
 
-1. **Check key is correct** — Copy from Settings > System
+1. **Check key is correct** — Copy from **Settings > System**
 2. **Check header name** — Must be `x-api-key`
 3. **Check permissions** — Streaming key has limited access
 4. **Check rate limits** — May be temporarily blocked

@@ -1,14 +1,14 @@
 ---
 title: Set up quality profiles
-description: Configure quality scoring, custom formats, and upgrade behavior
+description: Configure quality scoring, Custom Formats, and upgrade behavior
 sidebar_position: 3
 tags: [quality-profiles, custom-formats, scoring, configuration, guide]
-keywords: [quality profiles, scoring, custom formats, upgrades]
+keywords: [quality profiles, scoring, Custom Formats, upgrades]
 ---
 
 # Set up quality profiles
 
-This guide explains Cinephage's quality system and how to configure quality profiles and custom formats for intelligent release selection.
+This guide explains Cinephage's quality system and how to configure quality profiles and Custom Formats for intelligent release selection.
 
 ## Goal
 
@@ -233,7 +233,7 @@ Only accept HDR content:
 
 ## Part 5: Apply Custom Formats to Profiles
 
-After creating custom formats, apply them to quality profiles:
+After creating Custom Formats, apply them to quality profiles:
 
 1. Go to **Settings > Profiles**
 2. Click **Edit** on a profile
@@ -354,7 +354,7 @@ Use **AND** and **OR** logic:
 
 **Solutions:**
 
-- Check custom formats with negative scores
+- Check Custom Formats with negative scores
 - Review quality profile minimums
 - Check blocklist for entries
 - Verify indexer categories
@@ -378,7 +378,7 @@ Keep notes on what each custom format does:
 
 ### Test before applying
 
-Always test custom formats:
+Always test Custom Formats:
 
 - Use real release names
 - Check score calculations

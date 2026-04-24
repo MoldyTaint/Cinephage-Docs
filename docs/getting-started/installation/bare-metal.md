@@ -337,7 +337,7 @@ Follow the on-screen instructions to:
 
 1. **Create an admin account** - Set up your first user
 2. **Configure TMDB API** - Get your free API key from themoviedb.org
-3. **Set root folders** - Define where media will be stored
+3. **Set Root Folders** - Define where media will be stored
 
 ## Service Management
 

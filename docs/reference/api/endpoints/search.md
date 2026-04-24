@@ -300,7 +300,7 @@ Custom format scores are calculated based on matching conditions:
 
 | Field | Description |
 |-------|-------------|
-| `customFormatScore` | Total score from all matching custom formats |
+| `customFormatScore` | Total score from all matching Custom Formats |
 | `rejections` | Reasons if score is below cutoff |
 
 ### Release approval
@@ -321,7 +321,7 @@ Cinephage supports searching across multiple indexer types:
 |------|-----------|-------------|
 | Usenet | NZB | Newznab-compatible indexers |
 | Torrent | Magnet, Torrent file | Torznab and RSS indexers |
-| IPTV | M3U | Live TV sources |
+| Live TV | M3U | Live TV sources |
 
 ---
 
