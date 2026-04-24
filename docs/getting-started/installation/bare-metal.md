@@ -497,6 +497,6 @@ For more help, see the [Troubleshooting Guide](/guides/deploy/troubleshooting).
 
 ## See Also
 
-- [Docker Installation](/getting-started/installation) - Alternative installation using containers
+- [Docker Installation](/getting-started/installation/docker) - Alternative installation using containers
 - [Installation FAQ](/support/faq/installation) - Common questions
-- [System Requirements](/getting-started/installation) - Hardware and software requirements
+- [System Requirements](/getting-started/installation#system-requirements) - Hardware and software requirements
