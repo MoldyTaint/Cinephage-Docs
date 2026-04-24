@@ -6,7 +6,7 @@ tags: [settings, configuration, reference]
 keywords: [settings, configuration, ui, web interface]
 ---
 
-# Settings explained
+# Settings Explained
 
 This reference provides detailed explanations of all settings available in Cinephage's web interface. For environment variables (Docker/command-line configuration), see [Environment Variables](./environment-variables).
 
@@ -338,7 +338,7 @@ Configure connections to download clients for automated downloading.
 | **Username** | NZBGet username | `nzbget` |
 | **Password** | NZBGet password | `********` |
 
-#### NZBMount (Streaming)
+#### NZBMount (streaming)
 
 **Required Fields:**
 
@@ -506,7 +506,7 @@ The unified status page provides a consolidated view of your Cinephage system he
 | **Last Sync** | When library was last updated |
 | **Connection Health** | Test results per server |
 
-### Scan/Sync Status
+### Scan/sync status
 
 | Metric | Description |
 |--------|-------------|

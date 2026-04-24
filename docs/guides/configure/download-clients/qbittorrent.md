@@ -145,7 +145,7 @@ Click **Save** to add the download client.
 - Verify the category name in Cinephage settings
 - Check that the category is not disabled in qBittorrent
 
-## See also
+## See Also
 
 - [Download clients overview](/guides/configure/download-clients) — Overview of supported clients
 - [How to configure SABnzbd](./sabnzbd) — Usenet client setup

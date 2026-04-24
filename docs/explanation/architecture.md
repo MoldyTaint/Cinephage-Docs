@@ -6,7 +6,7 @@ tags: [architecture, system, components, explanation]
 keywords: [architecture, system, components, svelte]
 ---
 
-# Architecture overview
+# Architecture Overview
 
 This document provides a high-level overview of Cinephage's architecture, explaining how the major components work together.
 
@@ -43,7 +43,7 @@ Cinephage follows a modern web application architecture with clear separation of
 
 ## Core Components
 
-### 1. Web Interface
+### 1. Web interface
 
 **Technology:** SvelteKit + Svelte 5
 
@@ -83,7 +83,7 @@ RESTful API endpoints handle all data operations:
 - API key support for external access
 - Rate limiting for protection
 
-### 3. Services Layer
+### 3. Services layer
 
 **Business Logic**
 
@@ -134,7 +134,7 @@ Single-file embedded database:
 - Subtitles (providers, languages, files)
 - Live TV (portals, channels, EPG)
 
-### 5. External Integrations
+### 5. External integrations
 
 Cinephage integrates with numerous external services:
 
@@ -166,7 +166,7 @@ Cinephage integrates with numerous external services:
 - Emby notifications
 - Plex notifications
 
-### 6. Background Services
+### 6. Background services
 
 **Technology:** Node.js with custom worker system
 
@@ -192,7 +192,7 @@ Long-running background processes:
 | `CaptchaSolver`       | Cloudflare bypass           | On-demand    |
 | `MediaBrowserNotifier`| Jellyfin/Emby/Plex updates  | Event-driven |
 
-### 7. Worker System
+### 7. Worker system
 
 **Concurrent Task Processing**
 

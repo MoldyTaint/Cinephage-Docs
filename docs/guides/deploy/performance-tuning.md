@@ -6,7 +6,7 @@ tags: [performance, tuning, optimization, guide, scaling, workers]
 keywords: [performance, tuning, optimization, scaling]
 ---
 
-# Performance tuning
+# Performance Tuning
 
 This guide covers optimizing Cinephage performance for your specific hardware, usage patterns, and deployment scenario.
 
@@ -694,7 +694,7 @@ environment:
    - Measure impact
    - Document what works
 
-### Hardware-Specific guidelines
+### Hardware-specific guidelines
 
 **Raspberry Pi / low-power:**
 - Workers: 1-2 each

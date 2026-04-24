@@ -121,7 +121,7 @@ npm --version   # Should show 10.x.x or higher
 For CentOS/RHEL, Fedora, or other distributions, see the [Node.js downloads page](https://nodejs.org/en/download/).
 :::
 
-### Step 2: Install Dependencies
+### Step 2: Install dependencies
 
 Install FFmpeg and Git:
 
@@ -134,7 +134,7 @@ sudo apt-get install -y ffmpeg git
 ffmpeg -version | head -1
 ```
 
-### Step 3: Create User and Directory
+### Step 3: Create user and directory
 
 For security, run Cinephage as a dedicated system user:
 
@@ -149,7 +149,7 @@ sudo mkdir -p /opt/cinephage
 sudo chown cinephage:cinephage /opt/cinephage
 ```
 
-### Step 4: Download and Build
+### Step 4: Download and build
 
 Clone the repository and build the application:
 
@@ -177,7 +177,7 @@ exit
 The build process compiles the Svelte frontend and may take 2-5 minutes depending on your server's performance.
 :::
 
-### Step 5: Configure Environment
+### Step 5: Configure environment
 
 Create an environment file with your configuration:
 
@@ -224,7 +224,7 @@ EOF
 - Changing it invalidates all user sessions and API keys
 :::
 
-### Step 6: Set Up Data Directories
+### Step 6: Set up data directories
 
 Create directories for data and media:
 
@@ -244,7 +244,7 @@ sudo chown -R cinephage:cinephage /mnt/media
 sudo chown -R cinephage:cinephage /mnt/downloads
 ```
 
-### Step 7: Create Systemd Service
+### Step 7: Create systemd service
 
 Create a systemd service file for automatic startup:
 
@@ -303,7 +303,7 @@ sudo systemctl enable cinephage
 sudo systemctl status cinephage
 ```
 
-### Step 9: Verify Installation
+### Step 9: Verify installation
 
 Check the logs to ensure Cinephage started correctly:
 
@@ -331,7 +331,7 @@ http://your-server-ip:3000
 
 You should see the Cinephage setup wizard.
 
-### Step 11: Complete Setup Wizard
+### Step 11: Complete setup wizard
 
 Follow the on-screen instructions to:
 
