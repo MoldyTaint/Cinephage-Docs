@@ -14,7 +14,7 @@ This tutorial provides a tour of the Cinephage web interface. You will learn the
 
 The dashboard is your home screen when logging in. It provides:
 
-### Quick Stats
+### Quick stats
 
 At the top:
 
@@ -23,7 +23,7 @@ At the top:
 - **Monitored** - Items actively being monitored
 - **Missing** - Monitored items not yet downloaded
 
-### Recent Activity
+### Recent activity
 
 Shows recent events:
 
@@ -31,7 +31,7 @@ Shows recent events:
 - Downloads completed
 - Upgrades applied
 
-### Quick Actions
+### Quick actions
 
 Buttons for common tasks:
 
@@ -69,7 +69,7 @@ IPTV and live television management:
 - **EPG** - Electronic program guide
 - **Accounts** - Live TV provider accounts
 
-### Smart Lists
+### Smart lists
 
 Dynamic content lists:
 
@@ -89,14 +89,14 @@ Monitor operations:
 
 Navigate to **Library > Movies**:
 
-### View Modes
+### View modes
 
 Toggle between:
 
 - **Grid** - Poster view with basic info
 - **Table** - Detailed list with sortable columns
 
-### Filters and Sorting
+### Filters and sorting
 
 Filter by:
 
@@ -108,7 +108,7 @@ Sort by:
 
 - Title, Year, Rating, Added date, File size
 
-### Movie Details
+### Movie details
 
 Click any movie to see:
 
@@ -141,7 +141,7 @@ Click any movie to see:
 
 Navigate to **Library > TV**:
 
-### Series List
+### Series list
 
 Similar to movies but with series-level information:
 
@@ -149,7 +149,7 @@ Similar to movies but with series-level information:
 - Overall completion percentage
 - Season count
 
-### Series Details
+### Series details
 
 Click a series for:
 
@@ -269,7 +269,7 @@ Add and manage content sources:
 - Test connections
 - Set priorities
 
-### Download Clients
+### Download clients
 
 Configure download applications:
 
@@ -278,7 +278,7 @@ Configure download applications:
 - Set category labels
 - Configure path mappings
 
-### Subtitle Providers
+### Subtitle providers
 
 Manage subtitle sources:
 
@@ -286,7 +286,7 @@ Manage subtitle sources:
 - Configure API keys
 - Set provider priorities
 
-### Language Profiles
+### Language profiles
 
 Subtitle language preferences:
 
@@ -294,7 +294,7 @@ Subtitle language preferences:
 - Set cutoff languages
 - Configure upgrade behavior
 
-### NNTP Servers
+### NNTP servers
 
 Usenet server configuration:
 
@@ -302,7 +302,7 @@ Usenet server configuration:
 - Set connection limits
 - Configure SSL
 
-### Media Browsers
+### Media browsers
 
 Jellyfin/Emby integration:
 
@@ -310,7 +310,7 @@ Jellyfin/Emby integration:
 - Set notification triggers
 - Test connections
 
-### Captcha Solver
+### Captcha solver
 
 Cloudflare bypass settings:
 
@@ -359,7 +359,7 @@ Prevent re-downloading:
 
 Multiple places to search:
 
-### Global Search
+### Global search
 
 Top navigation bar:
 
@@ -367,7 +367,7 @@ Top navigation bar:
 - Quick results dropdown
 - Keyboard shortcut: `/`
 
-### Discover Search
+### Discover search
 
 In Discover section:
 
@@ -375,14 +375,14 @@ In Discover section:
 - Filter by genre, year, rating
 - Sort options
 
-### Library Search
+### Library search
 
 In Library sections:
 
 - Search your library only
 - Filter by tags, quality, status
 
-### Manual Search
+### Manual search
 
 On movie/series details:
 
@@ -432,17 +432,17 @@ You have completed the Getting Started tutorials. You are ready to:
 
 ## See Also
 
-### Essential Configuration
+### Essential configuration
 - [Configure Download Clients](../guides/configure/download-clients) — Set up qBittorrent, SABnzbd, and others
 - [Configure Indexers](../guides/configure/indexers) — Add content sources
 - [Set Up Quality Profiles](../guides/configure/quality-profiles) — Configure quality scoring
 
-### Daily Operations
+### Daily operations
 - [Search and Download](../guides/use/search-and-download) — Find and acquire content
 - [Monitor and Upgrade](../guides/use/monitor-and-upgrade) — Automatic quality improvements
 - [Import Existing Files](../guides/use/import-existing-files) — Add your current media library
 
-### Technical Understanding
+### Technical understanding
 - [Architecture Overview](../explanation/architecture) — System architecture and components
 - [Workers and Tasks](../explanation/workers-and-tasks) — Background processing system
 - [Key Concepts](../explanation/concepts) — Root folders, monitoring, and terminology
@@ -453,19 +453,19 @@ You have completed the Getting Started tutorials. You are ready to:
 
 ## Tips for Efficient Use
 
-### Customize Your View
+### Customize your view
 
 - Use table view for bulk operations
 - Filter by tags to find content quickly
 - Sort by "Added" to see newest items
 
-### Monitor What Matters
+### Monitor what matters
 
 - Check Activity queue daily
 - Review blocklist for patterns
 - Use History to track down issues
 
-### Stay Organized
+### Stay organized
 
 - Apply tags consistently
 - Use naming patterns for clean file structure

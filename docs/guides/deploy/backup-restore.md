@@ -24,28 +24,28 @@ Create regular backups of your Cinephage configuration and database to prevent d
 
 Cinephage stores data in several locations:
 
-### Essential Data (Must Backup)
+### Essential data (must backup)
 
 | Location                    | Contents                                 | Size     |
 | --------------------------- | ---------------------------------------- | -------- |
 | `/config/data/cinephage.db` | Main database (movies, series, settings) | 10-100MB |
 | `/config/settings/`    | Application settings                     | 1-5MB    |
 
-### Important Data (Should Backup)
+### Important data (should backup)
 
 | Location            | Contents                        | Size     |
 | ------------------- | ------------------------------- | -------- |
 | `/config/indexers/` | Custom YAML indexer definitions | Varies   |
 | `/config/camoufox/` | Captcha solver data             | 50-100MB |
 
-### Optional Data
+### Optional data
 
 | Location         | Contents                     | Size      |
 | ---------------- | ---------------------------- | --------- |
 | `/config/cache/` | Cached data (can be rebuilt) | 100MB-1GB |
 | `/config/logs/`  | Application logs             | Varies    |
 
-### What NOT to Backup
+### What not to backup
 
 - **Media files** - These are in your `/media` mount
 - **Downloads** - These are in your `/downloads` mount
@@ -53,7 +53,7 @@ Cinephage stores data in several locations:
 
 ## Part 1: Manual Backup
 
-### Step 1: Stop Cinephage
+### Step 1: stop Cinephage
 
 Stop the container to ensure database is not being written:
 
@@ -61,13 +61,13 @@ Stop the container to ensure database is not being written:
 docker compose down
 ```
 
-### Step 2: Create Backup Directory
+### Step 2: create backup directory
 
 ```bash
 mkdir -p /path/to/backups/cinephage-$(date +%Y%m%d)
 ```
 
-### Step 3: Copy Essential Files
+### Step 3: copy essential files
 
 ```bash
 # Backup directory
@@ -91,7 +91,7 @@ if [ -d "$CONFIG_DIR/camoufox" ]; then
 fi
 ```
 
-### Step 4: Create Archive
+### Step 4: create archive
 
 ```bash
 cd /path/to/backups
@@ -99,13 +99,13 @@ tar -czf cinephage-$(date +%Y%m%d).tar.gz cinephage-$(date +%Y%m%d)/
 rm -rf cinephage-$(date +%Y%m%d)/
 ```
 
-### Step 5: Restart Cinephage
+### Step 5: restart Cinephage
 
 ```bash
 docker compose up -d
 ```
 
-### Step 6: Move Backup to Safe Location
+### Step 6: move backup to safe location
 
 ```bash
 # Move to external drive
@@ -120,7 +120,7 @@ rsync -avz /path/to/backups/cinephage-$(date +%Y%m%d).tar.gz user@backup-server:
 
 ## Part 2: Automated Backups
 
-### Option A: Docker Backup Container
+### Option a: Docker backup container
 
 Create a backup service in docker-compose.yaml:
 
@@ -146,7 +146,7 @@ services:
       - 'cinephage.backup.stop=true'
 ```
 
-### Option B: Systemd Timer (Linux)
+### Option b: Systemd timer (Linux)
 
 Create backup script:
 
@@ -214,7 +214,7 @@ sudo systemctl enable cinephage-backup.timer
 sudo systemctl start cinephage-backup.timer
 ```
 
-### Option C: Cron Job
+### Option c: cron job
 
 Add to crontab:
 
@@ -228,13 +228,13 @@ crontab -e
 
 ## Part 3: Restore from Backup
 
-### Step 1: Stop Cinephage
+### Step 1: stop Cinephage
 
 ```bash
 docker compose down
 ```
 
-### Step 2: Locate Backup
+### Step 2: locate backup
 
 Find your backup file:
 
@@ -242,7 +242,7 @@ Find your backup file:
 ls -la /path/to/backups/cinephage-*.tar.gz
 ```
 
-### Step 3: Extract Backup
+### Step 3: extract backup
 
 ```bash
 # Create temp directory
@@ -255,7 +255,7 @@ tar -xzf /path/to/backups/cinephage-20250316.tar.gz -C /tmp/cinephage-restore
 ls -la /tmp/cinephage-restore/cinephage-20250316/
 ```
 
-### Step 4: Restore Files
+### Step 4: restore files
 
 ```bash
 CONFIG_DIR=/path/to/your/cinephage/config
@@ -286,20 +286,20 @@ fi
 chown -R 1000:1000 "$CONFIG_DIR"  # Adjust UID:GID as needed
 ```
 
-### Step 5: Start Cinephage
+### Step 5: start Cinephage
 
 ```bash
 docker compose up -d
 ```
 
-### Step 6: Verify Restore
+### Step 6: verify restore
 
 1. Open Cinephage web interface
 2. Check library is intact
 3. Verify settings are restored
 4. Test search functionality
 
-### Step 7: Clean Up
+### Step 7: clean up
 
 ```bash
 # Remove temp files
@@ -311,11 +311,11 @@ rm -rf /tmp/cinephage-restore
 
 ## Part 4: Migration to New Server
 
-### Backup on Old Server
+### Backup on old server
 
 Follow Part 1 to create backup
 
-### Transfer to New Server
+### Transfer to new server
 
 ```bash
 # Using scp
@@ -327,7 +327,7 @@ rsync -avz /path/to/backups/cinephage-20250316.tar.gz user@newserver:/tmp/
 # Or copy to USB/external drive
 ```
 
-### Setup on New Server
+### Setup on new server
 
 1. Install Docker and Docker Compose
 2. Create Cinephage directory structure
@@ -379,7 +379,7 @@ This creates a consistent backup without stopping the application.
 | Settings    | Weekly           | 90 days   |
 | Full config | Weekly           | 30 days   |
 
-### Storage Locations
+### Storage locations
 
 Keep backups in multiple locations:
 
@@ -398,7 +398,7 @@ Test restore process periodically:
 
 ## Troubleshooting
 
-### Database Locked During Backup
+### Database locked during backup
 
 **Problem:** Cannot copy database file
 
@@ -410,7 +410,7 @@ docker exec cinephage sqlite3 /config/data/cinephage.db ".backup /tmp/backup.db"
 docker cp cinephage:/tmp/backup.db /path/to/backups/
 ```
 
-### Backup Too Large
+### Backup too large
 
 **Problem:** Backup files are huge
 
@@ -421,7 +421,7 @@ docker cp cinephage:/tmp/backup.db /path/to/backups/
 - Use incremental backups
 - Backup only database and settings
 
-### Restore Fails
+### Restore fails
 
 **Problem:** Cannot restore backup
 
@@ -432,7 +432,7 @@ docker cp cinephage:/tmp/backup.db /path/to/backups/
 - Check database integrity: `sqlite3 data/cinephage.db "PRAGMA integrity_check;"`
 - Restore to fresh config directory
 
-### Version Compatibility
+### Version compatibility
 
 **Problem:** Backup from old version incompatible
 

@@ -12,7 +12,7 @@
 
 ## File Structure
 
-### New Files
+### New files
 - `docs/getting-started/_category_.json` — Category config for Getting Started
 - `docs/guides/_category_.json` — Category config for Guides
 - `docs/reference/_category_.json` — Category config for Reference
@@ -24,7 +24,7 @@
 - `docs/reference/index.md` — Improved reference landing
 - `docs/explanation/index.md` — Improved explanation landing
 
-### Modified Files
+### Modified files
 - `sidebars.ts` — Add support category
 - `docusaurus.config.ts` — Search plugin, breadcrumbs, TOC, footer/navbar
 - `src/pages/index.tsx` — Homepage redesign
@@ -35,7 +35,7 @@
 - `docs/index.md` — Docs landing page rewrite
 - `docs/support/releases.md` — Release history rewrite
 
-### Deleted Files
+### Deleted files
 - `docs/getting-started/installation.md` — Duplicate
 - `docs/support/faq.md` — Duplicate
 
@@ -210,7 +210,7 @@ Find answers, track releases, and get help with Cinephage.
 
 <div className="card">
 
-### 📋 Frequently Asked Questions
+### 📋 frequently asked questions
 
 Common questions about installing, configuring, and using Cinephage.
 
@@ -220,7 +220,7 @@ Common questions about installing, configuring, and using Cinephage.
 
 <div className="card">
 
-### 🚀 Release History
+### 🚀 release history
 
 Version history, release notes, and Docker tag reference.
 
@@ -230,7 +230,7 @@ Version history, release notes, and Docker tag reference.
 
 <div className="card">
 
-### 🗺️ Roadmap
+### 🗺️ roadmap
 
 Planned features, work in progress, and known limitations.
 
@@ -240,7 +240,7 @@ Planned features, work in progress, and known limitations.
 
 <div className="card">
 
-### 🔧 Troubleshooting
+### 🔧 troubleshooting
 
 Common issues, logs, and debugging steps.
 
@@ -281,7 +281,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 
 ## Version History
 
-### v0.5.0 (Latest Stable)
+### V0.5.0 (latest stable)
 
 **Release Date:** 2025-04-XX
 
@@ -305,7 +305,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 
 [View full release notes on GitHub →](https://github.com/MoldyTaint/Cinephage/releases/tag/v0.5.0)
 
-### v0.6.0 (In Development)
+### V0.6.0 (in development)
 
 **Status:** Preview builds available
 
@@ -317,7 +317,7 @@ Cinephage follows semantic versioning and maintains two release channels.
 
 ## Docker Tags Reference
 
-### Stable Releases
+### Stable releases
 
 ```bash
 # Latest stable
@@ -327,7 +327,7 @@ docker pull ghcr.io/moldytaint/cinephage:latest
 docker pull ghcr.io/moldytaint/cinephage:v0.5.0
 ```
 
-### Preview Builds
+### Preview builds
 
 ```bash
 # Latest development build
@@ -559,7 +559,7 @@ Instead of running multiple separate services, Cinephage provides one cohesive p
 
 <div className="card">
 
-### 📚 Getting Started
+### 📚 getting started
 
 Installation, setup, and your first steps.
 
@@ -569,7 +569,7 @@ Installation, setup, and your first steps.
 
 <div className="card">
 
-### ⚙️ Guides
+### ⚙️ guides
 
 Task-oriented guides for configuration and use.
 
@@ -579,7 +579,7 @@ Task-oriented guides for configuration and use.
 
 <div className="card">
 
-### 📖 Reference
+### 📖 reference
 
 API docs, configuration, database schema.
 
@@ -589,7 +589,7 @@ API docs, configuration, database schema.
 
 <div className="card">
 
-### 💡 Explanation
+### 💡 explanation
 
 Architecture, concepts, and design decisions.
 
@@ -599,7 +599,7 @@ Architecture, concepts, and design decisions.
 
 <div className="card">
 
-### 🆘 Support
+### 🆘 support
 
 FAQ, releases, roadmap, and troubleshooting.
 

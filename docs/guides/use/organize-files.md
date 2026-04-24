@@ -28,7 +28,7 @@ Naming patterns use **tokens** (variables) that get replaced with actual values:
 The Matrix (1999) - 1080p BluRay - YIFY
 ```
 
-### Available Tokens
+### Available tokens
 
 #### Movie Tokens
 
@@ -62,12 +62,12 @@ The Matrix (1999) - 1080p BluRay - YIFY
 
 ## Configuring Naming Patterns
 
-### Access Naming Settings
+### Access naming settings
 
 1. Go to **Settings > Media Management > Naming**
 2. Configure patterns for Movies and TV separately
 
-### Movie Folder Pattern
+### Movie folder pattern
 
 Controls how movie folders are named:
 
@@ -97,7 +97,7 @@ Controls how movie folders are named:
 → T/The Matrix (1999)
 ```
 
-### Movie File Pattern
+### Movie file pattern
 
 Controls how movie files are renamed:
 
@@ -130,7 +130,7 @@ Controls how movie files are renamed:
 → The Matrix (1999) - 1080p BluRay x264 [x264 DTS 5.1] [YIFY].mkv
 ```
 
-### TV Show Folder Pattern
+### TV show folder pattern
 
 Controls series and season folder naming:
 
@@ -169,7 +169,7 @@ S{Season:00}             → S01
 → Breaking Bad/Season 01 [1080p]
 ```
 
-### Episode File Pattern
+### Episode file pattern
 
 Controls how episode files are named:
 
@@ -208,7 +208,7 @@ S{Season:00}E{Episode:00}
 
 ## Advanced Naming Techniques
 
-### Conditional Tokens
+### Conditional tokens
 
 Some tokens only appear when applicable:
 
@@ -218,7 +218,7 @@ Some tokens only appear when applicable:
 → Inception (2010)  [no edition, so no extra text]
 ```
 
-### Multi-Episode Files
+### Multi-Episode files
 
 Handle episodes that span multiple files:
 
@@ -232,7 +232,7 @@ Handle episodes that span multiple files:
 → Show - S01E01-03 - Three Episode Arc.mkv
 ```
 
-### Specials and Extras
+### Specials and extras
 
 Naming for non-standard episodes:
 
@@ -246,7 +246,7 @@ Naming for non-standard episodes:
 → The Matrix (1999)/Extras/Behind the Scenes - Making Of.mkv
 ```
 
-### Custom Format Token
+### Custom format token
 
 Use custom format scores in naming:
 
@@ -257,7 +257,7 @@ Use custom format scores in naming:
 
 ## Folder Structure Examples
 
-### Standard Movie Structure
+### Standard movie structure
 
 ```
 /movies/
@@ -273,7 +273,7 @@ Use custom format scores in naming:
     The Godfather (1972) - 1080p BluRay.fr.srt
 ```
 
-### By Quality Structure
+### By quality structure
 
 ```
 /movies/
@@ -288,7 +288,7 @@ Use custom format scores in naming:
       Old.Movie (1990) - 720p.mkv
 ```
 
-### By First Letter Structure
+### By first letter structure
 
 ```
 /movies/
@@ -302,7 +302,7 @@ Use custom format scores in naming:
     Casablanca (1942)/
 ```
 
-### Standard TV Structure
+### Standard TV structure
 
 ```
 /tv/
@@ -319,7 +319,7 @@ Use custom format scores in naming:
     fanart.jpg
 ```
 
-### Anime Structure
+### Anime structure
 
 ```
 /anime/
@@ -333,7 +333,7 @@ Use custom format scores in naming:
 
 ## Applying Naming Patterns
 
-### To New Downloads
+### To new downloads
 
 Naming applies automatically to new downloads:
 
@@ -342,7 +342,7 @@ Naming applies automatically to new downloads:
 3. Cinephage organizes files automatically
 4. Names follow your patterns
 
-### To Existing Files
+### To existing files
 
 Rename existing library:
 
@@ -370,7 +370,7 @@ Preview changes before applying!
 
 ## Troubleshooting Organization
 
-### Files Not Renaming
+### Files not renaming
 
 **Check Pattern Syntax:**
 
@@ -393,7 +393,7 @@ chmod -R u+w /path/to/media
 - Renaming requires temporary space
 - Ensure destination has room
 
-### Wrong Folder Structure
+### Wrong folder structure
 
 **Review Root Folders:**
 
@@ -412,7 +412,7 @@ Settings > Media Management > Root Folders
 {Movie Title}\{Movie Title} ({Release Year})
 ```
 
-### Special Characters
+### Special characters
 
 Cinephage sanitizes filenames automatically:
 
@@ -429,21 +429,21 @@ Cinephage sanitizes filenames automatically:
 
 ## Best Practices
 
-### For Movies
+### For movies
 
 1. **Include year** - Prevents confusion between remakes
 2. **Keep it simple** - Don't over-complicate patterns
 3. **Quality optional** - Can be in filename or folder
 4. **Group optional** - Useful for some, clutter for others
 
-### For TV Shows
+### For TV shows
 
 1. **S00E00 format** - Most compatible with all players
 2. **Include episode titles** - Makes browsing easier
 3. **Separate specials** - Use S00 for special episodes
 4. **Consistent season folders** - Season 01, not Season 1
 
-### General Tips
+### General tips
 
 1. **Test patterns first** - Use preview before applying
 2. **Document your pattern** - Keep a note of your settings
@@ -453,13 +453,13 @@ Cinephage sanitizes filenames automatically:
 
 ## Common Naming Patterns
 
-### Movie Pattern Example
+### Movie pattern example
 
 ```
 {Movie Title} ({Release Year}) - {Quality:Full}
 ```
 
-### TV Show Pattern Example
+### TV show pattern example
 
 ```
 {Series Title} - S{Season:00}E{Episode:00} - {Episode Title} [{Quality:Full}]

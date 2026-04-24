@@ -18,7 +18,7 @@ Diagnose and resolve common problems with Cinephage.
 
 Before diving into specific issues, perform these checks:
 
-### Check Application Status
+### Check application status
 
 1. Is Cinephage running?
 
@@ -36,7 +36,7 @@ Before diving into specific issues, perform these checks:
    - Open browser to `http://localhost:3000`
    - Check for error messages
 
-### Check System Resources
+### Check system resources
 
 - **Disk Space**: Ensure adequate space for database and media
 - **Memory**: Cinephage uses 512MB-2GB RAM typically
@@ -44,7 +44,7 @@ Before diving into specific issues, perform these checks:
 
 ## Common Issues
 
-### Cannot Access Web Interface
+### Cannot access web interface
 
 **Symptoms:** Browser shows "This site cannot be reached" or connection refused
 
@@ -79,7 +79,7 @@ Before diving into specific issues, perform these checks:
    docker compose logs cinephage | tail -50
    ```
 
-### Authentication Issues
+### Authentication issues
 
 **Symptoms:** Cannot log in, "Invalid credentials", session expired
 
@@ -106,7 +106,7 @@ Before diving into specific issues, perform these checks:
    - Must match your access URL
    - Required for CSRF protection
 
-### Downloads Not Starting
+### Downloads not starting
 
 **Symptoms:** Searches find releases but nothing downloads
 
@@ -136,7 +136,7 @@ Before diving into specific issues, perform these checks:
    - Verify item is monitored (blue bookmark icon)
    - Unmonitored items are not downloaded automatically
 
-### Downloads Not Importing
+### Downloads not importing
 
 **Symptoms:** Download completes but file not in library
 
@@ -173,7 +173,7 @@ Before diving into specific issues, perform these checks:
    - Try importing the file manually
    - Check for specific error messages
 
-### TMDB API Errors
+### TMDB API errors
 
 **Symptoms:** "TMDB API error", no search results, metadata missing
 
@@ -201,7 +201,7 @@ Before diving into specific issues, perform these checks:
    - Wait a few minutes if rate limited
    - Consider TMDB VIP for higher limits
 
-### Database Errors
+### Database errors
 
 **Symptoms:** "Database error", "SQLite error", data not saving
 
@@ -242,7 +242,7 @@ Before diving into specific issues, perform these checks:
      docker compose up -d
      ```
 
-### Slow Performance
+### Slow performance
 
 **Symptoms:** Slow page loads, searches take long time
 
@@ -278,7 +278,7 @@ Before diving into specific issues, perform these checks:
    docker compose logs cinephage | grep -i "slow"
    ```
 
-### Subtitle Download Failures
+### Subtitle download failures
 
 **Symptoms:** Subtitles not downloading or syncing
 
@@ -303,7 +303,7 @@ Before diving into specific issues, perform these checks:
    - Go to media detail > Subtitles
    - Click **Sync** on subtitle file
 
-### Environment Variable Issues
+### Environment variable issues
 
 **Symptoms:** Configuration changes don't apply, settings don't work as expected
 
@@ -355,7 +355,7 @@ docker exec cinephage env | grep LOG_LEVEL
 
 ## Advanced Troubleshooting
 
-### Enable Debug Logging
+### Enable debug logging
 
 Get more detailed logs:
 
@@ -377,7 +377,7 @@ Get more detailed logs:
    docker compose logs -f cinephage
    ```
 
-### Database Inspection
+### Database inspection
 
 Investigate database issues:
 
@@ -399,7 +399,7 @@ SELECT * FROM settings WHERE key LIKE '%error%';
 .quit
 ```
 
-### Reset Specific Components
+### Reset specific components
 
 **Reset tasks:**
 
@@ -420,7 +420,7 @@ SELECT * FROM settings WHERE key LIKE '%error%';
 
 If you cannot resolve the issue:
 
-### Gather Information
+### Gather information
 
 Before asking for help, collect:
 
@@ -453,7 +453,7 @@ Before asking for help, collect:
    df -h
    ```
 
-### Where to Ask
+### Where to ask
 
 1. **Discord** - [Join community](https://discord.gg/scGCBTSWEt)
    - Real-time chat support
@@ -464,7 +464,7 @@ Before asking for help, collect:
    - Feature requests
    - Include logs and reproduction steps
 
-### Bug Report Template
+### Bug report template
 
 ```markdown
 **Description:**
@@ -501,7 +501,7 @@ Any other relevant information
 
 ## Prevention
 
-### Regular Maintenance
+### Regular maintenance
 
 - Check logs weekly for errors
 - Monitor disk space
@@ -514,7 +514,7 @@ Any other relevant information
 - Review **Settings > Logs** periodically
 - Monitor system resources
 
-### Best Practices
+### Best practices
 
 - Use stable Docker tags (not `dev` in production)
 - Keep configuration in version control

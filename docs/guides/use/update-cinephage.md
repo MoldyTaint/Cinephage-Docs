@@ -16,7 +16,7 @@ Breaking changes may occur between updates. Always backup before updating and re
 
 ## Before Updating
 
-### 1. Backup Your Data
+### 1. backup your data
 
 Always backup before updating:
 
@@ -30,7 +30,7 @@ cp .env .env.backup
 
 See [Backup & Restore](../deploy/backup-restore) for detailed backup procedures.
 
-### 2. Check Release Notes
+### 2. check release notes
 
 Review what's changed:
 
@@ -52,7 +52,7 @@ Tag policy:
 - `dev` = current preview build
 - `vX.Y.Z` = pinned stable release
 
-### Standard Update
+### Standard update
 
 ```bash
 cd /opt/cinephage
@@ -67,7 +67,7 @@ docker compose up -d
 docker logs cinephage --tail 50
 ```
 
-### Update to Specific Version
+### Update to specific version
 
 ```bash
 # Edit docker-compose.yaml to specify version
@@ -77,7 +77,7 @@ docker logs cinephage --tail 50
 docker compose up -d
 ```
 
-### Rollback Docker Update
+### Rollback Docker update
 
 If something goes wrong:
 
@@ -95,7 +95,7 @@ docker compose up -d
 
 ## Manual Update
 
-### Standard Update
+### Standard update
 
 ```bash
 # Stop the service
@@ -122,7 +122,7 @@ sudo systemctl start cinephage
 sudo systemctl status cinephage
 ```
 
-### Update to Specific Version
+### Update to specific version
 
 ```bash
 cd /opt/cinephage
@@ -141,7 +141,7 @@ Cinephage handles database migrations automatically on startup:
 2. Required migrations are applied
 3. Application starts normally
 
-### If Migration Fails
+### If migration fails
 
 1. Check logs for specific error
 2. Restore database from backup
@@ -152,7 +152,7 @@ Cinephage handles database migrations automatically on startup:
 
 After updating, verify everything works:
 
-### 1. Service Status
+### 1. service status
 
 ```bash
 # Docker
@@ -163,19 +163,19 @@ docker logs cinephage --tail 20
 sudo systemctl status cinephage
 ```
 
-### 2. Web Interface
+### 2. web interface
 
 - Access Cinephage in browser
 - Check Settings load correctly
 - Verify library is intact
 
-### 3. Functionality Test
+### 3. functionality test
 
 - Test a manual search
 - Verify download client connection
 - Check indexer status
 
-### 4. Check Logs
+### 4. check logs
 
 ```bash
 # Docker
@@ -187,7 +187,7 @@ sudo journalctl -u cinephage -n 50 -p err
 
 ## Automatic Updates
 
-### Docker with Watchtower
+### Docker with watchtower
 
 Watchtower can automatically update Docker containers:
 
@@ -207,7 +207,7 @@ Automatic updates are not recommended for alpha software. Breaking changes may o
 
 ## Troubleshooting Updates
 
-### Build Fails After Update
+### Build fails after update
 
 ```bash
 # Clear node_modules and rebuild
@@ -216,14 +216,14 @@ npm ci --production=false
 npm run build
 ```
 
-### Service Won't Start After Update
+### Service won't start after update
 
 1. Check logs for specific error
 2. Verify Node.js version meets requirements
 3. Try restoring database backup
 4. Consider rolling back to previous version
 
-### Breaking Changes
+### Breaking changes
 
 If update introduces breaking changes:
 
@@ -232,7 +232,7 @@ If update introduces breaking changes:
 3. Clear browser cache
 4. Restart service
 
-### Version Information
+### Version information
 
 Check current version:
 

@@ -21,7 +21,7 @@ Cinephage continuously monitors your library and can automatically:
 
 ## Understanding Monitoring
 
-### What is Monitoring?
+### What is monitoring?
 
 Monitoring tells Cinephage to actively track content and search for it:
 
@@ -30,7 +30,7 @@ Monitoring tells Cinephage to actively track content and search for it:
 | **Monitored** | Cinephage searches for this content automatically |
 | **Unmonitored** | Item exists in library but won't be auto-searched |
 
-### Monitoring Levels
+### Monitoring levels
 
 Cinephage supports monitoring at multiple levels:
 
@@ -45,14 +45,14 @@ Cinephage supports monitoring at multiple levels:
 
 ## Configuring Tasks
 
-### Access Task Settings
+### Access task settings
 
 1. Go to **Settings > Tasks**
 2. Review and configure monitoring tasks
 3. Enable/disable tasks as needed
 4. Set appropriate intervals
 
-### Core Monitoring Tasks
+### Core monitoring tasks
 
 #### Missing Content Search
 
@@ -173,7 +173,7 @@ Short intervals may cause rate limiting from indexers. 15-30 minutes is recommen
 
 ## Quality Upgrade System
 
-### How Upgrades Work
+### How upgrades work
 
 When Cinephage finds a better quality release:
 
@@ -183,7 +183,7 @@ When Cinephage finds a better quality release:
 4. **Import** - New file imported to library
 5. **Cleanup** - Old file deleted (per your settings)
 
-### Quality Scoring
+### Quality scoring
 
 Each quality is assigned a score:
 
@@ -203,7 +203,7 @@ Audio:          Atmos=+25, DTS-HD MA=+20
 | 1080p BluRay H.265 HDR10 | 150 |
 | 2160p BluRay H.265 Dolby Vision | 175 |
 
-### Upgrade Cutoff
+### Upgrade cutoff
 
 The cutoff is the quality level where upgrades stop:
 
@@ -222,7 +222,7 @@ Cutoff: 1080p BluRay
 
 ## Setting Up Monitoring
 
-### Monitoring Movies
+### Monitoring movies
 
 #### When Adding Movies
 
@@ -250,7 +250,7 @@ Cutoff: 1080p BluRay
 4. Set **Monitored** to Yes/No
 5. Click **Save**
 
-### Monitoring TV Shows
+### Monitoring TV shows
 
 #### Series-Level Monitoring
 
@@ -286,7 +286,7 @@ Fine-grained control:
    - Monitored: Will search for this episode
    - Unmonitored: Won't search
 
-### Monitoring Best Practices
+### Monitoring best practices
 
 **For Movies:**
 - Monitor movies you actively want
@@ -306,7 +306,7 @@ Fine-grained control:
 
 ## Managing Upgrades
 
-### Automatic Upgrades
+### Automatic upgrades
 
 With proper configuration, upgrades happen automatically:
 
@@ -317,7 +317,7 @@ With proper configuration, upgrades happen automatically:
 5. **Import** - New file replaces old
 6. **Cleanup** - Old file deleted (if configured)
 
-### Manual Upgrades
+### Manual upgrades
 
 Force an upgrade for specific items:
 
@@ -333,7 +333,7 @@ Force an upgrade for specific items:
 3. Click **Search Selected**
 4. Cinephage searches all selected items
 
-### Blocking Upgrades
+### Blocking upgrades
 
 Prevent specific releases from being used:
 
@@ -349,7 +349,7 @@ Prevent specific releases from being used:
 - **Bad Quality** - Block poor encodes
 - **Wrong Language** - Block wrong audio/subtitles
 
-### Upgrade History
+### Upgrade history
 
 View your upgrade activity:
 
@@ -363,7 +363,7 @@ View your upgrade activity:
 
 ## Advanced Monitoring
 
-### Delay Profiles
+### Delay profiles
 
 Set delays to avoid "bad" releases:
 
@@ -389,7 +389,7 @@ Set delays to avoid "bad" releases:
 Set 24-hour delay for BluRay to avoid early low-quality encodes. If a good WEB-DL releases within 24 hours, you'll get that instead of waiting for BluRay.
 :::
 
-### Release Profiles
+### Release profiles
 
 Create rules for automatic release selection:
 
@@ -406,7 +406,7 @@ Must not contain: HC, FRENCH, GERMAN
 Preferred: REMUX (+50 points), SPARKS (+30 points)
 ```
 
-### Custom Formats
+### Custom formats
 
 Advanced scoring with custom format rules:
 
@@ -419,7 +419,7 @@ Advanced scoring with custom format rules:
 
 ## Troubleshooting Monitoring
 
-### Items Not Being Searched
+### Items not being searched
 
 **Check Monitoring Status:**
 
@@ -440,7 +440,7 @@ Settings > Tasks > Cutoff Unmet Search = Enabled
 2. Ensure cutoff is set correctly
 3. Check custom formats aren't rejecting releases
 
-### No Upgrades Found
+### No upgrades found
 
 **Check Current Quality:**
 
@@ -466,7 +466,7 @@ This task searches above cutoff. If disabled, no above-cutoff upgrades occur.
 3. Ensure categories are correct
 4. Check rate limits aren't blocking
 
-### Too Many Upgrades
+### Too many upgrades
 
 **Set Cutoff Properly:**
 
@@ -492,7 +492,7 @@ Condition: Quality is 1080p or 2160p
 Score: -1000 for anything else
 ```
 
-### Duplicate Downloads
+### Duplicate downloads
 
 **Causes:**
 - Multiple indexers finding same release
@@ -507,21 +507,21 @@ Score: -1000 for anything else
 
 ## Best Practices
 
-### For New Users
+### For new users
 
 1. **Start Conservative** - Monitor only content you really want
 2. **Set Realistic Cutoffs** - 1080p BluRay is good for most
 3. **Enable Core Tasks** - Missing Content + Cutoff Unmet
 4. **Check Results** - Review Activity regularly
 
-### For Power Users
+### For power users
 
 1. **Custom Formats** - Fine-tune scoring for your preferences
 2. **Delay Profiles** - Avoid bad early releases
 3. **Multiple Indexers** - More sources = better results
 4. **Review Blocklist** - Keep it clean for better performance
 
-### Efficiency Tips
+### Efficiency tips
 
 1. **Don't Monitor Everything** - Focus on what you watch
 2. **Use Future Episodes** - For ongoing series, not all episodes

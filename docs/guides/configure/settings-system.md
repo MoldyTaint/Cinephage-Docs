@@ -18,7 +18,7 @@ Navigate to **Settings > System**.
 
 Cinephage provides two types of API keys for different use cases.
 
-### Main API Key
+### Main API key
 
 The **Main API Key** provides full access to all Cinephage API endpoints.
 
@@ -35,7 +35,7 @@ The **Main API Key** provides full access to all Cinephage API endpoints.
 - Home automation systems
 - Custom applications
 
-### Streaming API Key
+### Streaming API key
 
 The **Streaming API Key** provides limited access for media server integration.
 
@@ -63,14 +63,14 @@ The **Streaming API Key** provides limited access for media server integration.
 - Emby Live TV
 - Media player apps
 
-### Viewing API Keys
+### Viewing API keys
 
 1. Navigate to **Settings > System**
 2. Keys are shown masked by default (e.g., `cinephage_abc...xyz`)
 3. Click **Show** to reveal full key
 4. Click **Copy** to copy to clipboard
 
-### Regenerating API Keys
+### Regenerating API keys
 
 If a key is compromised or you want to rotate it:
 
@@ -83,7 +83,7 @@ If a key is compromised or you want to rotate it:
 After regenerating, update any services using the old key. The old key becomes invalid immediately.
 :::
 
-### Using API Keys
+### Using API keys
 
 **Via HTTP Header (Recommended):**
 
@@ -102,7 +102,7 @@ curl "http://localhost:3000/api/livetv/playlist.m3u?api_key=cinephage_your_key_h
 Some media servers (Plex, Jellyfin) cannot send custom headers. Use the query parameter for M3U playlist URLs in these cases.
 :::
 
-### API Key Security
+### API key security
 
 - **Treat like passwords** — Don't share or commit to version control
 - **Use environment variables** — In scripts, store keys in env vars
@@ -117,7 +117,7 @@ The **External URL** is the public-facing URL used for:
 - Link generation in notifications
 - Reverse proxy setups
 
-### When to Set
+### When to set
 
 Set the External URL when:
 - Using a reverse proxy (nginx, Traefik, Caddy)
@@ -141,7 +141,7 @@ Set the External URL when:
 | Reverse proxy HTTPS | `https://cinephage.example.com`   |
 | Custom subpath      | `https://example.com/cinephage`   |
 
-### Reverse Proxy Examples
+### Reverse proxy examples
 
 **Nginx:**
 

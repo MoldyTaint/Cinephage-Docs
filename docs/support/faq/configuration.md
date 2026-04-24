@@ -30,7 +30,7 @@ Common causes:
 3. **BETTER_AUTH_URL not set** - Required for external access
 4. **Host binding** - Use 0.0.0.0 not 127.0.0.1
 
-### How do I configure PUID/PGID?
+### How do I configure puid/pgid?
 
 **Get your IDs:**
 ```bash

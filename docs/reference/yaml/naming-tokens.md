@@ -184,7 +184,7 @@ Special characters for formatting.
 
 ## Usage Examples
 
-### Movie Naming Examples
+### Movie naming examples
 
 **Standard movie file:**
 ```
@@ -210,7 +210,7 @@ Special characters for formatting.
 # Result: The Dark Knight Collection\The Dark Knight (2008)\The Dark Knight (2008) - 1080p BluRay
 ```
 
-### TV Naming Examples
+### TV naming examples
 
 **Standard episode:**
 ```
@@ -236,7 +236,7 @@ Special characters for formatting.
 # Result: One Piece - 100 - The Legend Begins
 ```
 
-### Path Organization Examples
+### Path organization examples
 
 **Movies by quality:**
 ```

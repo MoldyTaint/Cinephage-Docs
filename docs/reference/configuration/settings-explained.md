@@ -27,7 +27,7 @@ Cinephage settings are organized into categories accessible from the **Settings*
 
 ## General Settings
 
-### Basic Configuration
+### Basic configuration
 
 #### TMDB API Key
 
@@ -77,7 +77,7 @@ Configure user authentication settings:
 
 ## Media Management
 
-### Root Folders
+### Root folders
 
 **Path:** `Settings > Media Management > Root Folders`
 
@@ -109,7 +109,7 @@ When using Docker, use the **container path**, not the host path:
 - Each root folder should be on a separate mount point
 :::
 
-### File Naming
+### File naming
 
 **Path:** `Settings > Media Management > Naming`
 
@@ -154,7 +154,7 @@ Template used for renaming media files:
 Custom naming patterns combine multiple tokens to create specific folder and file naming schemes. Example: `{Movie Title} ({Release Year}) [{Quality}][{Codec}]-{Group}`
 :::
 
-### Import Behavior
+### Import behavior
 
 **Path:** `Settings > Media Management > Import`
 
@@ -183,7 +183,7 @@ Hardlinks are most efficient when the download folder and library are on the sam
 
 ## Profiles
 
-### Quality Profiles
+### Quality profiles
 
 **Path:** `Settings > Profiles > Quality`
 
@@ -230,7 +230,7 @@ Cinephage includes four default profiles:
 | **Custom Format Scores** | Bonus/malus scoring rules | Optional |
 | **Upgrades Enabled** | Whether to search for better versions | Yes, default: Enabled |
 
-### Language Profiles
+### Language profiles
 
 **Path:** `Settings > Profiles > Languages`
 
@@ -251,7 +251,7 @@ Required Subtitles: [English, Spanish]
 Subtitle Priority: Must have English, prefer Spanish
 ```
 
-### Custom Formats
+### Custom formats
 
 **Path:** `Settings > Profiles > Custom Formats`
 
@@ -290,7 +290,7 @@ A custom format matching releases containing "HEVC" or "H.265" with a +50 score 
 
 ## Integrations
 
-### Download Clients
+### Download clients
 
 **Path:** `Settings > Integrations > Download Clients`
 
@@ -391,7 +391,7 @@ Trackers not in the built-in list require a custom YAML definition containing:
 Custom YAML indexers must follow the Prowlarr/Jackett indexer definition format. The YAML is validated before saving.
 :::
 
-### Subtitle Providers
+### Subtitle providers
 
 **Path:** `Settings > Integrations > Subtitles`
 
@@ -444,7 +444,7 @@ Configure when to send notifications:
 
 Configure background monitoring tasks that run automatically.
 
-### Task Overview
+### Task overview
 
 | Task | Purpose | Default Interval |
 |------|---------|------------------|
@@ -456,7 +456,7 @@ Configure background monitoring tasks that run automatically.
 | **Subtitle Upgrade** | Search for better subtitle scores | Daily |
 | **RSS Sync** | Check indexers for new releases | 15 minutes |
 
-### Task Configuration
+### Task configuration
 
 Each task has:
 
@@ -472,7 +472,7 @@ Each task has:
 Very short task intervals may trigger rate limiting from indexers or TMDB. The minimum recommended interval depends on the number of configured indexers and API usage.
 :::
 
-### Task History
+### Task history
 
 View detailed history of task execution:
 
@@ -489,7 +489,7 @@ View detailed history of task execution:
 
 The unified status page provides a consolidated view of your Cinephage system health, replacing separate maintenance and server-stats pages.
 
-### Storage Section
+### Storage section
 
 | Metric | Description |
 |--------|-------------|
@@ -498,7 +498,7 @@ The unified status page provides a consolidated view of your Cinephage system he
 | **Free Space** | Available storage |
 | **Root Folder Status** | Per-folder usage and health |
 
-### Media Servers Section
+### Media servers section
 
 | Metric | Description |
 |--------|-------------|
@@ -506,7 +506,7 @@ The unified status page provides a consolidated view of your Cinephage system he
 | **Last Sync** | When library was last updated |
 | **Connection Health** | Test results per server |
 
-### Scan/Sync Status
+### Scan/Sync status
 
 | Metric | Description |
 |--------|-------------|
@@ -522,7 +522,7 @@ The unified status page provides a consolidated view of your Cinephage system he
 
 Create encrypted configuration backups and restore from them.
 
-### Creating Backups
+### Creating backups
 
 1. Navigate to **Settings > System > Backup & Restore**
 2. Click **Create Backup**
@@ -532,7 +532,7 @@ Create encrypted configuration backups and restore from them.
    - Encrypted secrets (API keys, passwords)
    - User accounts and preferences
 
-### Restoring from Backup
+### Restoring from backup
 
 1. Click **Restore from Backup**
 2. Select backup file
@@ -543,7 +543,7 @@ Create encrypted configuration backups and restore from them.
 Backups are compatible within the same major version. Cross-version restores may require manual adjustments.
 :::
 
-### Automated Backups
+### Automated backups
 
 Configure automatic backups via environment variables or scheduled tasks:
 
@@ -561,7 +561,7 @@ Configure automatic backups via environment variables or scheduled tasks:
 
 Configure personal preferences for your Cinephage user account.
 
-### Language Preferences
+### Language preferences
 
 Set your preferred interface and content languages:
 
@@ -575,7 +575,7 @@ Set your preferred interface and content languages:
 Cinephage uses Paraglide JS v2 for internationalization. Interface translations are community-contributed.
 :::
 
-### Playback Preferences
+### Playback preferences
 
 | Setting | Description | Default |
 |---------|-------------|---------|
@@ -591,7 +591,7 @@ Cinephage uses Paraglide JS v2 for internationalization. Interface translations 
 
 Configure IPTV provider accounts and streaming settings.
 
-### Provider Accounts
+### Provider accounts
 
 Cinephage supports three provider types:
 
@@ -637,7 +637,7 @@ Cinephage supports three provider types:
 | **EPG URL** | XMLTV EPG source |
 | **Auto-refresh** | Refresh playlist periodically |
 
-### EPG Settings
+### EPG settings
 
 Configure Electronic Program Guide behavior:
 
@@ -646,7 +646,7 @@ Configure Electronic Program Guide behavior:
 | **EPG Refresh Interval** | How often to update EPG | 6 hours |
 | **Cache Duration** | How long to cache EPG data | 24 hours |
 
-### Portal Scanner
+### Portal scanner
 
 The portal scanner tests Stalker portals for working MAC addresses.
 
@@ -699,7 +699,7 @@ The first time you enable the Captcha Solver, Cinephage downloads the Camoufox b
 
 Configure usenet provider connections for NZB streaming.
 
-### Server Configuration
+### Server configuration
 
 **Required Fields:**
 
@@ -719,7 +719,7 @@ Configure usenet provider connections for NZB streaming.
 | **SSL** | Use encrypted connection | Enabled |
 | **Priority** | Server priority | 1 |
 
-### Performance Tuning
+### Performance tuning
 
 | Setting | Description | Recommended |
 |---------|-------------|-------------|
@@ -732,7 +732,7 @@ Configure usenet provider connections for NZB streaming.
 
 ## See Also
 
-### Configuration Guides
+### Configuration guides
 - [Configure Download Clients](../../guides/configure/download-clients) - Download client setup and connection
 - [Set Up Indexers](../../guides/configure/indexers) - Indexer configuration and testing
 - [Quality Profiles](../../guides/configure/quality-profiles) - Creating and customizing quality profiles
@@ -740,7 +740,7 @@ Configure usenet provider connections for NZB streaming.
 - [Delay Profiles](../../guides/configure/delay-profiles) - Configuring download delay behavior
 - [Blocklist Management](../../guides/configure/blocklist) - Managing blocked releases and indexers
 
-### Media and Integration Guides
+### Media and integration guides
 - [Root Folders](../../guides/configure/root-folders) - Root folders, naming, and organization
 - [Media Servers](../../guides/configure/media-servers) - Jellyfin, Emby, and Plex integration
 - [Live TV Setup](../../guides/configure/live-tv) - IPTV provider configuration
@@ -749,7 +749,7 @@ Configure usenet provider connections for NZB streaming.
 - [NZB Streaming](../../guides/configure/nzb-streaming) - Streaming without downloading
 - [Captcha Solver](../../guides/configure/captcha-solver) - Cloudflare challenge solving
 
-### System and Maintenance
+### System and maintenance
 - [Environment Variables](./environment-variables) - Docker and command-line configuration
 - [Smart Lists](../../guides/configure/smart-lists) - Dynamic content lists from TMDB
 - [Settings and Logs](../../guides/configure/settings-logs) - System configuration and troubleshooting

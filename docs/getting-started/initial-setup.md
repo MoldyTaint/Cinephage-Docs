@@ -66,14 +66,14 @@ Return to the Cinephage setup wizard:
 
 Root folders define where Cinephage stores your media library:
 
-### Add a Movies Root Folder
+### Add a movies root folder
 
 1. Click **Add Root Folder**
 2. Enter a name: `Movies`
 3. Enter the path: `/media/movies` (or your actual path)
 4. Click **Add**
 
-### Add a TV Shows Root Folder
+### Add a TV shows root folder
 
 1. Click **Add Root Folder** again
 2. Enter a name: `TV Shows`
@@ -91,7 +91,7 @@ Root folders define where Cinephage stores your media library:
 
 You can set up your download client now or skip and configure later:
 
-### qBittorrent Setup
+### qBittorrent setup
 
 1. Select **qBittorrent** from the dropdown
 2. Enter the host: `localhost` or your download client IP
@@ -100,7 +100,7 @@ You can set up your download client now or skip and configure later:
 5. Click **Test** to verify connection
 6. Click **Add**
 
-### SABnzbd Setup
+### SABnzbd setup
 
 1. Select **SABnzbd** from the dropdown
 2. Enter the URL: `http://localhost:8080`
@@ -134,7 +134,7 @@ You are now on the Cinephage dashboard.
 
 After completing the wizard, configure these essential settings:
 
-### 1. Quality Profiles
+### 1. quality profiles
 
 Navigate to **Settings > Profiles**:
 
@@ -143,7 +143,7 @@ Navigate to **Settings > Profiles**:
 3. Select a default profile for TV shows
 4. Click **Save**
 
-### 2. Indexers
+### 2. indexers
 
 Navigate to **Settings > Integrations > Indexers**:
 
@@ -160,7 +160,7 @@ Navigate to **Settings > Integrations > Indexers**:
 Start with one or two indexers. You can add more later.
 :::
 
-### 3. Monitoring Settings
+### 3. monitoring settings
 
 Navigate to **Settings > Tasks**:
 
@@ -172,7 +172,7 @@ Navigate to **Settings > Tasks**:
 3. Set appropriate intervals
 4. Click **Save**
 
-### 4. API Keys (Optional)
+### 4. API keys (optional)
 
 Navigate to **Settings > System** to manage API keys for external access:
 
@@ -192,7 +192,7 @@ Navigate to **Settings > System** to manage API keys for external access:
 - Use the Streaming API Key (not Main) for media server connections
 :::
 
-### 5. Media Server Notifications (Optional)
+### 5. media server notifications (optional)
 
 Navigate to **Settings > Integrations > Media Servers** to connect your media servers:
 
@@ -244,19 +244,19 @@ Now that Cinephage is fully configured, continue to [Adding Media](adding-media)
 
 ## Common Issues
 
-### TMDB API Key Not Working
+### TMDB API key not working
 
 - Ensure you copied the **API Key**, not the Read Access Token
 - Verify there are no extra spaces when pasting
 - Check that your TMDB account is verified
 
-### Cannot Access Root Folders
+### Cannot access root folders
 
 - Verify the volume mounts in Docker Compose
 - Check file permissions (PUID/PGID settings)
 - Ensure the folders exist on your host system
 
-### Download Client Connection Failed
+### Download client connection failed
 
 - If running in Docker, use the host IP instead of `localhost`
 - Verify the download client web UI is enabled
@@ -264,16 +264,16 @@ Now that Cinephage is fully configured, continue to [Adding Media](adding-media)
 
 ## See Also
 
-### Next Steps
+### Next steps
 - [Adding Media](./adding-media) — Learn the complete workflow for adding and downloading content
 - [Understanding the Interface](./understanding-interface) — Navigate the Cinephage web interface
 
-### Configuration Guides
+### Configuration guides
 - [Configure Download Clients](../guides/configure/download-clients) — Set up qBittorrent, SABnzbd, and others
 - [Configure Indexers](../guides/configure/indexers) — Add content sources using YAML definitions
 - [Set Up Quality Profiles](../guides/configure/quality-profiles) — Configure quality scoring and upgrade behavior
 
-### Help & Support
+### Help & support
 - [Getting Help](./getting-help) — Community support and troubleshooting resources
 - [Troubleshooting Guide](../guides/deploy/troubleshooting) — Solutions for common setup issues
 

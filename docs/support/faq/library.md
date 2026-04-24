@@ -38,7 +38,7 @@ Yes! You can create multiple root folders:
 
 Each must be dedicated to one media type (don't mix movies and TV).
 
-### What's the difference between Monitored and Unmonitored?
+### What's the difference between monitored and unmonitored?
 
 - **Monitored:** Cinephage actively searches for this content
 - **Unmonitored:** Item is in library but won't be auto-searched

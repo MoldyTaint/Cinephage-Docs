@@ -26,12 +26,12 @@ Think of them as "search filters with scores":
 
 Navigate to **Settings > Quality > Custom Formats**:
 
-### 1. Basic Information
+### 1. basic information
 
 - **Name** — Descriptive name (e.g., "x265 Preferred", "No HDR")
 - **Description** — Optional explanation
 
-### 2. Add Conditions
+### 2. add conditions
 
 Click **Add Condition** and choose a type:
 
@@ -48,13 +48,13 @@ Click **Add Condition** and choose a type:
 | **Release Group** | Encoder group     | SPARKS, RARBG, YIFY                       |
 | **Size**          | File size range   | 1-4 GB                                    |
 
-### 3. Set Match Logic
+### 3. set match logic
 
 - **Must Contain** — All conditions must match
 - **Must Not Contain** — Release is rejected if matches
 - **Should Contain** — Optional, adds score if matches
 
-### 4. Assign Score
+### 4. assign score
 
 - **Positive score** — Prefer these releases
 - **Negative score** — Avoid these releases
@@ -64,7 +64,7 @@ Click **Add Condition** and choose a type:
 
 ## Example Custom Formats
 
-### Prefer x265/HEVC
+### Prefer x265/hevc
 
 ```
 Name: x265 Preferred
@@ -74,7 +74,7 @@ Conditions:
   - Codec: x264 (score: -50)
 ```
 
-### Block Low-Quality Groups
+### Block low-quality groups
 
 ```
 Name: Block Cam Releases
@@ -84,7 +84,7 @@ Conditions:
   - Release Title contains: HDCAM (reject: true)
 ```
 
-### Prefer Specific Group
+### Prefer specific group
 
 ```
 Name: SPARKS Preferred
@@ -92,7 +92,7 @@ Conditions:
   - Release Group: SPARKS (score: +200)
 ```
 
-### Size Limits
+### Size limits
 
 ```
 Name: Reasonable Size
@@ -105,14 +105,14 @@ Conditions:
 
 ## Using Custom Formats
 
-### Assign to Quality Profile
+### Assign to quality profile
 
 1. Go to **Settings > Quality > Quality Profiles**
 2. Edit a profile
 3. Under "Custom Formats", enable your formats
 4. Set minimum score if needed
 
-### Score Calculation
+### Score calculation
 
 Total Score = Base Profile Score + Sum of Custom Format Scores
 
@@ -123,7 +123,7 @@ Example:
 - SPARKS Preferred matches: +200
 - **Total: +800**
 
-### Minimum Score
+### Minimum score
 
 Set a minimum score to reject low-quality releases:
 
@@ -135,13 +135,13 @@ Set a minimum score to reject low-quality releases:
 
 ## Condition Matching
 
-### Text Matching
+### Text matching
 
 - **Contains** — Substring match (case-insensitive)
 - **Equals** — Exact match
 - **Regex** — Regular expression (advanced)
 
-### Multiple Values
+### Multiple values
 
 Add multiple values to a condition:
 
@@ -164,7 +164,7 @@ Must Not Contain:
 
 ## Best Practices
 
-### Start Simple
+### Start simple
 
 Don't create 50 custom formats at once. Start with 2-3 important ones:
 
@@ -172,7 +172,7 @@ Don't create 50 custom formats at once. Start with 2-3 important ones:
 2. Block unwanted formats (3D, CAM)
 3. Prefer trusted groups
 
-### Test Your Formats
+### Test your formats
 
 Use the **Test** button to see if a format matches a release name:
 
@@ -182,14 +182,14 @@ Format: x265 Preferred
 Result: MATCH (+100 points)
 ```
 
-### Avoid Over-Scoring
+### Avoid over-scoring
 
 Don't make any single format worth 1000+ points:
 
 - **Good**: x265 (+100), SPARKS (+200), HDR (+50)
 - **Bad**: x265 (+5000) — overwhelms everything else
 
-### Use Rejection Sparingly
+### Use rejection sparingly
 
 Only reject truly unwanted content:
 
@@ -202,20 +202,20 @@ Only reject truly unwanted content:
 
 For complex matching, use regular expressions:
 
-### Match Multiple Groups
+### Match multiple groups
 
 ```
 Release Group matches regex: (SPARKS|RARBG|YIFY)
 ```
 
-### Match Season Packs
+### Match season packs
 
 ```
 Release Title matches regex: S\d{2}\.(?!E\d{2})
 → Matches S01. but not S01E01
 ```
 
-### Match Specific Bitrates
+### Match specific bitrates
 
 ```
 Release Title matches regex: \d{3,4}kbps
@@ -226,19 +226,19 @@ Release Title matches regex: \d{3,4}kbps
 
 ## Troubleshooting
 
-### Format Not Matching
+### Format not matching
 
 1. **Check case sensitivity** — Matching is case-insensitive by default
 2. **Verify condition type** — "Release Title" vs "Release Group"
 3. **Test with exact name** — Copy/paste from indexer results
 
-### Wrong Releases Being Grabbed
+### Wrong releases being grabbed
 
 1. **Check score calculation** — Higher score wins
 2. **Verify minimum score** — May be too low
 3. **Review format order** — Earlier formats apply first
 
-### Too Many Rejections
+### Too many rejections
 
 1. **Reduce reject conditions** — Only block truly unwanted
 2. **Check "Must Contain"** — All must match, not any

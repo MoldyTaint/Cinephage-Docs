@@ -44,7 +44,7 @@ Transmission uses RPC (Remote Procedure Call) for remote control. You must enabl
 
 4. Save the file and restart Transmission
 
-### Alternative: Using Transmission Web UI
+### Alternative: using Transmission web UI
 
 If you have the Transmission Web UI available:
 

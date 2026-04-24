@@ -38,7 +38,7 @@ For completed features and changes, see the [Changelog](https://github.com/Moldy
 
 Features actively being developed.
 
-### Streaming Provider Settings Integration
+### Streaming provider settings integration
 
 In Progress | High | **Area**: Streaming
 
@@ -52,7 +52,7 @@ Complete the integration of streaming providers with the settings system.
 
 Features confirmed for upcoming releases.
 
-### Tag-Based Monitoring Profiles
+### Tag-Based monitoring profiles
 
 Planned | Medium | **Area**: Monitoring
 
@@ -62,7 +62,7 @@ Implement tag matching for content-specific delay and upgrade profiles.
 
 ---
 
-### Additional Public Indexers
+### Additional public indexers
 
 Planned | Medium | **Area**: Indexers
 
@@ -78,7 +78,7 @@ Continue expanding built-in indexer support:
 
 ---
 
-### Notifications System
+### Notifications system
 
 Planned | Medium | **Area**: Infrastructure
 
@@ -100,7 +100,7 @@ Implement notification support for various events:
 
 ---
 
-### Import Lists
+### Import lists
 
 Planned | Medium | **Area**: Library
 
@@ -117,7 +117,7 @@ Sync watchlists from external services:
 
 ---
 
-### Calendar View
+### Calendar view
 
 Planned | Medium | **Area**: UI/UX
 
@@ -131,7 +131,7 @@ Visual calendar showing upcoming releases for monitored content.
 
 Longer-term features under consideration.
 
-### Multi-User Support
+### Multi-User support
 
 Under Consideration | Medium | **Area**: Infrastructure
 
@@ -148,7 +148,7 @@ Add user authentication and multi-user support:
 
 ---
 
-### qBittorrent v5 API Support
+### qBittorrent v5 API support
 
 Under Consideration | Low | **Area**: Download Clients
 
@@ -162,7 +162,7 @@ Update download client integration for qBittorrent v5 API changes.
 
 Features on the horizon but not actively in development.
 
-### Improved Cloudflare Handling
+### Improved Cloudflare handling
 
 Not Yet Started | Medium | **Area**: Infrastructure
 
@@ -172,7 +172,7 @@ Better handling of Cloudflare-protected indexers.
 
 ---
 
-### Music Support
+### Music support
 
 Not Yet Started | Low | **Area**: Library
 
@@ -182,7 +182,7 @@ Artist/album discovery, music indexers, audio quality profiles.
 
 ---
 
-### Books Support
+### Books support
 
 Not Yet Started | Low | **Area**: Library
 
@@ -192,7 +192,7 @@ Book and ebook management with Library Genesis integration.
 
 ---
 
-### Audiobooks Support
+### Audiobooks support
 
 Not Yet Started | Low | **Area**: Library
 
@@ -202,7 +202,7 @@ Audiobook library management and metadata.
 
 ---
 
-### Enhanced Streaming Provider Support
+### Enhanced streaming provider support
 
 Not Yet Started | Medium | **Area**: Streaming
 
@@ -212,7 +212,7 @@ Deeper integration with streaming services for availability tracking.
 
 ---
 
-### Additional Subtitle Providers
+### Additional subtitle providers
 
 Not Yet Started | Low | **Area**: Subtitles
 
@@ -226,7 +226,7 @@ Expand subtitle provider support beyond the current 13 providers.
 
 Current acknowledged gaps and their workarounds.
 
-### Single User Only
+### Single user only
 
 Known Limitation | Medium
 

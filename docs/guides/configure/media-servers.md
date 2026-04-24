@@ -30,12 +30,12 @@ Connect your media servers to Cinephage for automatic library refresh notificati
 
 Navigate to **Settings > Integrations > Media Servers**.
 
-### Step 1: Add a Media Server
+### Step 1: add a media server
 
 1. Click **Add Server**
 2. Select server type (Jellyfin, Emby, or Plex)
 
-### Step 2: Configure Connection
+### Step 2: configure connection
 
 | Field      | Description                                           | Example                      |
 | ---------- | ----------------------------------------------------- | ---------------------------- |
@@ -62,7 +62,7 @@ Navigate to **Settings > Integrations > Media Servers**.
 3. Find your server and copy the **Plex Token** from the URL
 4. Or visit `https://plex.tv/devices.xml` and find the token
 
-### Step 3: Configure Notification Triggers
+### Step 3: configure notification triggers
 
 Select which events should trigger library updates:
 
@@ -73,7 +73,7 @@ Select which events should trigger library updates:
 | **On Rename** | Notify when files are renamed                 | Yes         |
 | **On Delete** | Notify when media files are deleted           | Yes         |
 
-### Step 4: Configure Path Mappings (Docker)
+### Step 4: configure path mappings (Docker)
 
 If Cinephage and your media server run in different Docker containers, paths may differ:
 
@@ -99,7 +99,7 @@ Remote Path: /data/media/movies
 3. Enter the remote path (media server's view)
 4. Repeat for each root folder
 
-### Step 5: Test and Save
+### Step 5: test and save
 
 1. Click **Test** to verify connection
 2. Review settings
@@ -113,7 +113,7 @@ You can connect multiple media servers:
 - **Mixed environments** — Jellyfin for some, Plex for others
 - **Backup server** — Secondary server for redundancy
 
-### Bulk Actions
+### Bulk actions
 
 Select multiple servers to:
 
@@ -139,7 +139,7 @@ To trigger a full library refresh manually:
 
 ## Troubleshooting
 
-### Connection Test Fails
+### Connection test fails
 
 **Jellyfin/Emby:**
 1. Verify URL includes protocol (`http://` or `https://`)
@@ -153,14 +153,14 @@ To trigger a full library refresh manually:
 3. Check if Plex is using custom port
 4. Try `http://` instead of `https://` for local connections
 
-### Library Not Updating
+### Library not updating
 
 1. **Check notification triggers** — Ensure events are enabled
 2. **Verify path mappings** — Mismatched paths cause silent failures
 3. **Check server logs** — Media server may have received but ignored
 4. **Test manually** — Use Test button to verify connection
 
-### Path Mapping Issues
+### Path mapping issues
 
 **Symptoms:**
 - Media server doesn't show new content
@@ -173,7 +173,7 @@ To trigger a full library refresh manually:
 3. Check for trailing slashes (remove them)
 4. Ensure paths exist on both sides
 
-### Plex-Specific Issues
+### Plex-Specific issues
 
 **Plex requires library section lookup:**
 - Cinephage finds the section containing your path
@@ -186,13 +186,13 @@ To trigger a full library refresh manually:
 
 ## Best Practices
 
-### Path Mappings
+### Path mappings
 
 - **Use consistent mount points** across containers
 - **Document your mappings** for future reference
 - **Test after Docker changes** — Recreating containers can change paths
 
-### Notification Strategy
+### Notification strategy
 
 - **Enable all triggers** for best experience
 - **Disable On Delete** if you manually manage deletions

@@ -22,9 +22,9 @@ NNTP servers enable Cinephage to:
 
 Navigate to **Settings > Integrations > NNTP Servers**.
 
-### Step 1: Click Add Server
+### Step 1: click add server
 
-### Step 2: Configure Server Settings
+### Step 2: configure server settings
 
 | Field          | Description                              | Example                  |
 | -------------- | ---------------------------------------- | ------------------------ |
@@ -37,13 +37,13 @@ Navigate to **Settings > Integrations > NNTP Servers**.
 | **Connections**| Maximum concurrent connections            | `8` (check provider limit)|
 | **Priority**   | Server priority (lower = higher priority)| `1`                      |
 
-### Step 3: Test Connection
+### Step 3: test connection
 
 1. Click **Test** to verify credentials
 2. Check connection speed and authentication
 3. Review any error messages
 
-### Step 4: Save
+### Step 4: save
 
 Click **Save** to add the server.
 
@@ -55,7 +55,7 @@ When multiple servers are configured:
 2. **Fallback** to lower priority if primary fails
 3. **Article completion** checked across all servers
 
-### Priority Strategy
+### Priority strategy
 
 | Priority | Use Case                    |
 | -------- | --------------------------- |
@@ -83,7 +83,7 @@ Setting connections higher than your provider allows may result in:
 
 ## SSL/TLS Configuration
 
-### Recommended Settings
+### Recommended settings
 
 | Port | SSL  | Use Case           |
 | ---- | ---- | ------------------ |
@@ -115,28 +115,28 @@ Select multiple servers to:
 
 ## Troubleshooting
 
-### Connection Refused
+### Connection refused
 
 1. **Check host and port** — Verify correct server address
 2. **Verify SSL setting** — SSL port requires SSL enabled
 3. **Check firewall** — Ensure port is not blocked
 4. **Provider status** — Check if provider is having issues
 
-### Authentication Failed
+### Authentication failed
 
 1. **Verify credentials** — Check username/password
 2. **Account status** — Ensure subscription is active
 3. **Connection limits** — May be exceeded on provider side
 4. **Case sensitivity** — Some providers are case-sensitive
 
-### Slow Performance
+### Slow performance
 
 1. **Reduce connections** — Too many can cause throttling
 2. **Check priority** — Ensure fastest server is priority 1
 3. **SSL overhead** — Try non-SSL if speed is critical
 4. **Provider issues** — Check provider status page
 
-### SSL Certificate Errors
+### SSL certificate errors
 
 1. **Update certificates** — System CA bundle may be outdated
 2. **Verify hostname** — Must match certificate exactly
@@ -144,13 +144,13 @@ Select multiple servers to:
 
 ## Best Practices
 
-### Multiple Providers
+### Multiple providers
 
 Configure at least 2 servers:
 - **Primary** — Fast, unlimited provider
 - **Backup** — Block account for missing articles
 
-### Connection Tuning
+### Connection tuning
 
 | System Type      | Connections |
 | ---------------- | ----------- |

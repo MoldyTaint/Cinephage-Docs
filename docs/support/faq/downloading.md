@@ -49,7 +49,7 @@ Downloads:
 3. Upgrade: 1080p BluRay ← Cutoff met, no more upgrades
 ```
 
-### What's the difference between Missing, Cutoff Unmet, and Upgrade tasks?
+### What's the difference between missing, cutoff unmet, and upgrade tasks?
 
 - **Missing:** Searches for items with no files
 - **Cutoff Unmet:** Searches for items below quality cutoff
