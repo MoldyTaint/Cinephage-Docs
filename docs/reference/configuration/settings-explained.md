@@ -29,7 +29,7 @@ Cinephage settings are organized into categories accessible from the **Settings*
 
 ### Basic Configuration
 
-#### TMDB API Key
+#### TMDB API key
 
 **Path:** `Settings > General > TMDB API Key`
 
@@ -94,7 +94,7 @@ When using Docker, use the **container path**, not the host path:
 - ❌ Incorrect: `/mnt/media/movies` (host path)
 :::
 
-#### Root Folder Properties
+#### Root folder properties
 
 | Property | Description | Requirement |
 |----------|-------------|-------------|
@@ -115,7 +115,7 @@ When using Docker, use the **container path**, not the host path:
 
 Configure how files and folders are named when importing or organizing media.
 
-#### Folder Naming Pattern
+#### Folder naming pattern
 
 Template used for creating media folders:
 
@@ -132,7 +132,7 @@ Template used for creating media folders:
 | `{IMDb Id}` | IMDb identifier | "tt0133093" |
 | `{TMDB Id}` | TMDB identifier | "603" |
 
-#### File Naming Pattern
+#### File naming pattern
 
 Template used for renaming media files:
 
@@ -166,7 +166,7 @@ Configure how Cinephage handles file imports:
 | **Delete Empty Folders** | Remove empty source folders after import | Yes/No |
 | **Skip Free Space Check** | Import even if low disk space | Yes/No |
 
-#### Import Methods Explained
+#### Import methods explained
 
 | Method | Description | Use Case |
 |--------|-------------|----------|
@@ -196,7 +196,7 @@ Quality profiles define how Cinephage scores and selects releases. Each profile 
 | **Cutoff** | Quality level to stop upgrading |
 | **Custom Formats** | Bonus/malus scoring rules |
 
-#### Built-in Profiles
+#### Built-in profiles
 
 Cinephage includes four default profiles:
 
@@ -220,7 +220,7 @@ Cinephage includes four default profiles:
 - For NZB streaming
 - Best for: Streaming without downloading
 
-#### Custom Profile Properties
+#### Custom profile properties
 
 | Property | Description | Required |
 |----------|-------------|----------|
@@ -242,7 +242,7 @@ Configure language preferences for media and subtitles.
 | **Subtitle Languages** | Subtitle languages to download |
 | **Upgrade Until** | Stop upgrading when this quality reached |
 
-#### Example Language Profile
+#### Example language profile
 
 ```yaml
 Name: "English + Spanish Subs"
@@ -257,7 +257,7 @@ Subtitle Priority: Must have English, prefer Spanish
 
 Create custom scoring rules based on release attributes.
 
-#### Format Conditions
+#### Format conditions
 
 Match releases based on:
 
@@ -353,7 +353,7 @@ Configure connections to download clients for automated downloading.
 
 Configure search sources for finding releases.
 
-#### Indexer Configuration Fields
+#### Indexer configuration fields
 
 | Field | Description | Required |
 |-------|-------------|----------|
@@ -368,7 +368,7 @@ Configure search sources for finding releases.
 Lower priority values indicate higher search priority. Indexers with priority 1 are searched first, while those with 50+ are searched later. Set higher values for slower indexers or those with rate limits.
 :::
 
-#### Indexer Priority
+#### Indexer priority
 
 Priority determines search order:
 
@@ -378,7 +378,7 @@ Priority determines search order:
 | **25** | Default priority |
 | **50+** | Lower priority, searched later |
 
-#### Custom YAML Indexers
+#### Custom YAML indexers
 
 Trackers not in the built-in list require a custom YAML definition containing:
 
@@ -397,7 +397,7 @@ Custom YAML indexers must follow the Prowlarr/Jackett indexer definition format.
 
 Configure sources for automatic subtitle downloads.
 
-#### Available Providers
+#### Available providers
 
 | Provider | Type | Authentication |
 |----------|------|----------------|
@@ -405,7 +405,7 @@ Configure sources for automatic subtitle downloads.
 | **Subf2m** | Web | None |
 | **Addic7ed** | Web | Username/Password |
 
-#### Provider Settings
+#### Provider settings
 
 | Setting | Description |
 |---------|-------------|
@@ -419,7 +419,7 @@ Configure sources for automatic subtitle downloads.
 
 Configure media server integrations and notifications.
 
-#### Media Server Connect
+#### Media server connect
 
 | Server | Capability |
 |--------|------------|
@@ -427,7 +427,7 @@ Configure media server integrations and notifications.
 | **Emby** | Library update, playback status |
 | **Plex** | Library update |
 
-#### Notification Triggers
+#### Notification triggers
 
 Configure when to send notifications:
 
@@ -621,7 +621,7 @@ Cinephage supports three provider types:
 | **Username** | Account username | `user123` |
 | **Password** | Account password | `********` |
 
-#### M3U Playlist
+#### M3U playlist
 
 **Required Fields:**
 

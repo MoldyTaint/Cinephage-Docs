@@ -77,7 +77,7 @@ You should see the qBittorrent web interface. Log in with the credentials you se
 | **Category** | Organizes downloads | `cinephage` |
 | **Priority** | Download priority | Leave as default |
 
-## Step 4: Test the connection
+## Step 4: Test the Connection
 
 Click **Test** to verify Cinephage can connect.
 
@@ -93,7 +93,7 @@ If successful, you will see a success message. If the test fails:
 
 Click **Save** to add the download client.
 
-## Testing your configuration
+## Testing Your Configuration
 
 1. Add a movie or series to your library with monitoring enabled
 2. Go to the item and click **Search**
@@ -101,7 +101,7 @@ Click **Save** to add the download client.
 4. Check **Activity > Queue** to see the download
 5. Verify the download appears in the qBittorrent Web UI
 
-## Common issues
+## Common Issues
 
 ### Connection refused
 

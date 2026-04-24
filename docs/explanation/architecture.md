@@ -342,7 +342,7 @@ Custom indexer definitions:
 
 ## Scalability Considerations
 
-### Single-User Design
+### Single-user design
 
 Cinephage is optimized for personal use:
 

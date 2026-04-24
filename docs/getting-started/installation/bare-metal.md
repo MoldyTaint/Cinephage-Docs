@@ -208,7 +208,7 @@ TZ=UTC
 EOF
 ```
 
-#### Required Environment Variables
+#### Required environment variables
 
 | Variable | Required | Description |
 |----------|----------|-------------|

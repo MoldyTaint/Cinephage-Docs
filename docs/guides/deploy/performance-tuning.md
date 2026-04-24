@@ -139,14 +139,14 @@ Place the database on SSD storage if possible. It significantly improves:
 
 ### Database Maintenance
 
-#### Automatic Maintenance
+#### Automatic maintenance
 
 Cinephage performs automatic maintenance:
 - Cleanup of old logs and history
 - Index optimization
 - Temporary file cleanup
 
-#### Manual Optimization
+#### Manual optimization
 
 **VACUUM Database:**
 
@@ -506,7 +506,7 @@ Shows:
 - Memory usage
 - Uptime
 
-**Task Performance:**
+**Task performance:**
 
 ```
 Settings > Tasks > Performance
@@ -694,27 +694,27 @@ environment:
    - Measure impact
    - Document what works
 
-### Hardware-Specific Guidelines
+### Hardware-Specific guidelines
 
-**Raspberry Pi / Low-Power:**
+**Raspberry Pi / low-power:**
 - Workers: 1-2 each
 - Cache: 2-5 GB
 - Tasks: Conservative intervals
 - Disable NZB streaming
 
-**NAS / Home Server:**
+**NAS / home server:**
 - Workers: 3-5 each
 - Cache: 10-20 GB
 - SSD for database
 - Balanced configuration
 
-**Dedicated Server:**
+**Dedicated server:**
 - Workers: 5-10 each
 - Cache: 20-50 GB
 - Full SSD storage
 - Aggressive configuration
 
-**VPS / Cloud:**
+**VPS / cloud:**
 - Workers: Match CPU cores
 - Cache: Limited by disk
 - Monitor bandwidth costs
