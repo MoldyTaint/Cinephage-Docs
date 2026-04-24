@@ -476,8 +476,8 @@ Key metrics tracked:
 
 ## See Also
 
-- [Workers and Tasks](workers-and-tasks)
-- [Quality Scoring](quality-scoring)
-- [Design Decisions](design-decisions)
+- [Workers and Tasks](workers-and-tasks) — Background processing system
+- [Quality Scoring](quality-scoring) — How release quality is evaluated
+- [Design Decisions](design-decisions) — Why Cinephage was built this way
 - [Database Schema](../reference/database/schema-overview)
 - [Getting Started](../getting-started/)

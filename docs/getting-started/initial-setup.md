@@ -269,13 +269,13 @@ Now that Cinephage is fully configured, continue to [Adding Media](adding-media)
 - [Understanding the Interface](./understanding-interface) — Navigate the Cinephage web interface
 
 ### Configuration Guides
-- [Configure Download Clients](../guides/configure/download-clients) — Set up qBittorrent, SABnzbd, and others
-- [Configure Indexers](../guides/configure/indexers) — Add indexers using YAML definitions
-- [Set Up Quality Profiles](../guides/configure/quality-profiles) — Configure quality scoring and upgrade behavior
+- [Configure Download Clients](/guides/configure/download-clients) — Set up qBittorrent, SABnzbd, and others
+- [Configure Indexers](/guides/configure/indexers) — Add indexers using YAML definitions
+- [Set Up Quality Profiles](/guides/configure/quality-profiles) — Configure quality scoring and upgrade behavior
 
 ### Help & Support
 - [Getting Help](./getting-help) — Community support and troubleshooting resources
-- [Troubleshooting Guide](../guides/deploy/troubleshooting) — Solutions for common setup issues
+- [Troubleshooting Guide](/guides/deploy/troubleshooting) — Solutions for common setup issues
 
 ---
 

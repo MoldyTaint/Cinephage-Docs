@@ -90,7 +90,7 @@ docker compose exec cinephage ls -la /path/to/media
 
 ## See Also
 
-- [Import Existing Files](/guides/use/import-existing-files) - Detailed import guide
-- [Organize Files](/guides/use/organize-files) - File naming patterns
-- [Downloading FAQ](/support/faq/downloading) - Automated downloads
-- [Troubleshooting](/support/faq/troubleshooting) - Import issues
+- [Import Existing Files](/guides/use/import-existing-files) — Detailed import guide
+- [Organize Files](/guides/use/organize-files) — File naming patterns
+- [Downloading FAQ](/support/faq/downloading) — Automated downloads
+- [Troubleshooting](/support/faq/troubleshooting) — Import issues
